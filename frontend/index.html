@@ -1,0 +1,1652 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      name="viewport"
+    />
+    <!-- Author -->
+    <meta name="author" content="Jeremy Dohin" />
+    <!-- description -->
+    <meta name="description" content="" />
+    <!-- keywords -->
+    <meta
+      name="keywords"
+      content="Creative, modern, clean, responsive, html5, css3, javascript, jquery, portfolio, one page, start-up, branding, designer, carousel, parallax, masonry, grid, faq"
+    />
+    <!-- Page Title -->
+    <title>Jeremy Portfolio Website</title>
+    <!-- Favicon -->
+    <link href="./public/assets/icons/logo.svg" rel="icon" />
+    <!-- Bundle -->
+    <link href="css/bundle.min.css" rel="stylesheet" />
+    <!-- Plugin Css -->
+    <link href="css/jquery.fancybox.min.css" rel="stylesheet" />
+    <link href="css/owl.carousel.min.css" rel="stylesheet" />
+    <!-- Style Sheet -->
+    <link href="css/tootik.min.css" rel="stylesheet" />
+    <link href="css/jquery.pagepiling.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="90">
+    <!-- START LOADER -->
+    <div class="loader-bg">
+      <div id="container">
+        <svg viewBox="0 0 100 100">
+          <defs>
+            <filter id="shadow">
+              <fedropshadow
+                dx="0"
+                dy="0"
+                stdDeviation="0.5"
+                flood-color="#26acd9"
+              />
+            </filter>
+          </defs>
+          <circle
+            id="spinner"
+            style="
+              fill: transparent;
+              stroke: #26acd9;
+              stroke-width: 5px;
+              stroke-linecap: round;
+              filter: url(#shadow);
+            "
+            cx="50"
+            cy="50"
+            r="45"
+          />
+        </svg>
+      </div>
+    </div>
+    <!-- END LOADER -->
+
+    <!-- START HEADER -->
+    <header>
+      <!--Navigation-->
+      <nav
+        class="navbar navbar-top-default navbar-expand-lg navbar-simple nav-line"
+      >
+        <a href="#home" title="Logo" class="logo">
+          <!--Logo Default-->
+          <img
+            class="mega-logo"
+            src="./public/assets/icons/logo.svg"
+            alt="logo"
+          />
+        </a>
+
+        <!--Side Menu Button-->
+        <div class="navigation-toggle">
+          <ul class="slider-social toggle-btn my-0">
+            <li>
+              <a
+                href="javascript:void(0);"
+                class="sidemenu_btn"
+                id="sidemenu_toggle"
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!--Side Nav-->
+      <div class="side-menu hidden">
+        <span id="btn_sideNavClose">
+          <img
+            src="./public/assets/icons/cross.svg"
+            alt="close button"
+            class="btn-close"
+          />
+        </span>
+        <div class="inner-wrapper">
+          <nav class="side-nav w-100">
+            <a href="#home" title="Logo" class="logo navbar-brand">
+              <img src="./public/assets/icons/logo.svg" alt="logo" />
+            </a>
+            <ul class="navbar-nav text-capitalize">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#timeline">Timeline</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#project">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#review">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <div class="text-center sidebar_btn">
+              <a
+                href="./public/assets/document/resume-JeremyDohin.pdf"
+                download
+                class="btn btn-medium btn-rounded btn-blue text-capitalize"
+                >Download Resume</a
+              >
+            </div>
+          </nav>
+        </div>
+      </div>
+      <a id="close_side_menu" href="javascript:void(0);"></a>
+    </header>
+    <!-- END HEADER -->
+
+    <div id="pagepiling">
+      <!-- START BANNER -->
+      <section class="section slider-bg slide1 p-0" id="home">
+        <div class="slider-area" id="slider-area">
+          <div class="row align-items-start">
+            <div class="col-12 col-lg-6 image-order">
+              <div class="slider-image">
+                <!-- <img
+									src="../public/assets/img/slider-img.jpg"
+									alt="Slider-Image" /> -->
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 text-md-center text-lg-left">
+              <div class="slider-content">
+                <h1 class="main-font text-uppercase d-block">
+                  <span>Hello, I'm Jeremy</span><br />
+                  <span class="multiple-text text-blue"></span>
+                </h1>
+                <p class="pt-3 alt-font content-para">
+                  I'm a passionate web developer skilled in creating engaging
+                  and user-friendly websites. Specializing in front-end
+                  development with modern technologies like JavaScript, React
+                  and Tailwind. Dedicated to delivering high-quality, custom
+                  solutions that exceed client expectations.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Circle-One -->
+          <div class="circle-one">
+            <span
+              data-tootik="About me"
+              data-tootik-conf="left dark square shadow"
+            >
+              <a href="#about">
+                <span class="animated-circle-one position-relative"></span>
+              </a>
+            </span>
+          </div>
+          <!-- Circle-Two -->
+          <div class="circle-two">
+            <span data-tootik="Timeline" data-tootik-conf="dark square shadow">
+              <a href="#timeline">
+                <span class="animated-circle-two position-relative"></span>
+              </a>
+            </span>
+          </div>
+          <!-- Circle-Three -->
+          <div class="circle-three">
+            <span
+              data-tootik="Projects"
+              data-tootik-conf="right dark square shadow"
+            >
+              <a href="#project">
+                <span class="animated-circle-three position-relative"></span>
+              </a>
+            </span>
+          </div>
+          <!-- Circle-Four -->
+          <div class="circle-four">
+            <span
+              data-tootik="Reviews"
+              data-tootik-conf="bottomR dark square shadow"
+            >
+              <a href="#review">
+                <span class="animated-circle-four position-relative"></span>
+              </a>
+            </span>
+          </div>
+          <!-- Circle-Five -->
+          <div class="circle-five">
+            <span
+              data-tootik="Contact"
+              data-tootik-conf="bottomL dark square shadow"
+            >
+              <a href="#contact">
+                <span class="animated-circle-five position-relative"> </span>
+              </a>
+            </span>
+          </div>
+        </div>
+      </section>
+      <!-- END BANNER -->
+
+      <!-- START SKILLS -->
+      <section class="section slide2 skills" id="about">
+        <div class="container">
+          <div class="row pb-5">
+            <div class="col-12 col-md-7 pl-md-0">
+              <h3 class="main-font text-uppercase">
+                <span class="text-blue d-block"> Product Designer &amp; </span>
+                <span> Digital Creative Director </span>
+              </h3>
+            </div>
+          </div>
+          <div class="row pt-md-5 skill-box">
+            <div class="col-12 col-md-6">
+              <div class="row">
+                <!-- First Skill -->
+                <div class="col-12 col-md-6 text-center text-md-left pl-md-0">
+                  <h4 class="main-font text-blue skill">WEB DESIGN</h4>
+                  <p class="alt-font text-white mt-3">
+                    Curabitur mollis bibendum luctus. Duis suscipit vitae dui
+                    sed suscipit.
+                  </p>
+                </div>
+                <!-- Second Skill -->
+                <div
+                  class="col-12 col-md-6 pt-5 pt-md-0 pr-md-0 text-center text-md-left"
+                >
+                  <h4 class="main-font text-blue skill">MARKETING</h4>
+                  <p class="alt-font text-white mt-3">
+                    Curabitur mollis bibendum luctus. Duis suscipit vitae dui
+                    sed suscipit.
+                  </p>
+                </div>
+              </div>
+              <div class="row mt-5">
+                <!-- Third Skill -->
+                <div class="col-12 col-md-6 text-center text-md-left pl-md-0">
+                  <h4 class="main-font text-blue skill">DEVELOPMENT</h4>
+                  <p class="alt-font text-white mt-3">
+                    Curabitur mollis bibendum luctus. Duis suscipit vitae dui
+                    sed suscipit.
+                  </p>
+                </div>
+                <!-- Fourth Skill -->
+                <div
+                  class="col-12 col-md-6 pt-5 pt-md-0 text-center text-md-left pr-md-0"
+                >
+                  <h4 class="main-font text-blue skill">DIGITAL MEDIA</h4>
+                  <p class="alt-font text-white mt-3">
+                    Curabitur mollis bibendum luctus. Duis suscipit vitae dui
+                    sed suscipit.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Progress Bars -->
+            <div
+              class="col-12 col-md-5 offset-md-1 text-left pr-md-0 bars-section"
+            >
+              <ul class="progress-bar-side">
+                <!-- First Bar -->
+                <li class="custom-progress text-white">
+                  <h6 class="mb-0 text-capitalize alt-font">
+                    Adobe Photoshop<span class="float-right"
+                      ><b class="numscroller">96</b>%</span
+                    >
+                  </h6>
+
+                  <div class="progress">
+                    <div
+                      class="progress-bar bg-blue"
+                      role="progressbar"
+                      aria-valuenow="96"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </li>
+                <!-- Second Bar -->
+                <li class="custom-progress text-white">
+                  <h6 class="mb-0 text-capitalize alt-font">
+                    HTML / WordPress<span class="float-right"
+                      ><b class="numscroller">92</b>%</span
+                    >
+                  </h6>
+
+                  <div class="progress">
+                    <div
+                      class="progress-bar bg-blue"
+                      role="progressbar"
+                      aria-valuenow="92"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </li>
+                <!-- Third Bar -->
+                <li class="custom-progress text-white">
+                  <h6 class="mb-0 text-capitalize alt-font">
+                    Development<span class="float-right"
+                      ><b class="numscroller">90</b>%</span
+                    >
+                  </h6>
+
+                  <div class="progress">
+                    <div
+                      class="progress-bar bg-blue"
+                      role="progressbar"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END SKILLS -->
+
+      <!-- START TIMELINE -->
+      <section class="section slide3 timeline-bg" id="timeline">
+        <div class="container">
+          <div class="row pb-5 heading-row">
+            <div class="col-12 col-md-7">
+              <h3 class="main-font text-uppercase">
+                <span class="text-blue d-block text-uppercase">
+                  My Career
+                </span>
+                <span> History &amp; Timeline </span>
+              </h3>
+            </div>
+            <div class="col-12 col-md-5 text-md-right pt-4 pt-md-0">
+              <h2 class="m-0 text-blue main-font" id="age"></h2>
+              <p class="alt-font">Years Old</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="cd-horizontal-timeline loaded">
+                <div class="timeline">
+                  <!-- Events-Wrapper -->
+                  <div class="events-wrapper">
+                    <!-- Events -->
+                    <div class="events" style="width: 2200px">
+                      <ol>
+                        <li>
+                          <a
+                            href="#"
+                            data-date="20/04/2017"
+                            class="older-event selected"
+                            >2012</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" data-date="10/06/2017">2014</a>
+                        </li>
+                        <li>
+                          <a href="#" data-date="17/06/2017">2014</a>
+                        </li>
+                        <li>
+                          <a href="#" data-date="30/06/2017">2015</a>
+                        </li>
+                        <li>
+                          <a href="#" data-date="12/07/2017">2015</a>
+                        </li>
+                        <li>
+                          <a href="#" data-date="15/08/2017">2018</a>
+                        </li>
+                        <li>
+                          <a href="#" data-date="09/09/2017">2019</a>
+                        </li>
+                        <li>
+                          <a href="#" data-date="24/10/2017">2021</a>
+                        </li>
+                        <li>
+                          <a href="#" data-date="02/11/2017">2021</a>
+                        </li>
+                        <li>
+                          <a href="#" data-date="18/12/2017">2023</a>
+                        </li>
+                        <li>
+                          <a href="#" data-date="27/12/2017">2023</a>
+                        </li>
+                        <li>
+                          <a href="#" data-date="10/01/2018">2023</a>
+                        </li>
+                      </ol>
+                      <span class="filling-line" aria-hidden="true"></span>
+                    </div>
+                    <!-- Events -->
+                  </div>
+                  <!-- Events-Wrapper -->
+                  <ul class="cd-timeline-navigation">
+                    <li><a href="#" class="prev">Prev</a></li>
+                    <li><a href="#" class="next">Next</a></li>
+                  </ul>
+                  <!-- Timeline-Navigation -->
+                </div>
+                <!-- Timeline -->
+                <div class="events-content">
+                  <ol>
+                    <li class="selected" data-date="20/04/2017">
+                      <!-- Main Content Div -->
+                      <div class="timeline-header">
+                        <div class="main-content text-uppercase">
+                          <h4 class="text-blue main-font font-weight-normal">
+                            06 July 2012
+                          </h4>
+                          <h2 class="main-font">
+                            Graduated from college
+                            <img
+                              src="./public/assets/icons/timeline/gradcap.svg"
+                              alt="graduation cap"
+                              style="padding-left: 10px"
+                            />
+                          </h2>
+                        </div>
+                        <div
+                          class="main-content main-content-right text-uppercase"
+                        >
+                          <h4 class="text-blue main-font font-weight-normal">
+                            School
+                          </h4>
+                          <h4 class="main-font">Lycée Henri Gaudier-Brzeska</h4>
+                        </div>
+                      </div>
+                      <!-- Sub Content Div -->
+                      <div class="row align-items-start">
+                        <div class="col-12 col-md-9 pl-md-0">
+                          <div class="sub-content">
+                            <h5 class="text-uppercase main-font text-blue">
+                              Diploma obtained
+                            </h5>
+                            <p class="alt-font">
+                              Baccalaureate in Industrial Sciences and
+                              Technologies with a specialization in Civil
+                              Engineering
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-3 pr-md-0">
+                          <div class="sub-content sub-content-right">
+                            <h5 class="text-uppercase main-font text-blue">
+                              Details
+                            </h5>
+                            <p class="alt-font">
+                              Orléans - France
+                              <img
+                                src="./public/assets/icons/timeline/pin.svg"
+                                alt="location icon"
+                              />
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li data-date="10/06/2017">
+                      <!-- Main Content Div -->
+                      <div class="timeline-header">
+                        <div class="main-content text-uppercase">
+                          <h4 class="text-blue main-font font-weight-normal">
+                            12 June 2014
+                          </h4>
+                          <h2 class="main-font">
+                            Graduated from university
+                            <img
+                              src="./public/assets/icons/timeline/gradcap.svg"
+                              alt="graduation cap"
+                              style="padding-left: 10px"
+                            />
+                          </h2>
+                        </div>
+                        <div
+                          class="main-content main-content-right text-uppercase"
+                        >
+                          <h4 class="text-blue main-font font-weight-normal">
+                            School
+                          </h4>
+                          <h4 class="main-font">
+                            Lycée des métiers du Bâtiment
+                          </h4>
+                        </div>
+                      </div>
+                      <!-- Sub Content Div -->
+                      <div class="row align-items-start">
+                        <div class="col-12 col-md-9 pl-md-0">
+                          <div class="sub-content">
+                            <h5 class="text-uppercase main-font text-blue">
+                              Diploma obtained
+                            </h5>
+                            <p class="alt-font">
+                              Higher Technician's Certificate in Building
+                              Construction
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-3 pr-md-0">
+                          <div class="sub-content sub-content-right">
+                            <h5 class="text-uppercase main-font text-blue">
+                              Details
+                            </h5>
+                            <p class="alt-font">
+                              Felletin - France
+                              <img
+                                src="./public/assets/icons/timeline/pin.svg"
+                                alt="location icon"
+                              />
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li data-date="17/06/2017">
+                      <!-- Main Content Div -->
+                      <div class="timeline-header">
+                        <div class="main-content text-uppercase">
+                          <h4 class="text-blue main-font font-weight-normal">
+                            18 August 2014
+                          </h4>
+                          <h2 class="main-font">
+                            First job as Operation officer
+                          </h2>
+                        </div>
+                        <div
+                          class="main-content main-content-right text-uppercase"
+                        >
+                          <h4 class="text-blue main-font font-weight-normal">
+                            Company
+                          </h4>
+                          <h4 class="main-font">Amazon</h4>
+                        </div>
+                      </div>
+                      <!-- Sub Content Div -->
+                      <div class="row align-items-start">
+                        <div class="col-12 col-md-9 pl-md-0">
+                          <div class="sub-content">
+                            <h5 class="text-uppercase main-font text-blue">
+                              Introduction
+                            </h5>
+                            <p class="alt-font">
+                              Joining Amazon as an operations officer marked my
+                              first job experience, as the challenging
+                              circumstances in the building industry during that
+                              time hindered opportunities in that field.
+                            </p>
+                          </div>
+                          <div class="sub-content">
+                            <h5 class="text-uppercase main-font text-blue">
+                              About my position
+                            </h5>
+                            <p class="alt-font">
+                              While i worked at Amazon as an operations officer
+                              in the customer return department, I honed my
+                              skills in meticulousness and attention to detail.
+                              <br />This experience not only taught me the
+                              importance of maintaining high standards but also
+                              allowed me to master time management and
+                              multitasking abilities. Furthermore, I have
+                              acquired additional skills such as effective
+                              communication and adapting to fast-paced
+                              environments.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-3 pr-md-0">
+                          <div class="sub-content sub-content-right">
+                            <h5 class="text-uppercase main-font text-blue">
+                              Details
+                            </h5>
+                            <p class="alt-font">
+                              Orléans - France
+                              <img
+                                src="./public/assets/icons/timeline/pin.svg"
+                                alt="location icon"
+                              />
+                            </p>
+                            <p class="alt-font">
+                              Interim contract
+                              <img
+                                src="./public/assets/icons/timeline/contract.svg"
+                                alt="contract icon"
+                              />
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li data-date="30/06/2017">
+                      <!-- Main Content Div -->
+                      <div class="timeline-header">
+                        <div class="main-content text-uppercase">
+                          <h4 class="text-blue main-font font-weight-normal">
+                            04 May 2015
+                          </h4>
+                          <h2 class="main-font">
+                            Started a new job as Operation officer
+                          </h2>
+                        </div>
+                        <div
+                          class="main-content main-content-right text-uppercase"
+                        >
+                          <h4 class="text-blue main-font font-weight-normal">
+                            Company
+                          </h4>
+                          <h4 class="main-font">Chronopost</h4>
+                        </div>
+                      </div>
+                      <!-- Sub Content Div -->
+                      <div class="row align-items-start">
+                        <div class="col-12 col-md-9 pl-md-0">
+                          <div class="sub-content">
+                            <h5 class="text-uppercase main-font text-blue">
+                              Introduction
+                            </h5>
+                            <p class="alt-font">
+                              After my contract at Amazon concluded, I made the
+                              bold decision to relocate to a new city in search
+                              of fresh experiences. It was during this
+                              transition that I found an opportunity at
+                              Chronopost, where I embarked on a new chapter of
+                              my career.
+                            </p>
+                          </div>
+                          <div class="sub-content">
+                            <h5 class="text-uppercase main-font text-blue">
+                              About my position
+                            </h5>
+                            <p class="alt-font">
+                              During my time at Chronopost, I assumed a dynamic
+                              position encompassing several key
+                              responsibilities. As part of my role, I took
+                              charge of effectively managing drivers, diligently
+                              enforcing procedures and timelines to ensure
+                              smooth operations. I also actively engaged in
+                              sales as well as facilitating the convenient
+                              pickup of packages directly from their offices. I
+                              played a crucial role in maintaining customer
+                              satisfaction by liaising with our dedicated
+                              customer service team which required my
+                              problem-solving and communicating skills.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-3 pr-md-0">
+                          <div class="sub-content sub-content-right">
+                            <h5 class="text-uppercase main-font text-blue">
+                              Details
+                            </h5>
+                            <p class="alt-font">
+                              Tours - France
+                              <img
+                                src="./public/assets/icons/timeline/pin.svg"
+                                alt="location icon"
+                              />
+                            </p>
+                            <p class="alt-font">
+                              Fixed-term contract
+                              <img
+                                src="./public/assets/icons/timeline/contract.svg"
+                                alt="contract icon"
+                              />
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li data-date="12/07/2017">
+                      <!-- Main Content Div -->
+                      <div class="timeline-header">
+                        <div class="main-content text-uppercase">
+                          <h4 class="text-blue main-font font-weight-normal">
+                            07 September 2015
+                          </h4>
+                          <h2 class="main-font">
+                            Hired permanently as Operation officer
+                          </h2>
+                        </div>
+                        <div
+                          class="main-content main-content-right text-uppercase"
+                        >
+                          <h4 class="text-blue main-font font-weight-normal">
+                            Company
+                          </h4>
+                          <h4 class="main-font">Chronopost</h4>
+                        </div>
+                      </div>
+                      <!-- Sub Content Div -->
+                      <div class="row align-items-start">
+                        <div class="col-12 col-md-9 pl-md-0">
+                          <div class="sub-content">
+                            <h5 class="text-uppercase main-font text-blue">
+                              Introduction
+                            </h5>
+                            <p class="alt-font">
+                              After successfully completing my fixed-term
+                              contract as an operations officer, I was delighted
+                              to receive an offer for a permanent position,
+                              solidifying my commitment to the company's
+                              long-term goals.
+                            </p>
+                          </div>
+                          <div class="sub-content">
+                            <h5 class="text-uppercase main-font text-blue">
+                              About my position
+                            </h5>
+                            <p class="alt-font">
+                              In my subsequent role, my responsibilities
+                              remained aligned with my previous position. I
+                              continued to manage drivers, enforce procedures,
+                              and ensure seamless operations. Additionally, I
+                              undertook the crucial responsibility of overseeing
+                              all export packages from the office, meticulously
+                              examining accompanying documentation, verifying
+                              compliance, and effectively communicating the
+                              required documents to customs at Roissy Charles de
+                              Gaulle airport. I handled hazardous material
+                              shipments on occasion, adhering strictly to IATA
+                              (International Air Transport Association)
+                              procedures.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-3 pr-md-0">
+                          <div class="sub-content sub-content-right">
+                            <h5 class="text-uppercase main-font text-blue">
+                              Details
+                            </h5>
+                            <p class="alt-font">
+                              Bourges - France
+                              <img
+                                src="./public/assets/icons/timeline/pin.svg"
+                                alt="location icon"
+                              />
+                            </p>
+                            <p class="alt-font">
+                              Permanent contract
+                              <img
+                                src="./public/assets/icons/timeline/contract.svg"
+                                alt="contract icon"
+                              />
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li data-date="15/08/2017">
+                      <!-- Main Content Div -->
+                      <div class="timeline-header">
+                        <div class="main-content text-uppercase">
+                          <h4 class="text-blue main-font font-weight-normal">
+                            09 April 2018
+                          </h4>
+                          <h2 class="main-font">
+                            Started a new job as Operation officer
+                          </h2>
+                        </div>
+                        <div
+                          class="main-content main-content-right text-uppercase"
+                        >
+                          <h4 class="text-blue main-font font-weight-normal">
+                            Company
+                          </h4>
+                          <h4 class="main-font">TCS</h4>
+                        </div>
+                      </div>
+                      <!-- Sub Content Div -->
+                      <div class="row align-items-start">
+                        <div class="col-12 col-md-9 pl-md-0">
+                          <div class="sub-content">
+                            <h5 class="text-uppercase main-font text-blue">
+                              Introduction
+                            </h5>
+                            <p class="alt-font">
+                              After 3 years at Chronopost, my 1st significant
+                              job experience, I made the decision to resign from
+                              my position to return to Orléans. Throughout my
+                              time there, I gained valuable insights and
+                              acquired extensive knowledge.
+                            </p>
+                          </div>
+                          <div class="sub-content">
+                            <h5 class="text-uppercase main-font text-blue">
+                              About my position
+                            </h5>
+                            <p class="alt-font">
+                              As an operations officer, my role involved daily
+                              analysis and reporting for clients within tight
+                              deadlines. I also handled customer relations,
+                              addressing requests, disputes, and inquiries.
+                              Additionally, I oversaw driver management and
+                              conducted regular audits to evaluate their
+                              performance. Another aspect of my role involved
+                              handling billing, ensuring accurate and timely
+                              invoicing. Lastly, I was involved in fleet
+                              management, overseeing the administration and
+                              maintenance of the vehicle fleet. These
+                              responsibilities developed my skills in analysis,
+                              customer service and organization.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-3 pr-md-0">
+                          <div class="sub-content sub-content-right">
+                            <h5 class="text-uppercase main-font text-blue">
+                              Details
+                            </h5>
+                            <p class="alt-font">
+                              Orléans - France
+                              <img
+                                src="./public/assets/icons/timeline/pin.svg"
+                                alt="location icon"
+                              />
+                            </p>
+                            <p class="alt-font">
+                              Permanent contract
+                              <img
+                                src="./public/assets/icons/timeline/contract.svg"
+                                alt="contract icon"
+                              />
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li data-date="09/09/2017">
+                      <!-- Main Content Div -->
+                      <div class="timeline-header">
+                        <div class="main-content text-uppercase">
+                          <h4 class="text-blue main-font font-weight-normal">
+                            01 November 2019
+                          </h4>
+                          <h2 class="main-font">
+                            I got promoted as Quality Manager
+                          </h2>
+                        </div>
+                      </div>
+                      <!-- Sub Content Div -->
+                      <div class="row align-items-start">
+                        <div class="col-12 col-md-12 pl-md-0">
+                          <div class="sub-content">
+                            <h5 class="text-uppercase main-font text-blue">
+                              Introduction
+                            </h5>
+                            <p class="alt-font">
+                              I quickly established myself as a reliable and
+                              diligent professional. Through consistent
+                              dedication and delivering good results, I earned a
+                              promotion. As I transitioned into my new role, I
+                              embraced the opportunity to take on greater
+                              responsibilities and challenges.
+                            </p>
+                          </div>
+                          <div class="sub-content">
+                            <h5 class="text-uppercase main-font text-blue">
+                              About my position
+                            </h5>
+                            <p class="alt-font">
+                              As a Quality Manager, I was responsible for
+                              analyzing quality indicators, utilizing tools like
+                              Power BI, and implementing corrective actions in
+                              collaboration with the operations team. I also
+                              excelled in optimizing driver route network costs,
+                              contributing to cost-effective operations.
+                              Moreover, I played a key role in training and
+                              mentoring new operators, ensuring adherence to
+                              operating procedures. <br />
+                              Additionally, I successfully managed the process
+                              of calculating quotes and implementing services
+                              for new clients. Lastly, I conducted periodic
+                              audits of driver performance to maintain
+                              high-quality standards. These skills in analysis,
+                              optimization, training, and management are
+                              transferable and valuable in various industries.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li data-date="24/10/2017">
+                      <!-- Main Content Div -->
+                      <div class="timeline-header">
+                        <div class="main-content text-uppercase">
+                          <h4 class="text-blue main-font font-weight-normal">
+                            01 September 2021
+                          </h4>
+                          <h2 class="main-font">
+                            I Joined a crypto project as PR Lead
+                          </h2>
+                        </div>
+                        <div
+                          class="main-content main-content-right text-uppercase"
+                        >
+                          <h4 class="text-blue main-font font-weight-normal">
+                            Project
+                          </h4>
+                          <h4 class="main-font">Avian Network (AVN)</h4>
+                        </div>
+                      </div>
+                      <!-- Sub Content Div -->
+                      <div class="row align-items-start">
+                        <div class="col-12 col-md-9 pl-md-0">
+                          <div class="sub-content">
+                            <h5 class="text-uppercase main-font text-blue">
+                              Introduction
+                            </h5>
+                            <p class="alt-font">
+                              I first stepped into the crypto currency world
+                              back in autumn 2017. Being at the beginning of my
+                              professionnal career i wasn't able to go deeper on
+                              the subject. In summer 2021, i decided to return
+                              to crypto with the wish to join a project.
+                            </p>
+                          </div>
+                          <div class="sub-content">
+                            <h5 class="text-uppercase main-font text-blue">
+                              About my position
+                            </h5>
+                            <p class="alt-font">
+                              As a public relations lead, my role was to manage
+                              and improve the public image and reputation of
+                              Avian Network, a very new crypto project. <br />
+                              I developped PR campaigns, built relationships
+                              with youtubers &amp; community members, and
+                              communicated key messages effectively. My goal was
+                              to shape perception, build trust, and maintain
+                              positive community relationships together with the
+                              PR team.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-3 pr-md-0">
+                          <div class="sub-content sub-content-right">
+                            <h5 class="text-uppercase main-font text-blue">
+                              Details
+                            </h5>
+                            <p class="alt-font">
+                              On the Blockchain
+                              <img
+                                src="./public/assets/icons/timeline/pin.svg"
+                                alt="location icon"
+                              />
+                            </p>
+                            <p class="alt-font">
+                              Freelance - unpaid
+                              <img
+                                src="./public/assets/icons/timeline/contract.svg"
+                                alt="contract icon"
+                              />
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li data-date="02/11/2017">
+                      <!-- Main Content Div -->
+                      <div class="timeline-header">
+                        <div class="main-content text-uppercase">
+                          <h4 class="text-blue main-font font-weight-normal">
+                            01 November 2021
+                          </h4>
+                          <h2 class="main-font">
+                            I got promoted as Project Coordinator
+                          </h2>
+                        </div>
+                      </div>
+                      <!-- Sub Content Div -->
+                      <div class="row align-items-start">
+                        <div class="col-12 col-md-12 pl-md-0">
+                          <div class="sub-content">
+                            <h5 class="text-uppercase main-font text-blue">
+                              Introduction
+                            </h5>
+                            <p class="alt-font">
+                              With Avian Network popularity going up and the
+                              team growing up, a role of Project Coordinator
+                              opened up. This new position was for me the
+                              opportunity to learn more about crypto but also
+                              about managing a projet and bring it to success
+                              with the team.
+                            </p>
+                          </div>
+                          <div class="sub-content">
+                            <h5 class="text-uppercase main-font text-blue">
+                              About my position
+                            </h5>
+                            <p class="alt-font">
+                              As a project coordinator, my role was to oversee
+                              and facilitate the successful execution of AVN. I
+                              coordinated activities, timelines, and resources,
+                              ensuring efficient collaboration among team
+                              members. I tracked progress via weekly meetings,
+                              communicated updates to the community and partners
+                              such as crypto exchanges. <br />
+                              Additionally, I assisted the marketing team with
+                              the creation of designs such as the wallet,
+                              budgeted, and contibuted to the creation of the
+                              white paper. Ultimately, my focus was on driving
+                              the project efficiency, maintaining clear
+                              communication, and supporting the team in
+                              achieving their objectives.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li data-date="18/12/2017">
+                      <!-- Main Content Div -->
+                      <div class="timeline-header">
+                        <div class="main-content text-uppercase">
+                          <h4 class="text-blue main-font font-weight-normal">
+                            03 January 2023
+                          </h4>
+                          <h2 class="main-font">
+                            Resigned from my position at Avian Network
+                          </h2>
+                        </div>
+                      </div>
+                      <!-- Sub Content Div -->
+                      <div class="row align-items-start">
+                        <div class="col-12 col-md-12 pl-md-0">
+                          <div class="sub-content">
+                            <h5 class="text-uppercase main-font text-blue">
+                              Introduction
+                            </h5>
+                            <p class="alt-font">
+                              After nearly two and a half years of being part of
+                              this incredible crypto project as a project
+                              coordinator, this choice was motivated to focus on
+                              the next chapter of my life: being a web
+                              developer.
+                            </p>
+                          </div>
+                          <div class="sub-content">
+                            <h5 class="text-uppercase main-font text-blue">
+                              Retrospective
+                            </h5>
+                            <p class="alt-font">
+                              I have acquired a diverse set of skills that have
+                              shaped my professional and personnal growth. This
+                              include project management, communication, team
+                              work, adaptability to changing environments,
+                              stakeholder relationship management,
+                              problem-solving.
+                              <br />
+                              Additionally, I have honed my abilities in
+                              coordinating team efforts, managing timelines, and
+                              navigating the challenges inherent in the
+                              ever-evolving crypto landscape.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li data-date="27/12/2017">
+                      <!-- Main Content Div -->
+                      <div class="timeline-header">
+                        <div class="main-content text-uppercase">
+                          <h4 class="text-blue main-font font-weight-normal">
+                            27 Febuary 2023
+                          </h4>
+                          <h2 class="main-font">
+                            New chapter of my career in Web Development<img
+                              src="./public/assets/icons/timeline/star.svg"
+                              alt="star icon"
+                              style="padding-left: 10px"
+                            />
+                          </h2>
+                        </div>
+                        <div
+                          class="main-content main-content-right text-uppercase"
+                        >
+                          <h4 class="text-blue main-font font-weight-normal">
+                            Pro. School
+                          </h4>
+                          <h4 class="main-font">Wild Code School</h4>
+                        </div>
+                      </div>
+                      <!-- Sub Content Div -->
+                      <div class="row align-items-start">
+                        <div class="col-12 col-md-9 pl-md-0">
+                          <div class="sub-content">
+                            <p class="alt-font">
+                              After a successful 10-year career in the transport
+                              industry, I decided to pursue my true passion and
+                              embark on a journey into web development. To
+                              kickstart this transition, I made the decision to
+                              join a 5-month intensive training program at Wild
+                              Code School. This experience allowed me to acquire
+                              the foundations of web development and expand my
+                              knowledge in this exciting domain. <br />With a
+                              solid background in problem-solving and attention
+                              to detail from my previous industry, I now bring a
+                              fresh perspective to the field of web development.
+                              I am dedicated to crafting innovative and
+                              user-centric solutions, leveraging my diverse
+                              background to create impactful digital
+                              experiences. Ready to take on new challenges and
+                              collaborate with like-minded professionals in the
+                              web development community.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-3 pr-md-0">
+                          <div class="sub-content sub-content-right">
+                            <h5 class="text-uppercase main-font text-blue">
+                              Details
+                            </h5>
+                            <p class="alt-font">
+                              Remote
+                              <img
+                                src="./public/assets/icons/timeline/pin.svg"
+                                alt="location icon"
+                              />
+                            </p>
+                            <p class="alt-font">
+                              Training
+                              <img
+                                src="./public/assets/icons/timeline/contract.svg"
+                                alt="contract icon"
+                              />
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li data-date="10/01/2018">
+                      <!-- Main Content Div -->
+                      <div class="timeline-header">
+                        <div class="main-content text-uppercase">
+                          <h4 class="text-blue main-font font-weight-normal">
+                            27 July 2023
+                          </h4>
+                          <h2 class="main-font">
+                            End of my training in Web dev
+                          </h2>
+                        </div>
+                      </div>
+                      <!-- Sub Content Div -->
+                      <div class="row align-items-start">
+                        <div class="col-12 col-md-9 pl-md-0">
+                          <div class="sub-content">
+                            <p class="alt-font">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod tempor incididunt ut labore
+                              et dolore magna aliqua. Lorem ipsum dolor sit
+                              amet, consectetur adipiscing elit, sed do eiusmod
+                              tempor incididunt ut labore et dolore magna
+                              aliqua. Lorem ipsum dolor sit amet, consectetur
+                              adipiscing elit, sed do eiusmod tempor incididunt
+                              ut labore et dolore magna aliqua. Lorem ipsum
+                              dolor sit amet, consectetur adipiscing elit, sed
+                              do eiusmod tempor incididunt ut labore et dolore
+                              magna aliqua. Curabitur mollis bibendum luctus.
+                              Duis suscipit vitae dui sed suscipit.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-3 pr-md-0">
+                          <div class="sub-content sub-content-right">
+                            <h5 class="text-uppercase main-font text-blue">
+                              Things I learned
+                            </h5>
+                            <div class="languages">
+                              <img
+                                src="./public/assets/icons/language/css.svg"
+                                alt="CSS icon"
+                              />
+                              <img
+                                src="./public/assets/icons/language/html.svg"
+                                alt="HTML icon"
+                              />
+                              <img
+                                src="./public/assets/icons/language/js.svg"
+                                alt="JavaScript icon"
+                              />
+                              <img
+                                src="./public/assets/icons/language/nodejs.svg"
+                                alt="NodeJS icon"
+                              />
+                              <img
+                                src="./public/assets/icons/language/tailwind.svg"
+                                alt="TailwindCSS icon"
+                              />
+                              <img
+                                src="./public/assets/icons/language/sass.svg"
+                                alt="Sass icon"
+                              />
+                              <img
+                                src="./public/assets/icons/language/mysql.svg"
+                                alt="MySQL icon"
+                              />
+                              <img
+                                src="./public/assets/icons/language/express.svg"
+                                alt="Express icon"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END TIMELINE -->
+
+      <!-- START PORTFOLIO -->
+      <section class="section portfolio-bg slide4" id="project">
+        <div class="container">
+          <div class="row pb-5 heading-row">
+            <div class="col-12 col-md-7">
+              <h3 class="main-font text-uppercase">
+                <span class="text-blue d-block"> Portfolio </span>
+                <span> of my projects </span>
+              </h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="team-classic owl-team owl-carousel text-center">
+                <!-- Item 1 -->
+                <div class="item">
+                  <div class="team-data-img">
+                    <a
+                      href="https://arkantik.github.io/WildBook/"
+                      target="_blank"
+                    >
+                      <div class="single-work">
+                        <img
+                          src="./public/assets/img/project/wildbook.png"
+                          alt="Wildbook project"
+                          class="img-responsive"
+                          data-no-retina
+                        />
+                        <div class="overlay-text center-block">
+                          <div class="cases-image-inner">
+                            <span class="cases-line top"></span>
+                            <span class="cases-line top-right"></span>
+                            <span class="cases-line bottom"></span>
+                            <span class="cases-line bottom-left"></span>
+                            <h6 class="text-white text-uppercase alt-font">
+                              WildBook
+                            </h6>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="portfolio-content">
+                      <h5 class="text-blue main-font mb-2 text-uppercase">
+                        WildBook - My First Website
+                      </h5>
+                      <p>
+                        Responsive and mobile-first single-page site using HTML,
+                        CSS, and vanilla JS. <br />This project was made in 2
+                        weeks with only 2 weeks of experience in web dev
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="item">
+                  <div class="team-data-img">
+                    <a
+                      href="https://arkantik.github.io/hogwarts-magic-cards/"
+                      target="_blank"
+                    >
+                      <div class="single-work">
+                        <img
+                          src="./public/assets/img/project/hogwarts.png"
+                          alt="Hogwarts magic cards project"
+                          class="img-responsive"
+                          data-no-retina
+                        />
+                        <div class="overlay-text center-block">
+                          <div class="cases-image-inner">
+                            <span class="cases-line top"></span>
+                            <span class="cases-line top-right"></span>
+                            <span class="cases-line bottom"></span>
+                            <span class="cases-line bottom-left"></span>
+                            <h6 class="text-white text-uppercase alt-font">
+                              Hogwarts Magic Cards
+                            </h6>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="portfolio-content">
+                      <h5 class="text-blue main-font mb-2 text-uppercase">
+                        Hogwarts Magic Cards
+                      </h5>
+                      <p>
+                        Flash-game type website using ReactJS, a CSS
+                        framework(Tailwind), and integrating an API.<br />This
+                        website is a strategy turn by turn card game set in the
+                        world of Harry Potter.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="item">
+                  <div class="team-data-img">
+                    <a
+                      href="https://arkantik.github.io/holifun/"
+                      target="_blank"
+                    >
+                      <div class="single-work">
+                        <img
+                          src="./public/assets/img/project/holifun.png"
+                          alt="Holifun project"
+                          class="img-responsive"
+                          data-no-retina
+                        />
+                        <div class="overlay-text center-block">
+                          <div class="cases-image-inner">
+                            <span class="cases-line top"></span>
+                            <span class="cases-line top-right"></span>
+                            <span class="cases-line bottom"></span>
+                            <span class="cases-line bottom-left"></span>
+                            <h6 class="text-white text-uppercase alt-font">
+                              HoliFun
+                            </h6>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="portfolio-content">
+                      <h5 class="text-blue main-font mb-2 text-uppercase">
+                        HoliFun
+                      </h5>
+                      <p>
+                        No idea where to go for your next vacation? HoliFun is
+                        made for you!<br />This project has been created during
+                        a 36h Hackathon, with the objective to build something
+                        about vacation and using an API.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="item">
+                  <div class="team-data-img">
+                    <a
+                      href="./public/assets/img/project/origins.png"
+                      target="_blank"
+                    >
+                      <div class="single-work">
+                        <img
+                          src="./public/assets/img/project/origins.png"
+                          alt="team"
+                          class="img-responsive"
+                          data-no-retina
+                        />
+                        <div class="overlay-text center-block">
+                          <div class="cases-image-inner">
+                            <span class="cases-line top"></span>
+                            <span class="cases-line top-right"></span>
+                            <span class="cases-line bottom"></span>
+                            <span class="cases-line bottom-left"></span>
+                            <h6 class="text-white text-uppercase alt-font">
+                              Origins E-sport
+                            </h6>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="portfolio-content">
+                      <h5 class="text-blue main-font mb-2 text-uppercase">
+                        Origins E-sport
+                      </h5>
+                      <p class="text-capitalize">Currently in development</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="circle ini-customPrevBtn" id="team-circle-left">
+                <img
+                  src="./public/assets/icons/portfolio/arrow-left-circle.svg"
+                  alt="arrow left"
+                />
+              </a>
+              <a class="circle ini-customNextBtn" id="team-circle-right">
+                <img
+                  src="./public/assets/icons/portfolio/arrow-right-circle.svg"
+                  alt="arrow right"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END PORTFOLIO -->
+
+      <!-- START REVIEW -->
+      <section class="section review-bg slide6" id="review">
+        <div class="container">
+          <div class="row pb-5 heading-row">
+            <div class="col-12 col-md-7">
+              <h3 class="main-font text-uppercase">
+                <span class="text-blue d-block text-uppercase"> People </span>
+                <span> I worked with &amp; for </span>
+              </h3>
+              <p class="py-2 heading-row alt-font">
+                Few words from them about me and my work
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <!-- Review Slider -->
+              <div
+                id="review-carousal"
+                class="review-owl owl-carousel owl-theme"
+              >
+                <!-- review-1 -->
+                <div class="item">
+                  <img
+                    src="./public/assets/icons/review/quote.svg"
+                    alt="quote icon"
+                    class="icon-quotes"
+                  />
+                  <p class="description text-grey paragraph">
+                    Jeremy has a solid understanding of the fundamental
+                    principles of web development and is capable of creatively
+                    solving complex problems. His ability to work in a team and
+                    collaborate with other developers is a valuable quality.
+                  </p>
+                  <div class="review-img">
+                    <img
+                      src="./public/assets/img/review/anthony.webp"
+                      alt="Anthony Gorski picture"
+                    />
+                  </div>
+                  <div class="review-tittle">
+                    <h4 class="main-font font-weight-normal">Anthony Gorski</h4>
+                    <a href="https://www.linkedin.com/in/anthony-gorski/"
+                      ><img
+                        src="./public/assets/icons/linkedin.svg"
+                        alt="linkedin icon"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <!-- review-2 -->
+                <div class="item">
+                  <img
+                    src="./public/assets/icons/review/quote.svg"
+                    alt="quote icon"
+                    class="icon-quotes"
+                  />
+                  <p class="description text-grey paragraph">
+                    Jeremy is a reliable person, always present and
+                    professional. He's also a good trainer, explaining softwares
+                    in details. One thing is certain, he always dives fully into
+                    new projects to push himself to the limit.
+                  </p>
+                  <div class="review-img">
+                    <img
+                      src="./public/assets/img/review/ingrid.jpg"
+                      alt="Ingrid Freire picture"
+                      class="review-img"
+                    />
+                  </div>
+                  <div class="review-tittle">
+                    <h4 class="main-font font-weight-normal">Ingrid Freire</h4>
+                    <a
+                      href="https://www.linkedin.com/in/ingrid-freire-2a00b31b7/"
+                      ><img
+                        src="./public/assets/icons/linkedin.svg"
+                        alt="linkedin icon"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END REVIEWS -->
+
+      <!-- START CONTACT -->
+      <section class="section contact-bg slide5" id="contact">
+        <div class="container">
+          <div class="row pb-5">
+            <div class="col-12 col-md-7">
+              <h3 class="main-font text-uppercase">
+                <span class="text-blue d-block text-uppercase">
+                  Contact Me
+                </span>
+                <span> Lets Get In Touch </span>
+              </h3>
+            </div>
+          </div>
+          <form class="contact-form" id="contact-form-data">
+            <div class="row pt-3">
+              <!-- Submission Popup -->
+              <div class="col-12">
+                <div class="col-sm-12 px-0" id="result"></div>
+              </div>
+              <!--Left Column-->
+              <div class="col-md-4">
+                <div class="form-group">
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Fullname"
+                    required
+                    id="first_name"
+                    name="firstName"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <input
+                    class="form-control"
+                    type="tel"
+                    placeholder="Phone Number"
+                    id="phone"
+                    name="userPhone"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <input
+                    class="form-control"
+                    type="email"
+                    placeholder="Email"
+                    required
+                    id="email"
+                    name="userEmail"
+                  />
+                </div>
+              </div>
+              <!--Right Column-->
+              <div class="col-12 col-md-6 offset-md-1 contact-form">
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    placeholder="Type Your Message Here"
+                    id="message"
+                    name="userMessage"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+              <!-- Button -->
+              <div class="col-12 px-md-0">
+                <div class="contact-btn pt-5 text-center text-lg-left">
+                  <button
+                    type="button"
+                    class="btn btn-medium btn-rounded btn-blue text-capitalize contact_btn"
+                  >
+                    Contact Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- END CONTACT -->
+    </div>
+
+    <!-- Start Socials -->
+    <div class="slider-bottom">
+      <div class="slider-footer w-auto">
+        <ul class="social-icons-simple">
+          <li>
+            <a class="social-icon" href="https://github.com/Arkantik"
+              ><img src="./public/assets/icons/github.svg" alt="github icon" />
+            </a>
+          </li>
+          <li>
+            <a
+              class="social-icon"
+              href="https://www.linkedin.com/in/jeremy-dohin/"
+              ><img
+                src="./public/assets/icons/linkedin.svg"
+                alt="linkedin icon"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              class="social-icon"
+              href="./public/assets/document/resume-JeremyDohin.pdf"
+              download
+              ><img
+                src="./public/assets/icons/home/resume.svg"
+                alt="resume icon"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- <div id="root"></div> -->
+      <!-- <script type="module" src="/src/main.jsx"></script> -->
+    </div>
+    <!-- End Socials -->
+
+    <!-- JavaScript -->
+    <script src="js/bundle.min.js"></script>
+    <!-- Plugin Js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- CUSTOM JS -->
+    <script src="js/jquery.pagepiling.min.js"></script>
+    <script src="js/timeline.js"></script>
+    <script src="js/contact_us.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
