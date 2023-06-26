@@ -383,15 +383,3 @@ jQuery(document).ready(function ($) {
       .replace(/"/g, "");
   }
 });
-
-// Auto-update of age in timeline
-function updateAge() {
-  const ageElement = document.getElementById("age");
-  const birthDate = new Date(1994, 4, 1);
-  const currentDate = new Date();
-  const timeDiff = Math.abs(currentDate.getTime() - birthDate.getTime());
-  const age = Math.floor(timeDiff / (1000 * 3600 * 24 * 365.25)); // Accounting for leap years
-  ageElement.textContent = age.toString();
-}
-
-updateAge();
