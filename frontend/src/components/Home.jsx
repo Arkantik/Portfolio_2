@@ -41,29 +41,48 @@ export default function Home() {
         </p>
       </div>
       <div className={`${style.circle_one}`}>
-        <a href="#about">
-          <span className={`${style.animated_circle_one} relative`} />
-        </a>
+        <span data-tootik="About me" data-tootik-conf="left dark square shadow">
+          <a href="#about">
+            <span className={`${style.animated_circle_one} relative`} />
+          </a>
+        </span>
       </div>
       <div className={`${style.circle_two}`}>
-        <a href="#timeline">
-          <span className={`${style.animated_circle_two} relative`} />
-        </a>
+        <span data-tootik="Timeline" data-tootik-conf="dark square shadow">
+          <a href="#timeline">
+            <span className={`${style.animated_circle_two} relative`} />
+          </a>
+        </span>
       </div>
       <div className={`${style.circle_three}`}>
-        <a href="#project">
-          <span className={`${style.animated_circle_three} relative`} />
-        </a>
+        <span
+          data-tootik="Projects"
+          data-tootik-conf="right dark square shadow"
+        >
+          <a href="#project">
+            <span className={`${style.animated_circle_three} relative`} />
+          </a>
+        </span>
       </div>
       <div className={`${style.circle_four}`}>
-        <a href="#review">
-          <span className={`${style.animated_circle_four} relative`} />
-        </a>
+        <span
+          data-tootik="Reviews"
+          data-tootik-conf="bottomR dark square shadow"
+        >
+          <a href="#review">
+            <span className={`${style.animated_circle_four} relative`} />
+          </a>
+        </span>
       </div>
       <div className={`${style.circle_five}`}>
-        <a href="#contact">
-          <span className={`${style.animated_circle_five} relative`} />
-        </a>
+        <span
+          data-tootik="Contact"
+          data-tootik-conf="bottomL dark square shadow"
+        >
+          <a href="#contact">
+            <span className={`${style.animated_circle_five} relative`} />
+          </a>
+        </span>
       </div>
     </div>
   );
