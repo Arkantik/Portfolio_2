@@ -21,7 +21,11 @@ export default function Navbar() {
           </a>
           <ul className="flex items-center gap-8">
             <li>
-              <a href="https://github.com/Arkantik">
+              <a
+                href="https://github.com/Arkantik"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img
                   src="./public/assets/icons/github.svg"
                   alt="github icon"
@@ -30,7 +34,11 @@ export default function Navbar() {
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/jeremy-dohin/">
+              <a
+                href="https://www.linkedin.com/in/jeremy-dohin/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img
                   src="./public/assets/icons/linkedin.svg"
                   alt="linkedin icon"
