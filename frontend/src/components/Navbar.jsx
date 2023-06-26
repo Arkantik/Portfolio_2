@@ -14,7 +14,7 @@ export default function Navbar() {
 
   return (
     <header>
-      <nav className="fixed z-30 flex h-[80px] w-full justify-between px-8">
+      <nav className="fixed z-30 flex h-[80px] w-full justify-between bg-dark px-8">
         <div className="flex gap-20">
           <a href="#home" title="Logo" className="flex items-center">
             <img src="../assets/icons/logo.svg" alt="logo" />
@@ -25,7 +25,7 @@ export default function Navbar() {
                 <img
                   src="./public/assets/icons/github.svg"
                   alt="github icon"
-                  className="rounded bg-transparent p-1 hover:bg-primary"
+                  className="rounded bg-transparent p-1.5 hover:bg-primary"
                 />
               </a>
             </li>
@@ -34,7 +34,7 @@ export default function Navbar() {
                 <img
                   src="./public/assets/icons/linkedin.svg"
                   alt="linkedin icon"
-                  className="rounded bg-transparent p-1 hover:bg-primary"
+                  className="rounded bg-transparent p-1.5 hover:bg-primary"
                 />
               </a>
             </li>
@@ -46,7 +46,7 @@ export default function Navbar() {
                 <img
                   src="./public/assets/icons/home/resume.svg"
                   alt="resume icon"
-                  className="rounded bg-transparent p-1 hover:bg-primary"
+                  className="rounded bg-transparent p-1.5 hover:bg-primary"
                 />
               </a>
             </li>
