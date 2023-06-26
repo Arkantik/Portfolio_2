@@ -9,6 +9,7 @@
   "dependencies": {
     "@vitejs/plugin-react": "^3.0.1",
     "autoprefixer": "^10.4.14",
+    "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-react": "^7.32.2",
     "postcss": "^8.4.24",
     "prettier-plugin-tailwindcss": "^0.3.0",
