@@ -32,7 +32,7 @@ export default function Home() {
           <br />
           <span className="text-primary" ref={el} />
         </h1>
-        <p className="pr-[220px] pt-3 font-alt text-base text-light">
+        <p className="pr-[220px] pt-3 font-alt text-sm text-light">
           I'm a passionate web developer skilled in creating engaging and
           user-friendly websites. Specializing in front-end development with
           modern technologies like JavaScript, React and Tailwind. Dedicated to

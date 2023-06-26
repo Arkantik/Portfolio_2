@@ -130,10 +130,10 @@ export default function Timeline() {
             <li className="selected" data-date="20/04/2017">
               <div className="flex justify-between">
                 <div>
-                  <h4 className="font-main text-xl uppercase text-primary">
+                  <h4 className="font-main text-lg uppercase text-primary">
                     06 July 2012
                   </h4>
-                  <h2 className="flex font-main text-lg uppercase">
+                  <h2 className="flex font-main text-base uppercase">
                     Graduated from college
                     <img
                       src="./public/assets/icons/timeline/gradcap.svg"
@@ -143,10 +143,10 @@ export default function Timeline() {
                   </h2>
                 </div>
                 <div className="flex flex-col items-end justify-center">
-                  <h4 className="font-main text-xl uppercase text-primary">
+                  <h4 className="font-main text-lg uppercase text-primary">
                     School
                   </h4>
-                  <h2 className="flex font-main text-lg uppercase">
+                  <h2 className="flex font-main text-base uppercase">
                     Lycée Henri Gaudier-Brzeska
                   </h2>
                 </div>

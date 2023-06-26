@@ -32,22 +32,22 @@ module.exports = {
         lg: [
           "1.5rem",
           {
-            lineHeight: "1.75",
+            lineHeight: "1.5",
             fontWeight: "400",
           },
         ],
         base: [
-          "1rem",
+          "1.25rem",
           {
-            lineHeight: "1.75",
+            lineHeight: "1.5",
             fontWeight: "400",
           },
         ],
         sm: [
-          "0.875rem",
+          "1rem",
           {
             lineHeight: "1.5",
-            fontWeight: "300",
+            fontWeight: "400",
           },
         ],
         xs: [
