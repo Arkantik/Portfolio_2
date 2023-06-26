@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 
 export default function Menu({ onClick }) {
   const [isOpen, setIsOpen] = useState(true);
@@ -9,7 +10,7 @@ export default function Menu({ onClick }) {
   };
 
   return (
-    <button className="group relative" onClick={toggleMenu}>
+    <button type="button" className="group relative" onClick={toggleMenu}>
       <div
         className={`relative flex h-[50px] w-[50px] transform items-center justify-center overflow-hidden rounded-full shadow-md ring-0 ring-primary ring-opacity-30 transition-all duration-200 hover:ring-8 group-focus:ring-4 ${
           isOpen ? "" : "animate-reverse"
@@ -36,3 +37,7 @@ export default function Menu({ onClick }) {
     </button>
   );
 }
+
+Menu.propTypes = {
+  onClick: PropTypes.func.isRequired,
+};
