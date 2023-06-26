@@ -1,9 +1,7 @@
 $(window).on("load", function () {
-  "use strict";
-
-  //Clear URL On Page Refresh
-  var loc = window.location.href,
-    index = loc.indexOf("#");
+  // Clear URL On Page Refresh
+  const loc = window.location.href;
+  const index = loc.indexOf("#");
 
   if (index > 0) {
     window.location = loc.substring(0, index);
@@ -44,9 +42,9 @@ $(window).on("load", function () {
           "Contact",
         ],
       },
-      //events
-      onLeave: function (index, nextIndex, direction) {
-        //reaching our First section? The one with our normal site?
+      // events
+      onLeave(index, nextIndex, direction) {
+        // reaching our First section? The one with our normal site?
 
         $(".navbar-top-default").fadeOut();
         $(".slider-footer").fadeOut();
@@ -55,7 +53,7 @@ $(window).on("load", function () {
         if (nextIndex == 1) {
           $("#pp-nav").fadeOut();
         }
-        //leaving our last section? The one with our normal site?
+        // leaving our last section? The one with our normal site?
         if (index == 1) {
           $("#pp-nav").fadeIn();
         }
@@ -79,8 +77,8 @@ $(window).on("load", function () {
           }, 200);
         }
       },
-      afterLoad: function (anchorLink, index) {},
-      afterRender: function () {
+      afterLoad(anchorLink, index) {},
+      afterRender() {
         $("#pp-nav").hide();
       },
     });
@@ -103,8 +101,6 @@ $(window).on("load", function () {
 });
 
 jQuery(function ($) {
-  "use strict";
-
   $(window).on("scroll", function () {
     if ($(this).scrollTop() > 260) {
       // Set position from top to add class
@@ -114,13 +110,13 @@ jQuery(function ($) {
     }
   });
 
-  //scroll to appear
+  // scroll to appear
   $(window).on("scroll", function () {
     if ($(this).scrollTop() > 500) $(".scroll-top-arrow").fadeIn("slow");
     else $(".scroll-top-arrow").fadeOut("slow");
   });
 
-  //Click event to scroll to top
+  // Click event to scroll to top
   $(document).on("click", ".scroll-top-arrow", function () {
     $("html, body").animate({ scrollTop: 0 }, 800);
     return false;
@@ -183,7 +179,7 @@ jQuery(function ($) {
     hash: null,
   });
 
-  /*===================================
+  /*= ==================================
         Owl Carousel
     ====================================== */
 
@@ -216,17 +212,17 @@ jQuery(function ($) {
   });
   // Custom Portfolio OWL
   $(".ini-customNextBtn").click(function () {
-    var owl = $(".team-classic.owl-team");
+    const owl = $(".team-classic.owl-team");
     owl.owlCarousel();
     owl.trigger("next.owl.carousel");
   });
   $(".ini-customPrevBtn").click(function () {
-    var owl = $(".team-classic.owl-team");
+    const owl = $(".team-classic.owl-team");
     owl.owlCarousel();
     owl.trigger("prev.owl.carousel", [300]);
   });
 
-  //review Owl
+  // review Owl
   $("#review-carousal").owlCarousel({
     loop: true,
     margin: 120,
@@ -247,7 +243,7 @@ jQuery(function ($) {
   });
 });
 
-/*===================================
+/*= ==================================
         animation
     ====================================== */
 
@@ -284,7 +280,7 @@ TweenMax.staggerFrom(
   0.08
 );
 
-/****/
+/** * */
 
 TweenMax.staggerFrom(
   ".side-footer ul li",
@@ -304,18 +300,3 @@ TweenMax.from(".side-footer p", 2, {
   y: 20,
   ease: Expo.easeInOut,
 });
-
-/*===================================
-        typing animation
-    ====================================== */
-
-setTimeout(() => {
-  const typed = new Typed(".multiple-text", {
-    strings: ["A Frontend Developer", "An UI/UX Lover"],
-    typeSpeed: 100,
-    backSpeed: 50,
-    startDelay: 1000,
-    backDelay: 2000,
-    loop: true,
-  });
-}, 2000);
