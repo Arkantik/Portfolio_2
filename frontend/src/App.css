@@ -1,3 +1,68 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: 700;
+  src: url("../assets/fonts/Oswald-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: 400;
+  src: url("../assets/fonts/Oswald-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: 300;
+  src: url("../assets/fonts/Oswald-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  src: url("../assets/fonts/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  src: url("../assets/fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 300;
+  src: url("../assets/fonts/Roboto-Light.ttf") format("truetype");
+}
+
+@layer base {
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 80px 0 32px 0;
+    margin-inline: clamp(24px, 7.5vw, 192px);
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    @media screen and (min-width: theme("screens.md")) {
+      padding-top: 32px;
+    }
+
+    @media screen and (min-width: theme("screens.xl")) {
+      margin-inline: clamp(192px, 7.5vw, 288px);
+    }
+
+    @media screen and (min-width: theme("screens.2xl")) {
+      margin-inline: clamp(288px, 20vw, 576px);
+    }
+  }
+}
+
+@layer components {
+}
