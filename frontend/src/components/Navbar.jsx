@@ -63,32 +63,56 @@ export default function Navbar() {
           <nav className="flex h-screen w-full flex-col items-center justify-center py-8 text-center">
             <ul className="flex h-full flex-col items-center justify-center gap-8">
               <li>
-                <a className={`${style.nav_link}`} href="#home">
+                <a
+                  className={`${style.nav_link}`}
+                  href="#home"
+                  onClick={toggleNavMenu}
+                >
                   Home
                 </a>
               </li>
               <li>
-                <a className={`${style.nav_link}`} href="#about">
+                <a
+                  className={`${style.nav_link}`}
+                  href="#about"
+                  onClick={toggleNavMenu}
+                >
                   About me
                 </a>
               </li>
               <li>
-                <a className={`${style.nav_link}`} href="#timeline">
+                <a
+                  className={`${style.nav_link}`}
+                  href="#timeline"
+                  onClick={toggleNavMenu}
+                >
                   Timeline
                 </a>
               </li>
               <li>
-                <a className={`${style.nav_link}`} href="#project">
+                <a
+                  className={`${style.nav_link}`}
+                  href="#project"
+                  onClick={toggleNavMenu}
+                >
                   Projects
                 </a>
               </li>
               <li>
-                <a className={`${style.nav_link}`} href="#review">
+                <a
+                  className={`${style.nav_link}`}
+                  href="#review"
+                  onClick={toggleNavMenu}
+                >
                   Reviews
                 </a>
               </li>
               <li>
-                <a className={`${style.nav_link}`} href="#contact">
+                <a
+                  className={`${style.nav_link}`}
+                  href="#contact"
+                  onClick={toggleNavMenu}
+                >
                   Contact
                 </a>
               </li>
