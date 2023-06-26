@@ -30,10 +30,7 @@ export default function Recommendation() {
             developers is a valuable quality.
           </p>
           <div className={`${style.review_img} flex justify-center`}>
-            <img
-              src="../assets/img/review/anthony.webp"
-              alt="Anthony Gorski picture"
-            />
+            <img src="../assets/img/review/anthony.webp" alt="Anthony Gorski" />
           </div>
           <div className={`${style.review_title}`}>
             <h4 className="font-main text-lg text-primary">Anthony Gorski</h4>
@@ -55,10 +52,7 @@ export default function Recommendation() {
             the limit.
           </p>
           <div className={`${style.review_img} flex justify-center`}>
-            <img
-              src="../assets/img/review/ingrid.jpg"
-              alt="Ingrid Freire picture"
-            />
+            <img src="../assets/img/review/ingrid.jpg" alt="Ingrid Freire" />
           </div>
           <div className={`${style.review_title}`}>
             <h4 className="font-main text-lg text-primary">Ingrid Freire</h4>

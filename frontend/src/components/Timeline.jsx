@@ -12,7 +12,9 @@ export default function Timeline() {
             </h3>
           </div>
           <div className="col-12 col-md-5 text-md-right pt-md-0 pt-4">
-            <h2 className="text-blue main-font m-0" id="age"></h2>
+            <h2 className="text-blue main-font m-0" id="age">
+              age
+            </h2>
             <p className="alt-font">Years Old</p>
           </div>
         </div>
@@ -21,11 +23,11 @@ export default function Timeline() {
             <div className="cd-horizontal-timeline loaded">
               <div className="timeline">
                 <div className="events-wrapper">
-                  <div className="events" style="width: 2200px">
+                  <div className="events w-[2200px]">
                     <ol>
                       <li>
                         <a
-                          href="#"
+                          href="#1"
                           data-date="20/04/2017"
                           className="older-event selected"
                         >
@@ -33,73 +35,73 @@ export default function Timeline() {
                         </a>
                       </li>
                       <li>
-                        <a href="#" data-date="10/06/2017">
+                        <a href="#2" data-date="10/06/2017">
                           2014
                         </a>
                       </li>
                       <li>
-                        <a href="#" data-date="17/06/2017">
+                        <a href="#3" data-date="17/06/2017">
                           2014
                         </a>
                       </li>
                       <li>
-                        <a href="#" data-date="30/06/2017">
+                        <a href="#4" data-date="30/06/2017">
                           2015
                         </a>
                       </li>
                       <li>
-                        <a href="#" data-date="12/07/2017">
+                        <a href="#5" data-date="12/07/2017">
                           2015
                         </a>
                       </li>
                       <li>
-                        <a href="#" data-date="15/08/2017">
+                        <a href="#6" data-date="15/08/2017">
                           2018
                         </a>
                       </li>
                       <li>
-                        <a href="#" data-date="09/09/2017">
+                        <a href="#7" data-date="09/09/2017">
                           2019
                         </a>
                       </li>
                       <li>
-                        <a href="#" data-date="24/10/2017">
+                        <a href="#8" data-date="24/10/2017">
                           2021
                         </a>
                       </li>
                       <li>
-                        <a href="#" data-date="02/11/2017">
+                        <a href="#9" data-date="02/11/2017">
                           2021
                         </a>
                       </li>
                       <li>
-                        <a href="#" data-date="18/12/2017">
+                        <a href="#10" data-date="18/12/2017">
                           2023
                         </a>
                       </li>
                       <li>
-                        <a href="#" data-date="27/12/2017">
+                        <a href="#11" data-date="27/12/2017">
                           2023
                         </a>
                       </li>
                       <li>
-                        <a href="#" data-date="10/01/2018">
+                        <a href="#12" data-date="10/01/2018">
                           2023
                         </a>
                       </li>
                     </ol>
-                    <span className="filling-line" aria-hidden="true"></span>
+                    <span className="filling-line" aria-hidden="true" />
                   </div>
                 </div>
 
                 <ul className="cd-timeline-navigation">
                   <li>
-                    <a href="#" className="prev">
+                    <a href="#prev" className="prev">
                       Prev
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="next">
+                    <a href="#next" className="next">
                       Next
                     </a>
                   </li>
@@ -119,7 +121,7 @@ export default function Timeline() {
                           <img
                             src="./public/assets/icons/timeline/gradcap.svg"
                             alt="graduation cap"
-                            style="padding-left: 10px"
+                            className="pl-2.5"
                           />
                         </h2>
                       </div>
@@ -173,7 +175,7 @@ export default function Timeline() {
                           <img
                             src="./public/assets/icons/timeline/gradcap.svg"
                             alt="graduation cap"
-                            style="padding-left: 10px"
+                            className="pl-2.5"
                           />
                         </h2>
                       </div>
@@ -741,7 +743,7 @@ export default function Timeline() {
                           <img
                             src="./public/assets/icons/timeline/star.svg"
                             alt="star icon"
-                            style="padding-left: 10px"
+                            className="pl-2.5"
                           />
                         </h2>
                       </div>

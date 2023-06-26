@@ -18,6 +18,7 @@ export default function Project() {
                   <a
                     href="https://arkantik.github.io/WildBook/"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <div className="single-work">
                       <img
@@ -28,10 +29,10 @@ export default function Project() {
                       />
                       <div className="overlay-text center-block">
                         <div className="cases-image-inner">
-                          <span className="cases-line top"></span>
-                          <span className="cases-line top-right"></span>
-                          <span className="cases-line bottom"></span>
-                          <span className="cases-line bottom-left"></span>
+                          <span className="cases-line top" />
+                          <span className="cases-line top-right" />
+                          <span className="cases-line bottom" />
+                          <span className="cases-line bottom-left" />
                           <h6 className="text-uppercase alt-font text-light">
                             WildBook
                           </h6>
@@ -58,6 +59,7 @@ export default function Project() {
                   <a
                     href="https://arkantik.github.io/hogwarts-magic-cards/"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <div className="single-work">
                       <img
@@ -68,10 +70,10 @@ export default function Project() {
                       />
                       <div className="overlay-text center-block">
                         <div className="cases-image-inner">
-                          <span className="cases-line top"></span>
-                          <span className="cases-line top-right"></span>
-                          <span className="cases-line bottom"></span>
-                          <span className="cases-line bottom-left"></span>
+                          <span className="cases-line top" />
+                          <span className="cases-line top-right" />
+                          <span className="cases-line bottom" />
+                          <span className="cases-line bottom-left" />
                           <h6 className="text-uppercase alt-font text-light">
                             Hogwarts Magic Cards
                           </h6>
@@ -96,7 +98,11 @@ export default function Project() {
 
               <div className="item">
                 <div className="team-data-img">
-                  <a href="https://arkantik.github.io/holifun/" target="_blank">
+                  <a
+                    href="https://arkantik.github.io/holifun/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <div className="single-work">
                       <img
                         src="./public/assets/img/project/holifun.png"
@@ -106,10 +112,10 @@ export default function Project() {
                       />
                       <div className="overlay-text center-block">
                         <div className="cases-image-inner">
-                          <span className="cases-line top"></span>
-                          <span className="cases-line top-right"></span>
-                          <span className="cases-line bottom"></span>
-                          <span className="cases-line bottom-left"></span>
+                          <span className="cases-line top" />
+                          <span className="cases-line top-right" />
+                          <span className="cases-line bottom" />
+                          <span className="cases-line bottom-left" />
                           <h6 className="text-uppercase alt-font text-light">
                             HoliFun
                           </h6>
@@ -148,10 +154,10 @@ export default function Project() {
                       />
                       <div className="overlay-text center-block">
                         <div className="cases-image-inner">
-                          <span className="cases-line top"></span>
-                          <span className="cases-line top-right"></span>
-                          <span className="cases-line bottom"></span>
-                          <span className="cases-line bottom-left"></span>
+                          <span className="cases-line top" />
+                          <span className="cases-line top-right" />
+                          <span className="cases-line bottom" />
+                          <span className="cases-line bottom-left" />
                           <h6 className="text-uppercase alt-font text-light">
                             Origins E-sport
                           </h6>
@@ -168,7 +174,7 @@ export default function Project() {
                 </div>
               </div>
             </div>
-            <a className="circle ini-customPrevBtn" id="team-circle-left">
+            {/* <a className="circle ini-customPrevBtn" id="team-circle-left">
               <img
                 src="./public/assets/icons/portfolio/arrow-left-circle.svg"
                 alt="arrow left"
@@ -179,7 +185,7 @@ export default function Project() {
                 src="./public/assets/icons/portfolio/arrow-right-circle.svg"
                 alt="arrow right"
               />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

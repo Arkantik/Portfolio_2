@@ -59,49 +59,47 @@ export default function Navbar() {
 
       {/* Side Nav */}
       {isOpen ? (
-        <>
-          <div className="items-cente fixed z-20 h-screen w-full justify-center bg-dark font-alt">
-            <nav className="flex h-screen w-full flex-col items-center justify-center py-8 text-center">
-              <ul className="flex h-full flex-col items-center justify-center gap-8">
-                <li>
-                  <a className={`${style.nav_link}`} href="#home">
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a className={`${style.nav_link}`} href="#about">
-                    About me
-                  </a>
-                </li>
-                <li>
-                  <a className={`${style.nav_link}`} href="#timeline">
-                    Timeline
-                  </a>
-                </li>
-                <li>
-                  <a className={`${style.nav_link}`} href="#project">
-                    Projects
-                  </a>
-                </li>
-                <li>
-                  <a className={`${style.nav_link}`} href="#review">
-                    Reviews
-                  </a>
-                </li>
-                <li>
-                  <a className={`${style.nav_link}`} href="#contact">
-                    Contact
-                  </a>
-                </li>
-              </ul>
-              <div className={`${style.btn_resume} ${style.nav_link} `}>
-                <a href="../assets/document/resume-JeremyDohin.pdf" download>
-                  Download Resume
+        <div className="items-cente fixed z-20 h-screen w-full justify-center bg-dark font-alt">
+          <nav className="flex h-screen w-full flex-col items-center justify-center py-8 text-center">
+            <ul className="flex h-full flex-col items-center justify-center gap-8">
+              <li>
+                <a className={`${style.nav_link}`} href="#home">
+                  Home
                 </a>
-              </div>
-            </nav>
-          </div>
-        </>
+              </li>
+              <li>
+                <a className={`${style.nav_link}`} href="#about">
+                  About me
+                </a>
+              </li>
+              <li>
+                <a className={`${style.nav_link}`} href="#timeline">
+                  Timeline
+                </a>
+              </li>
+              <li>
+                <a className={`${style.nav_link}`} href="#project">
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a className={`${style.nav_link}`} href="#review">
+                  Reviews
+                </a>
+              </li>
+              <li>
+                <a className={`${style.nav_link}`} href="#contact">
+                  Contact
+                </a>
+              </li>
+            </ul>
+            <div className={`${style.btn_resume} ${style.nav_link} `}>
+              <a href="../assets/document/resume-JeremyDohin.pdf" download>
+                Download Resume
+              </a>
+            </div>
+          </nav>
+        </div>
       ) : null}
     </header>
   );
