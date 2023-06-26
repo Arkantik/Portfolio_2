@@ -19,11 +19,12 @@ SwiperCore.use([EffectCoverflow, Pagination, Navigation, Autoplay]);
 export default function Carousel() {
   const slideImages = projectData
     .slice(0, 7)
-    .map(({ id, src, name, techno, description }) => ({
+    .map(({ id, src, name, techno, tool, description }) => ({
       id,
       src,
       name,
       techno,
+      tool,
       description,
     }));
 
@@ -53,18 +54,28 @@ export default function Carousel() {
           disableOnInteraction: false,
         }}
       >
-        {slideImages.map(({ id, src, name, techno, description }) => (
+        {slideImages.map(({ id, src, name, techno, tool, description }) => (
           <SwiperSlide key={id}>
             <img src={src} alt={name} />
-            {Object.values(techno).map((tech) => (
-              <img
-                key={tech}
-                src={tech}
-                alt={tech}
-                className="inline-flex p-2"
-              />
-            ))}
-            <figcaption className="absolute bottom-0 w-full rounded-b-2xl p-2 text-center text-base text-dark">
+            <div className="flex justify-center">
+              {Object.values(techno).map((tech) => (
+                <img
+                  key={tech}
+                  src={tech}
+                  alt={tech}
+                  className="inline-flex p-2"
+                />
+              ))}
+              {Object.values(tool).map((soft) => (
+                <img
+                  key={soft}
+                  src={soft}
+                  alt={soft}
+                  className="inline-flex p-2"
+                />
+              ))}
+            </div>
+            <figcaption className="absolute bottom-0 w-full rounded-b-2xl p-2 text-center text-base text-light">
               {description}
             </figcaption>
           </SwiperSlide>

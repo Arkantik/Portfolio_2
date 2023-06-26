@@ -3,7 +3,7 @@ import Carousel from "./Carousel";
 export default function Project() {
   return (
     <section
-      className="flex flex-col justify-center gap-8 font-alt"
+      className="flex h-screen flex-col justify-center gap-8 font-alt"
       id="project"
     >
       <div>

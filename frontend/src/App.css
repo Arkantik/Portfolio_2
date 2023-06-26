@@ -77,7 +77,8 @@
 .swiper-slide {
   width: 27rem;
   height: 32rem;
-  background-color: theme("colors.light");
+  background-color: theme("colors.dark");
+  border: 1px solid theme("colors.primary");
   border-radius: 1rem;
 }
 
