@@ -13,7 +13,7 @@
       "3": "../assets/icons/language/js.svg"
     },
     "tool": {
-      "1": "Figma"
+      "1": "../assets/icons/language/figma.svg"
     }
   },
   {
@@ -31,7 +31,7 @@
       "4": "../assets/icons/language/react.svg"
     },
     "tool": {
-      "1": "Figma"
+      "1": "../assets/icons/language/figma.svg"
     }
   },
   {
@@ -47,6 +47,9 @@
       "2": "../assets/icons/language/css.svg",
       "3": "../assets/icons/language/tailwind.svg",
       "4": "../assets/icons/language/react.svg"
+    },
+    "tool": {
+      "1": ""
     }
   },
   {
@@ -66,7 +69,7 @@
       "6": "../assets/icons/language/mysql.svg"
     },
     "tool": {
-      "1": "Figma"
+      "1": "../assets/icons/language/figma.svg"
     }
   }
 ]
