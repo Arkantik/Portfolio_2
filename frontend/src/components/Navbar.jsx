@@ -125,7 +125,9 @@ export default function Navbar() {
                 </a>
               </li>
             </ul>
-            <div className={`${style.btn_resume} ${style.nav_link} `}>
+            <div
+              className={`${style.btn_resume} ${style.nav_link} shadow-lg shadow-primary/50`}
+            >
               <a href="../assets/document/resume-JeremyDohin.pdf" download>
                 Download Resume
               </a>
