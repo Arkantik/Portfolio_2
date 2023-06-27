@@ -75,7 +75,7 @@ export default function Carousel() {
                 />
               ))}
             </div>
-            <figcaption className="absolute bottom-0 w-full rounded-b-2xl p-2 text-center text-base text-light">
+            <figcaption className="absolute bottom-0 w-full rounded-b-2xl p-2 text-center text-sm text-light">
               {description}
             </figcaption>
           </SwiperSlide>
