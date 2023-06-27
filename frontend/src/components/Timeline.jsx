@@ -1,6 +1,12 @@
 // Package
 import { useEffect } from "react";
 
+// Style
+import style from "../../css/timeline.module.css";
+
+// Data
+import dataTimeline from "../services/timeline.json";
+
 export default function Timeline() {
   function updateAge() {
     const ageElement = document.getElementById("age");
@@ -16,6 +22,7 @@ export default function Timeline() {
   useEffect(() => {
     updateAge();
   }, []);
+
   return (
     <section
       className="flex h-screen flex-col justify-center gap-8 font-alt"
@@ -152,34 +159,31 @@ export default function Timeline() {
                 </div>
               </div>
 
-              <div className="row align-items-start">
-                <div className="col-12 col-md-9 pl-md-0">
-                  <div className="sub-content">
-                    <h5 className="text-uppercase main-font text-blue">
-                      Diploma obtained
-                    </h5>
-                    <p className="alt-font">
-                      Baccalaureate in Industrial Sciences and Technologies with
-                      a specialization in Civil Engineering
-                    </p>
-                  </div>
+              <div className="flex justify-between">
+                <div className={`${style.sub_content_left}`}>
+                  <h5 className={`${style.sub_content_header}`}>
+                    Diploma obtained
+                  </h5>
+                  <p className="text-sm">
+                    Baccalaureate in Industrial Sciences and Technologies with a
+                    specialization in Civil Engineering
+                  </p>
                 </div>
-                <div className="col-12 col-md-3 pr-md-0">
-                  <div className="sub-content sub-content-right">
-                    <h5 className="text-uppercase main-font text-blue">
-                      Details
-                    </h5>
-                    <p className="alt-font">
-                      Orléans - France
-                      <img
-                        src="./public/assets/icons/timeline/pin.svg"
-                        alt="location icon"
-                      />
-                    </p>
-                  </div>
+
+                <div className={`${style.sub_content_right}`}>
+                  <h5 className={`${style.sub_content_header}`}>Details</h5>
+                  <p className="flex text-sm">
+                    Orléans - France
+                    <img
+                      src="./public/assets/icons/timeline/pin.svg"
+                      alt="location icon"
+                      className="pl-2.5"
+                    />
+                  </p>
                 </div>
               </div>
             </li>
+
             <li data-date="10/06/2017">
               <div className="timeline-header">
                 <div className="main-content text-uppercase">

@@ -1,0 +1,21 @@
+.sub_content_left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 3.5rem;
+}
+
+.sub_content_right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 3.5rem;
+}
+
+.sub_content_header {
+  text-transform: uppercase;
+  color: theme("colors.primary");
+  font-family: theme("fontFamily.main");
+  font-size: 18px;
+  font-weight: 400;
+}
