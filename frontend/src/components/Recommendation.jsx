@@ -3,7 +3,7 @@ import style from "../../css/recommendation.module.css";
 export default function Recommendation() {
   return (
     <section
-      className="flex h-screen flex-col justify-center gap-8 font-alt"
+      className="flex h-screen flex-col justify-center gap-16 font-alt"
       id="review"
     >
       <div>
@@ -11,7 +11,7 @@ export default function Recommendation() {
           <span className="block uppercase text-primary">People</span>
           <span> I worked with &amp; for </span>
         </h2>
-        <p className="py-2 text-base text-light">
+        <p className="py-2 text-sm text-light">
           Few words from them about me and my work
         </p>
       </div>
@@ -23,7 +23,7 @@ export default function Recommendation() {
             alt="quote icon"
             className={`${style.icon_quotes}`}
           />
-          <p className="text-base text-light">
+          <p className="text-sm text-light">
             Jeremy has a solid understanding of the fundamental principles of
             web development and is capable of creatively solving complex
             problems. His ability to work in a team and collaborate with other
@@ -45,7 +45,7 @@ export default function Recommendation() {
             alt="quote icon"
             className={`${style.icon_quotes}`}
           />
-          <p className="text-base text-light">
+          <p className="text-sm text-light">
             Jeremy is a reliable person, always present and professional. He's
             also a good trainer, explaining softwares in details. One thing is
             certain, he always dives fully into new projects to push himself to
