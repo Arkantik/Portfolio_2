@@ -19,7 +19,7 @@ export default function Navbar() {
           <a href="#home" title="Logo" className="flex items-center">
             <img src="../assets/icons/logo.svg" alt="logo" />
           </a>
-          <ul className="flex items-center gap-8">
+          <ul className="hidden items-center gap-8 md:flex">
             <li>
               <a
                 href="https://github.com/Arkantik"
@@ -125,9 +125,7 @@ export default function Navbar() {
                 </a>
               </li>
             </ul>
-            <div
-              className={`${style.btn_resume} ${style.nav_link} shadow-lg shadow-primary/50`}
-            >
+            <div className={`${style.btn_resume} shadow-lg shadow-primary/50`}>
               <a href="../assets/document/resume-JeremyDohin.pdf" download>
                 Download Resume
               </a>
