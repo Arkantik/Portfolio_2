@@ -25,7 +25,7 @@ export default function Timeline() {
 
   return (
     <section
-      className="flex h-screen flex-col justify-center gap-8 font-alt"
+      className="flex h-screen flex-col justify-center gap-16 font-alt text-light"
       id="timeline"
     >
       <div className="flex items-center justify-between">
