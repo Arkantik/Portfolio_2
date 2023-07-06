@@ -19,7 +19,7 @@
     "src": "../assets/img/project/hogwarts.png",
     "alt": "Hogwarts magic cards project",
     "name": "Hogwarts Magic Cards",
-    "description": "Flash-game type website using ReactJS, a CSS framework(Tailwind), and integrating an API. This website is a strategy turn by turn card game set in the world of Harry Potter.",
+    "description": "Flash-game type website using ReactJS, a CSS framework (Tailwind), and integrating an API. This website is a strategy turn by turn card game set in the world of Harry Potter.",
     "techno": {
       "1": "../assets/icons/language/html.svg",
       "2": "../assets/icons/language/css.svg",
@@ -35,7 +35,7 @@
     "src": "../assets/img/project/holifun.png",
     "alt": "HoliFun project",
     "name": "HoliFun",
-    "description": "No idea where to go for your next vacation? HoliFun is made for you! This project has been created during a 36h Hackathon, with the objective to build something about vacation and using an API.",
+    "description": "No idea where to go for your next vacation? HoliFun is made for you! Project developped during a 36h Hackathon, with the objective to build something about vacation and using an API.",
     "techno": {
       "1": "../assets/icons/language/html.svg",
       "2": "../assets/icons/language/css.svg",
@@ -51,15 +51,13 @@
     "src": "../assets/img/project/emmaus-connect.png",
     "alt": "Emmaüs Connect project",
     "name": "Emmaüs Connect",
-    "description": "This intranet application allows Emmaus Connect volunteers to log in with their credentials, register smartphones intended for sale through a form, and access the database. This project has been created during a 48h Hackathon",
+    "description": "This intranet application allows Emmaus Connect volunteers to log in with their credentials, register smartphones intended for sale through a form, and access the database. Project developped during a 48h Hackathon",
     "techno": {
-      "1": "../assets/icons/language/html.svg",
-      "2": "../assets/icons/language/css.svg",
-      "3": "../assets/icons/language/tailwind.svg",
-      "4": "../assets/icons/language/react.svg",
-      "5": "../assets/icons/language/nodejs.svg",
-      "6": "../assets/icons/language/express.svg",
-      "7": "../assets/icons/language/mysql.svg"
+      "1": "../assets/icons/language/css.svg",
+      "2": "../assets/icons/language/tailwind.svg",
+      "3": "../assets/icons/language/react.svg",
+      "4": "../assets/icons/language/nodejs.svg",
+      "5": "../assets/icons/language/mysql.svg"
     },
     "tool": "",
     "github": "https://github.com/Arkantik/Emmaus-Connect",
@@ -74,13 +72,10 @@
     "name": "Origins E-sport",
     "description": "Currently in development",
     "techno": {
-      "1": "../assets/icons/language/html.svg",
-      "2": "../assets/icons/language/css.svg",
-      "3": "../assets/icons/language/tailwind.svg",
-      "4": "../assets/icons/language/react.svg",
-      "5": "../assets/icons/language/nodejs.svg",
-      "6": "../assets/icons/language/express.svg",
-      "7": "../assets/icons/language/mysql.svg"
+      "1": "../assets/icons/language/tailwind.svg",
+      "2": "../assets/icons/language/react.svg",
+      "3": "../assets/icons/language/nodejs.svg",
+      "4": "../assets/icons/language/mysql.svg"
     },
     "tool": "../assets/icons/language/figma.svg",
     "github": "",
