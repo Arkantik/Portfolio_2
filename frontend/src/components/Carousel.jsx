@@ -19,13 +19,15 @@ SwiperCore.use([EffectCoverflow, Pagination, Navigation, Autoplay]);
 export default function Carousel() {
   const slideImages = projectData
     .slice(0, 7)
-    .map(({ id, src, name, techno, tool, description }) => ({
+    .map(({ id, src, name, techno, tool, description, github, site }) => ({
       id,
       src,
       name,
       techno,
       tool,
       description,
+      github,
+      site,
     }));
 
   return (
@@ -54,32 +56,47 @@ export default function Carousel() {
           disableOnInteraction: false,
         }}
       >
-        {slideImages.map(({ id, src, name, techno, tool, description }) => (
-          <SwiperSlide key={id}>
-            <img src={src} alt={name} />
-            <div className="flex justify-center">
-              {Object.values(techno).map((tech) => (
-                <img
-                  key={tech}
-                  src={tech}
-                  alt={tech}
-                  className="inline-flex p-2"
-                />
-              ))}
-              {Object.values(tool).map((soft) => (
-                <img
-                  key={soft}
-                  src={soft}
-                  alt={soft}
-                  className="inline-flex p-2"
-                />
-              ))}
-            </div>
-            <figcaption className="absolute bottom-0 w-full rounded-b-2xl p-2 text-center text-sm text-light">
-              {description}
-            </figcaption>
-          </SwiperSlide>
-        ))}
+        {slideImages.map(
+          ({ id, src, name, techno, tool, description, github, site }) => (
+            <SwiperSlide key={id}>
+              <img
+                src={src}
+                alt={name}
+                className="h-3/5 w-full rounded-t-2xl object-cover"
+              />
+              <article className="flex flex-col gap-2">
+                <div className="flex justify-center px-4">
+                  {Object.values(techno).map((tech) => (
+                    <img
+                      key={tech}
+                      src={tech}
+                      alt={tech}
+                      className="inline-flex p-2"
+                    />
+                  ))}
+                  <img src={tool} alt={tool} className="inline-flex p-2" />
+                </div>
+                <div className="flex justify-center gap-4 px-4">
+                  <a
+                    href={github}
+                    className="rounded border border-primary bg-transparent px-4 py-1 text-light hover:bg-primary"
+                  >
+                    Github
+                  </a>
+                  <a
+                    href={site}
+                    className="rounded border border-primary bg-transparent px-4 py-1 text-light hover:bg-primary"
+                  >
+                    Website
+                  </a>
+                </div>
+                <p className="p-2 text-center text-sm text-light">
+                  {description}
+                </p>
+              </article>
+            </SwiperSlide>
+          )
+        )}
       </Swiper>
       <div className="swiper-controller flex items-center justify-center">
         <div className="flex items-center gap-4">
