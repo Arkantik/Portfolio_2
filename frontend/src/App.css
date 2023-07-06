@@ -84,12 +84,8 @@
 
 @media (max-width: 500px) {
   .swiper-slide {
-    width: 20rem !important;
-    height: 28rem !important;
-  }
-  .swiper-slide img {
-    width: 20rem !important;
-    height: 28rem !important;
+    width: 20rem;
+    height: 28rem;
   }
 }
 
