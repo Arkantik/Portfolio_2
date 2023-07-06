@@ -62,10 +62,10 @@ export default function Carousel() {
               <img
                 src={src}
                 alt={name}
-                className="h-3/5 w-full rounded-t-2xl object-cover"
+                className="h-2/5 w-full rounded-t-2xl object-cover object-top md:h-3/5 md:w-full md:object-cover"
               />
-              <article className="flex flex-col gap-2">
-                <div className="flex justify-center px-4">
+              <article className="flex flex-col gap-4 px-2 md:gap-2">
+                <div className="flex flex-wrap justify-center md:flex-nowrap">
                   {Object.values(techno).map((tech) => (
                     <img
                       key={tech}
@@ -74,23 +74,23 @@ export default function Carousel() {
                       className="inline-flex p-2"
                     />
                   ))}
-                  <img src={tool} alt={tool} className="inline-flex p-2" />
+                  <img src={tool} alt={tool} className="p-2 md:inline-flex" />
                 </div>
-                <div className="flex justify-center gap-4 px-4">
+                <div className="flex justify-center gap-4">
                   <a
                     href={github}
-                    className="rounded border border-primary bg-transparent px-4 py-1 text-light hover:bg-primary"
+                    className="rounded-lg border border-primary bg-transparent px-4 py-1 text-light hover:bg-primary"
                   >
                     Github
                   </a>
                   <a
                     href={site}
-                    className="rounded border border-primary bg-transparent px-4 py-1 text-light hover:bg-primary"
+                    className="rounded-lg border border-primary bg-transparent px-4 py-1 text-light hover:bg-primary"
                   >
                     Website
                   </a>
                 </div>
-                <p className="p-2 text-center text-sm text-light">
+                <p className="text-center text-sm text-light md:text-sm">
                   {description}
                 </p>
               </article>
