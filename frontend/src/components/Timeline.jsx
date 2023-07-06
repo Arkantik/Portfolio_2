@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import style from "../../css/timeline.module.css";
 
 // Data
-import dataTimeline from "../services/timeline.json";
+// import dataTimeline from "../services/timeline.json";
 
 export default function Timeline() {
   function updateAge() {
