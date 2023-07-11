@@ -18,7 +18,7 @@
 @media screen and (min-width: 1200px) {
   .circle_one {
     position: absolute;
-    top: 28%;
+    top: 22%;
     left: 47%;
   }
 }
@@ -77,8 +77,8 @@
 }
 @media screen and (min-width: 1200px) {
   .circle_three {
-    top: 38%;
-    left: 86%;
+    top: 32%;
+    left: 88%;
     position: absolute;
   }
 }
