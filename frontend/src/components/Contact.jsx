@@ -7,7 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 export default function Contact() {
   const form = useRef(null);
 
-  const notify = (message) => {
+  const notify = () => {
     toast.success("Success, your message was sent!", {
       position: "bottom-right",
       autoClose: 3000,
@@ -71,7 +71,7 @@ export default function Contact() {
           Let's get in touch!
         </h2>
       </div>
-      <div className="mx-auto text-sm md:w-2/3 lg:py-16">
+      <div className="mx-auto text-sm md:w-2/3">
         <form className="space-y-8" ref={form} onSubmit={sendEmail}>
           <div>
             <label htmlFor="fullname" className="text-light">
@@ -109,7 +109,7 @@ export default function Contact() {
               rows="6"
               id="message"
               name="message"
-            ></textarea>
+            />
           </div>
           <button
             type="submit"
