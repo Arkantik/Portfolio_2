@@ -91,6 +91,12 @@
   width: 100%;
 }
 
+@media (max-width: 500px) {
+  .swiper {
+    overflow: visible;
+  }
+}
+
 .swiper-slide {
   width: 29rem;
   height: 34rem;
@@ -101,7 +107,7 @@
 
 @media (max-width: 500px) {
   .swiper-slide {
-    width: 20rem;
+    width: 18rem;
     height: 28rem;
   }
 }

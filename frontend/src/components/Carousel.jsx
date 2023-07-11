@@ -9,7 +9,6 @@ import SwiperCore, {
 
 // Style
 import "swiper/swiper-bundle.min.css";
-import style from "../../css/project.module.css";
 
 // Data
 import projectData from "../services/project.json";
@@ -31,7 +30,7 @@ export default function Carousel() {
     }));
 
   return (
-    <>
+    <div className="flex flex-col gap-4 md:gap-8">
       <Swiper
         effect="coverflow"
         grabCursor
@@ -42,7 +41,7 @@ export default function Carousel() {
           rotate: 0,
           stretch: 0,
           depth: 125,
-          modifier: 2.5,
+          modifier: 1.5,
         }}
         pagination={{ el: ".pagination", clickable: true }}
         navigation={{
@@ -50,7 +49,6 @@ export default function Carousel() {
           prevEl: ".button-prev",
           clickable: true,
         }}
-        className={`${style.swiper_container}`}
         autoplay={{
           delay: 5000,
           disableOnInteraction: false,
@@ -90,7 +88,7 @@ export default function Carousel() {
                     Website
                   </a>
                 </div>
-                <p className="text-center text-sm text-light md:text-sm">
+                <p className="text-center text-xs text-light md:text-sm">
                   {description}
                 </p>
               </article>
@@ -117,6 +115,6 @@ export default function Carousel() {
           </button>
         </div>
       </div>
-    </>
+    </div>
   );
 }
