@@ -1,7 +1,7 @@
 import { useRef, useEffect } from "react";
 import Typed from "typed.js";
 
-import style from "../../css/home.module.css";
+import style from "../css/home.module.css";
 
 export default function Home() {
   const el = useRef(null);
@@ -35,7 +35,7 @@ export default function Home() {
           <br />
           <span className="text-primary" ref={el} />
         </h1>
-        <p className="pt-4 font-alt text-sm text-light lg:pr-[220px]">
+        <p className="pt-4 font-alt text-sm text-light lg:pr-[110px]">
           I'm a passionate web developer skilled in creating engaging and
           user-friendly websites. Specializing in front-end development with
           modern technologies like JavaScript, React and Tailwind. Dedicated to
@@ -69,10 +69,10 @@ export default function Home() {
       </div>
       <div className={`${style.circle_four}`}>
         <span
-          data-tootik="Reviews"
+          data-tootik="Testimonials"
           data-tootik-conf="bottomR dark square shadow"
         >
-          <a href="#review">
+          <a href="#testimonial">
             <span className={`${style.animated_circle_four} relative`} />
           </a>
         </span>
