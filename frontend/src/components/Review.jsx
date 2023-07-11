@@ -1,14 +1,14 @@
 import style from "../../css/review.module.css";
 
-export default function Recommendation() {
+export default function Review() {
   return (
     <section
       className="flex flex-col justify-center gap-16 font-alt md:h-screen"
       id="review"
     >
       <div>
-        <h2 className="block font-main text-xl uppercase text-light">
-          <span className="block uppercase text-primary">People</span>
+        <h2 className="font-main text-xl uppercase text-light">
+          <span className="uppercase text-primary">People</span>
           <span> I worked with &amp; for </span>
         </h2>
         <p className="py-2 text-sm text-light">
@@ -17,7 +17,7 @@ export default function Recommendation() {
       </div>
 
       <div className="flex flex-col gap-16 text-center md:grid md:grid-cols-2 md:gap-32">
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-8">
           <img
             src="../assets/icons/review/quote.svg"
             alt="quote icon"
@@ -39,7 +39,7 @@ export default function Recommendation() {
             </a>
           </div>
         </div>
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-8">
           <img
             src="../assets/icons/review/quote.svg"
             alt="quote icon"
