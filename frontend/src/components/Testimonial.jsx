@@ -1,10 +1,10 @@
-import style from "../../css/review.module.css";
+import style from "../css/review.module.css";
 
-export default function Review() {
+export default function Testimonials() {
   return (
     <section
       className="flex flex-col justify-center gap-16 font-alt md:h-screen"
-      id="review"
+      id="testimonial"
     >
       <div>
         <h2 className="font-main text-xl uppercase text-light">
