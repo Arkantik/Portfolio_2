@@ -5,7 +5,7 @@ import PulseLoader from "react-spinners/PulseLoader";
 
 // Components
 import Portfolio from "./pages/Portfolio";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/utilities/Navbar";
 
 import "./App.css";
 

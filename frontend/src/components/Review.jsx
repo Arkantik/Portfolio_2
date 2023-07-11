@@ -17,7 +17,7 @@ export default function Recommendation() {
       </div>
 
       <div className="flex flex-col gap-16 text-center md:grid md:grid-cols-2 md:gap-32">
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-6">
           <img
             src="../assets/icons/review/quote.svg"
             alt="quote icon"
@@ -39,7 +39,7 @@ export default function Recommendation() {
             </a>
           </div>
         </div>
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-6">
           <img
             src="../assets/icons/review/quote.svg"
             alt="quote icon"
