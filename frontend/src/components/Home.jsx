@@ -22,17 +22,20 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="grid h-screen grid-cols-2 items-center gap-8" id="home">
-      <div className="object-scale-down">
+    <div
+      className="grid h-screen grid-cols-1 items-center gap-8 lg:grid-cols-2"
+      id="home"
+    >
+      <div className="hidden object-scale-down lg:flex">
         {/* <img src="../assets/img/slider-img.jpg" alt="Slider" /> */}
       </div>
-      <div>
-        <h1 className="block font-main text-2xl uppercase text-light">
+      <div className="px-8 md:px-20 lg:px-0">
+        <h1 className="block font-main text-xl uppercase text-light md:text-2xl">
           <span>Hello, I'm Jeremy</span>
           <br />
           <span className="text-primary" ref={el} />
         </h1>
-        <p className="pr-[220px] pt-3 font-alt text-sm text-light">
+        <p className="pt-4 font-alt text-sm text-light lg:pr-[220px]">
           I'm a passionate web developer skilled in creating engaging and
           user-friendly websites. Specializing in front-end development with
           modern technologies like JavaScript, React and Tailwind. Dedicated to
