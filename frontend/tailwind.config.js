@@ -51,7 +51,7 @@ module.exports = {
           },
         ],
         xs: [
-          "0.75rem",
+          "0.875rem",
           {
             lineHeight: "1.5",
             fontWeight: "300",
