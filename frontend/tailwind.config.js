@@ -16,7 +16,7 @@ module.exports = {
 
       fontSize: {
         "2xl": [
-          "4.5rem",
+          "3.5rem",
           {
             lineHeight: "1.2",
             fontWeight: "900",
