@@ -1,6 +1,5 @@
 // Packages
 import { useState, useEffect } from "react";
-import { Routes, Route } from "react-router-dom";
 import PulseLoader from "react-spinners/PulseLoader";
 
 // Components
@@ -42,9 +41,7 @@ export default function App() {
         <>
           <Navbar />
           <main>
-            <Routes>
-              <Route path="/" element={<Portfolio />} />
-            </Routes>
+            <Portfolio />
           </main>
         </>
       )}
