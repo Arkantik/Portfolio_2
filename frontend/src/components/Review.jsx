@@ -8,7 +8,7 @@ export default function Review() {
     >
       <div>
         <h2 className="font-main text-xl uppercase text-light">
-          <span className="uppercase text-primary">People</span>
+          <span className="block uppercase text-primary">People</span>
           <span> I worked with &amp; for </span>
         </h2>
         <p className="py-2 text-sm text-light">
