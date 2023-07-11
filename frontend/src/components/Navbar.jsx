@@ -27,7 +27,7 @@ export default function Navbar() {
                 rel="noreferrer"
               >
                 <img
-                  src="./public/assets/icons/github.svg"
+                  src="../assets/icons/github.svg"
                   alt="github icon"
                   className="rounded bg-transparent p-1.5 hover:bg-primary"
                 />
@@ -40,19 +40,16 @@ export default function Navbar() {
                 rel="noreferrer"
               >
                 <img
-                  src="./public/assets/icons/linkedin.svg"
+                  src="../assets/icons/linkedin.svg"
                   alt="linkedin icon"
                   className="rounded bg-transparent p-1.5 hover:bg-primary"
                 />
               </a>
             </li>
             <li>
-              <a
-                href="./public/assets/document/resume-JeremyDohin.pdf"
-                download
-              >
+              <a href="../assets/document/resume-JeremyDohin.pdf" download>
                 <img
-                  src="./public/assets/icons/home/resume.svg"
+                  src="../assets/icons/home/resume.svg"
                   alt="resume icon"
                   className="rounded bg-transparent p-1.5 hover:bg-primary"
                 />
@@ -68,8 +65,8 @@ export default function Navbar() {
       {/* Side Nav */}
       {isOpen ? (
         <div className="items-cente fixed z-20 h-screen w-full justify-center bg-dark font-alt">
-          <nav className="flex h-screen w-full flex-col items-center justify-center py-8 text-center">
-            <ul className="flex h-full flex-col items-center justify-center gap-8">
+          <nav className="flex h-screen w-full flex-col items-center justify-center gap-12 py-8 text-center">
+            <ul className="flex flex-col gap-8">
               <li>
                 <a
                   className={`${style.nav_link}`}
@@ -125,7 +122,37 @@ export default function Navbar() {
                 </a>
               </li>
             </ul>
-            <div className={`${style.btn_resume} shadow-lg shadow-primary/50`}>
+            <div>
+              <ul className="flex items-center gap-4">
+                <li>
+                  <a
+                    href="https://github.com/Arkantik"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="../assets/icons/github.svg"
+                      alt="github icon"
+                      className="rounded bg-transparent p-1.5 hover:bg-primary"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/jeremy-dohin/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="../assets/icons/linkedin.svg"
+                      alt="linkedin icon"
+                      className="rounded bg-transparent p-1.5 hover:bg-primary"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className={`${style.btn_resume} shadow-md shadow-primary/50`}>
               <a href="../assets/document/resume-JeremyDohin.pdf" download>
                 Download Resume
               </a>
