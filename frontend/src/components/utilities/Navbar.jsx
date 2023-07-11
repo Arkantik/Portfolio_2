@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 // Style
-import style from "../../../css/navbar.module.css";
+import style from "../../css/navbar.module.css";
 
 // Component
 import Menu from "./Menu";
@@ -15,49 +15,47 @@ export default function Navbar() {
   return (
     <header>
       <nav className="fixed z-30 flex h-[80px] w-full justify-between bg-dark px-8">
-        <div className="flex gap-20">
-          <a href="#home" title="Logo" className="flex items-center">
-            <img src="../assets/icons/logo.svg" alt="logo" />
-          </a>
-          <ul className="hidden items-center gap-8 md:flex">
-            <li>
-              <a
-                href="https://github.com/Arkantik"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src="../assets/icons/github.svg"
-                  alt="github icon"
-                  className="rounded bg-transparent p-1.5 hover:bg-primary"
-                />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/jeremy-dohin/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src="../assets/icons/linkedin.svg"
-                  alt="linkedin icon"
-                  className="rounded bg-transparent p-1.5 hover:bg-primary"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="../assets/document/resume-JeremyDohin.pdf" download>
-                <img
-                  src="../assets/icons/home/resume.svg"
-                  alt="resume icon"
-                  className="rounded bg-transparent p-1.5 hover:bg-primary"
-                />
-              </a>
-            </li>
-          </ul>
-        </div>
+        <a href="#home" title="Logo" className="flex items-center">
+          <img src="../assets/icons/logo.svg" alt="logo" />
+        </a>
 
+        <ul className="hidden items-center gap-8 md:flex">
+          <li>
+            <a
+              href="https://github.com/Arkantik"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="../assets/icons/github.svg"
+                alt="github icon"
+                className="rounded bg-transparent p-1.5 hover:bg-primary"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/jeremy-dohin/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="../assets/icons/linkedin.svg"
+                alt="linkedin icon"
+                className="rounded bg-transparent p-1.5 hover:bg-primary"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="../assets/document/resume-JeremyDohin.pdf" download>
+              <img
+                src="../assets/icons/home/resume.svg"
+                alt="resume icon"
+                className="rounded bg-transparent p-1.5 hover:bg-primary"
+              />
+            </a>
+          </li>
+        </ul>
         {/* Mobile Menu Button */}
         <Menu onClick={toggleNavMenu} />
       </nav>
@@ -106,10 +104,10 @@ export default function Navbar() {
               <li>
                 <a
                   className={`${style.nav_link}`}
-                  href="#review"
+                  href="#testimonial"
                   onClick={toggleNavMenu}
                 >
-                  Reviews
+                  Testimonials
                 </a>
               </li>
               <li>
