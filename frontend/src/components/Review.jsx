@@ -1,4 +1,4 @@
-import style from "../../css/recommendation.module.css";
+import style from "../../css/review.module.css";
 
 export default function Recommendation() {
   return (
