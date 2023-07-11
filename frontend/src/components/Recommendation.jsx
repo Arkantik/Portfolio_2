@@ -3,7 +3,7 @@ import style from "../../css/recommendation.module.css";
 export default function Recommendation() {
   return (
     <section
-      className="flex h-screen flex-col justify-center gap-16 font-alt"
+      className="flex flex-col justify-center gap-16 font-alt md:h-screen"
       id="review"
     >
       <div>
@@ -16,7 +16,7 @@ export default function Recommendation() {
         </p>
       </div>
 
-      <div className="grid grid-cols-2 gap-32 text-center">
+      <div className="flex flex-col gap-16 text-center md:grid md:grid-cols-2 md:gap-32">
         <div className="flex flex-col gap-8">
           <img
             src="../assets/icons/review/quote.svg"
