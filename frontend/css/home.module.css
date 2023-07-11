@@ -12,9 +12,17 @@
 
 .circle_one {
   position: absolute;
-  top: 28%;
-  left: 47%;
+  top: 22%;
+  left: 12%;
 }
+@media screen and (min-width: 1200px) {
+  .circle_one {
+    position: absolute;
+    top: 28%;
+    left: 47%;
+  }
+}
+
 .animated_circle_one:after {
   content: "";
   height: 40px;
@@ -27,16 +35,24 @@
   box-shadow: 0 0 0 0 rgba(38, 172, 217, 0.4);
   -webkit-animation: ripple 2s infinite;
   animation: ripple 2s infinite;
-  background-image: url(../public/assets/icons/home/about.svg);
+  background-image: url(../assets/icons/home/about.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .circle_two {
   top: 14%;
-  left: 68%;
+  left: 48%;
   position: absolute;
 }
+@media screen and (min-width: 1200px) {
+  .circle_two {
+    top: 14%;
+    left: 68%;
+    position: absolute;
+  }
+}
+
 .animated_circle_two:after {
   content: "";
   height: 40px;
@@ -49,16 +65,24 @@
   box-shadow: 0 0 0 0 rgba(38, 172, 217, 0.4);
   -webkit-animation: ripple 3s infinite;
   animation: ripple 3s infinite;
-  background-image: url(../public/assets/icons/home/timeline.svg);
+  background-image: url(../assets/icons/home/timeline.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .circle_three {
-  top: 38%;
-  left: 84%;
+  top: 26%;
+  left: 76%;
   position: absolute;
 }
+@media screen and (min-width: 1200px) {
+  .circle_three {
+    top: 38%;
+    left: 86%;
+    position: absolute;
+  }
+}
+
 .animated_circle_three:after {
   content: "";
   height: 34px;
@@ -71,16 +95,24 @@
   box-shadow: 0 0 0 0 rgba(38, 172, 217, 0.4);
   -webkit-animation: ripple 2s infinite;
   animation: ripple 2s infinite;
-  background-image: url(../public/assets/icons/home/projects.svg);
+  background-image: url(../assets/icons/home/projects.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .circle_four {
-  top: 80%;
+  top: 74%;
   left: 70%;
   position: absolute;
 }
+@media screen and (min-width: 1200px) {
+  .circle_four {
+    top: 80%;
+    left: 80%;
+    position: absolute;
+  }
+}
+
 .animated_circle_four:after {
   content: "";
   height: 30px;
@@ -93,15 +125,23 @@
   box-shadow: 0 0 0 0 rgba(38, 172, 217, 0.4);
   -webkit-animation: ripple 3s infinite;
   animation: ripple 3s infinite;
-  background-image: url(../public/assets/icons/home/review.svg);
+  background-image: url(../assets/icons/home/review.svg);
   background-repeat: no-repeat;
 }
 
 .circle_five {
-  top: 86%;
-  left: 55%;
+  top: 82%;
+  left: 25%;
   position: absolute;
 }
+@media screen and (min-width: 1200px) {
+  .circle_five {
+    top: 86%;
+    left: 55%;
+    position: absolute;
+  }
+}
+
 .animated_circle_five:after {
   content: "";
   height: 30px;
@@ -114,7 +154,7 @@
   box-shadow: 0 0 0 0 rgba(38, 172, 217, 0.4);
   -webkit-animation: ripple 2s infinite;
   animation: ripple 2s infinite;
-  background-image: url(../public/assets/icons/home/mail.svg);
+  background-image: url(../assets/icons/home/mail.svg);
   background-repeat: no-repeat;
 }
 
