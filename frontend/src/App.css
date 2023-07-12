@@ -85,14 +85,39 @@
 }
 
 /*= ==================================
+        Intersection animation
+    ====================================== */
+.hidden-el {
+  position: relative;
+  opacity: 0;
+  filter: blur(10px);
+  transform: translateY(-100%);
+  transition: all 2s;
+
+  @media (prefers-reduced-motion) {
+    transition: none;
+  }
+}
+.hidden-el:nth-child(2) {
+  transform: translateY(100%);
+}
+
+.show-el {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+.show-el:nth-child(2) {
+  transform: translateY(0);
+}
+
+/*= ==================================
         Swiper react
     ====================================== */
 .swiper {
   width: 100%;
-}
 
-@media (max-width: 500px) {
-  .swiper {
+  @media (max-width: 500px) {
     overflow: visible;
   }
 }
@@ -103,10 +128,8 @@
   background-color: theme("colors.dark");
   border: 1px solid theme("colors.primary");
   border-radius: 1rem;
-}
 
-@media (max-width: 500px) {
-  .swiper-slide {
+  @media (max-width: 500px) {
     width: 18rem;
     height: 28rem;
   }
