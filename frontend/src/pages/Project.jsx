@@ -1,4 +1,7 @@
-import Carousel from "./Carousel";
+// Packages
+
+// Components
+import Carousel from "../components/Carousel";
 
 export default function Project() {
   return (
