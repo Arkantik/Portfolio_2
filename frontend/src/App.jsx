@@ -3,9 +3,16 @@ import { useState, useEffect } from "react";
 import PulseLoader from "react-spinners/PulseLoader";
 
 // Components
-import Portfolio from "./pages/Portfolio";
 import Navbar from "./components/utilities/Navbar";
 
+// Pages
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Project from "./pages/Project";
+import Testimonial from "./pages/Testimonial";
+import Contact from "./pages/Contact";
+
+// Style
 import "./App.css";
 
 export default function App() {
@@ -41,7 +48,11 @@ export default function App() {
         <>
           <Navbar />
           <main>
-            <Portfolio />
+            <Home />
+            <About />
+            <Project />
+            <Testimonial />
+            <Contact />
           </main>
         </>
       )}
