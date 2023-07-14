@@ -1,3 +1,7 @@
+// Package
+import { BsLinkedin } from "react-icons/bs";
+
+// Style
 import style from "../styles/review.module.css";
 
 export default function Testimonials() {
@@ -35,7 +39,7 @@ export default function Testimonials() {
           <div className={`${style.review_title}`}>
             <h4 className="font-main text-lg text-primary">Anthony Gorski</h4>
             <a href="https://www.linkedin.com/in/anthony-gorski/">
-              <img src="../assets/icons/linkedin.svg" alt="linkedin icon" />
+              <BsLinkedin className="rounded bg-transparent p-1.5 text-xl text-light hover:bg-primary" />
             </a>
           </div>
         </div>
@@ -57,7 +61,7 @@ export default function Testimonials() {
           <div className={`${style.review_title}`}>
             <h4 className="font-main text-lg text-primary">Ingrid Freire</h4>
             <a href="https://www.linkedin.com/in/ingrid-freire-2a00b31b7/">
-              <img src="../assets/icons/linkedin.svg" alt="linkedin icon" />
+              <BsLinkedin className="rounded bg-transparent p-1.5 text-xl text-light hover:bg-primary" />
             </a>
           </div>
         </div>
