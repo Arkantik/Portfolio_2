@@ -23,7 +23,7 @@ const navData = [
   { id: 6, name: "contact", path: "#contact", icon: <BsEnvelopeFill /> },
 ];
 
-export default function DesktopMenu() {
+export default function SideMenu() {
   const [activeItem, setActiveItem] = useState("");
   const [isHomeVisible, setIsHomeVisible] = useState(false);
   const [isMenuVisible, setIsMenuVisible] = useState(true);
@@ -82,7 +82,7 @@ export default function DesktopMenu() {
             href={link.path}
             className={`${
               activeItem === link.name ? "text-primary" : "text-dark"
-            } hover:scale-125 hover:text-light/50`}
+            } hover:scale-125 hover:text-primary`}
           >
             {link.icon}
           </a>

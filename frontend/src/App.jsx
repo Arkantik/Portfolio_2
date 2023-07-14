@@ -2,7 +2,7 @@
 
 // Components
 import Navbar from "./components/utilities/Navbar";
-import DesktopMenu from "./components/utilities/DesktopMenu";
+import SideMenu from "./components/utilities/SideMenu";
 
 // Pages
 import Home from "./pages/Home";
@@ -20,7 +20,7 @@ export default function App() {
     <div className="overflow-x-hidden overflow-y-hidden bg-dark">
       <Navbar />
       <main>
-        <DesktopMenu />
+        <SideMenu />
         <Home />
         <About />
         <Timeline />
