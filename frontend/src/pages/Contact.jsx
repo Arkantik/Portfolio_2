@@ -155,7 +155,7 @@ export default function Contact() {
           </div>
           <button
             type="submit"
-            className="hidden-form rounded-lg border border-primary bg-transparent px-5 py-3 text-light hover:bg-primary"
+            className="hidden-form rounded-lg border border-primary bg-transparent px-5 py-3 text-light"
             ref={formEl4}
           >
             Send message
