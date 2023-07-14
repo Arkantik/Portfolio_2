@@ -1,5 +1,6 @@
 // Package
 import { BsLinkedin } from "react-icons/bs";
+import { BiSolidQuoteAltRight } from "react-icons/bi";
 
 // Style
 import style from "../styles/review.module.css";
@@ -22,11 +23,7 @@ export default function Testimonials() {
 
       <div className="flex flex-col gap-16 text-center md:grid md:grid-cols-2 md:gap-32">
         <div className="flex flex-col gap-8">
-          <img
-            src="../assets/icons/review/quote.svg"
-            alt="quote icon"
-            className={`${style.icon_quotes}`}
-          />
+          <BiSolidQuoteAltRight className="flex w-full justify-center text-lg text-primary" />
           <p className="text-sm text-light">
             Jeremy has a solid understanding of the fundamental principles of
             web development and is capable of creatively solving complex
@@ -44,11 +41,7 @@ export default function Testimonials() {
           </div>
         </div>
         <div className="flex flex-col gap-8">
-          <img
-            src="../assets/icons/review/quote.svg"
-            alt="quote icon"
-            className={`${style.icon_quotes}`}
-          />
+          <BiSolidQuoteAltRight className="flex w-full justify-center text-lg text-primary" />
           <p className="text-sm text-light">
             Jeremy is a reliable person, always present and professional. He's
             also a good trainer, explaining softwares in details. One thing is
