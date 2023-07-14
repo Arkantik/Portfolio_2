@@ -104,10 +104,6 @@
   filter: blur(10px);
   transform: translateY(-100%);
   transition: all 2s;
-
-  @media (prefers-reduced-motion) {
-    transition: none;
-  }
 }
 .hidden-el:nth-child(2) {
   transform: translateY(100%);
@@ -128,20 +124,12 @@
   filter: blur(8px);
   transform: translateX(-100%);
   transition: all 1s;
-
-  @media (prefers-reduced-motion) {
-    transition: none;
-  }
 }
 .hidden-testi2 {
   opacity: 0;
   filter: blur(8px);
   transform: translateX(100%);
   transition: all 1s;
-
-  @media (prefers-reduced-motion) {
-    transition: none;
-  }
 }
 
 .show-testi {
@@ -168,10 +156,6 @@
   filter: blur(8px);
   transform: translateY(100%);
   transition: all 1s;
-
-  @media (prefers-reduced-motion) {
-    transition: none;
-  }
 }
 
 .show-form {
