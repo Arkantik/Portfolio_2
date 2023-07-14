@@ -5,7 +5,7 @@ import { useState } from "react";
 import style from "../../styles/navbar.module.css";
 
 // Component
-import Menu from "./Menu";
+import MobileMenu from "./MobileMenu";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -57,7 +57,7 @@ export default function Navbar() {
           </li>
         </ul>
         {/* Mobile Menu Button */}
-        <Menu onClick={toggleNavMenu} />
+        <MobileMenu onClick={toggleNavMenu} />
       </nav>
 
       {/* Mobile Nav */}
