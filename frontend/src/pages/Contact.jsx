@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import emailjs from "@emailjs/browser";
 
@@ -6,6 +6,11 @@ import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact() {
   const form = useRef(null);
+  const h2El = useRef(null);
+  const formEl1 = useRef(null);
+  const formEl2 = useRef(null);
+  const formEl3 = useRef(null);
+  const formEl4 = useRef(null);
 
   const notify = () => {
     toast.success("Success, your message was sent!", {
@@ -61,19 +66,54 @@ export default function Contact() {
       );
   };
 
+  useEffect(() => {
+    const observers = [
+      { ref: h2El, classToAdd: "show-form" },
+      { ref: formEl1, classToAdd: "show-form" },
+      { ref: formEl2, classToAdd: "show-form" },
+      { ref: formEl3, classToAdd: "show-form" },
+      { ref: formEl4, classToAdd: "show-form" },
+    ].map(({ ref, classToAdd }) => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(classToAdd);
+          } else {
+            entry.target.classList.remove(classToAdd);
+          }
+        });
+      });
+      observer.observe(ref.current);
+
+      return {
+        observer,
+        element: ref.current,
+      };
+    });
+
+    return () => {
+      observers.forEach(({ observer, element }) => {
+        observer.unobserve(element);
+      });
+    };
+  }, []);
+
   return (
     <section
       className="flex h-screen flex-col justify-center gap-16 font-alt"
       id="contact"
     >
       <div>
-        <h2 className="font-main text-xl uppercase text-primary">
+        <h2
+          className="hidden-form font-main text-xl uppercase text-primary"
+          ref={h2El}
+        >
           Let's get in touch!
         </h2>
       </div>
       <div className="mx-auto text-sm md:w-2/3">
         <form className="space-y-8" ref={form} onSubmit={sendEmail}>
-          <div>
+          <div className="hidden-form" ref={formEl1}>
             <label htmlFor="fullname" className="text-light">
               Your Fullname
             </label>
@@ -86,7 +126,7 @@ export default function Contact() {
               autoComplete="true"
             />
           </div>
-          <div>
+          <div className="hidden-form" ref={formEl2}>
             <label htmlFor="email" className="text-light">
               Your email
             </label>
@@ -101,7 +141,7 @@ export default function Contact() {
               autoComplete="true"
             />
           </div>
-          <div>
+          <div className="hidden-form" ref={formEl3}>
             <label htmlFor="message" className="text-light">
               Your message
             </label>
@@ -115,7 +155,8 @@ export default function Contact() {
           </div>
           <button
             type="submit"
-            className="rounded-lg border border-primary bg-transparent px-5 py-3 text-light hover:bg-primary"
+            className="hidden-form rounded-lg border border-primary bg-transparent px-5 py-3 text-light hover:bg-primary"
+            ref={formEl4}
           >
             Send message
           </button>

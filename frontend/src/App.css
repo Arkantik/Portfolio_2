@@ -87,6 +87,17 @@
 /*= ==================================
         Intersection animation
     ====================================== */
+.menu-visible {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+
+.menu-hidden {
+  opacity: 0;
+  transition: 2s ease-in-out;
+}
+
+/* = Home = */
 .hidden-el {
   position: relative;
   opacity: 0;
@@ -111,14 +122,34 @@
   transform: translateY(0);
 }
 
-.menu-visible {
-  opacity: 1;
-  transition: 0.5s ease-in-out;
+/* = Contact = */
+.hidden-form {
+  opacity: 0;
+  filter: blur(8px);
+  transform: translateX(-100%);
+  transition: all 2s;
+
+  @media (prefers-reduced-motion) {
+    transition: none;
+  }
 }
 
-.menu-hidden {
-  opacity: 0;
-  transition: 2s ease-in-out;
+.show-form {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0%);
+}
+.show-form:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.show-form:nth-child(2) {
+  transition-delay: 0.3s;
+}
+.show-form:nth-child(3) {
+  transition-delay: 0.5s;
+}
+.show-form:nth-child(4) {
+  transition-delay: 0.9s;
 }
 
 /*= ==================================
