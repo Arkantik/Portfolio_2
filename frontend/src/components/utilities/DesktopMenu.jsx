@@ -32,7 +32,7 @@ export default function DesktopMenu() {
     const handleScroll = () => {
       const homeElement = document.getElementById("home");
       const rect = homeElement.getBoundingClientRect();
-      const newIsHomeVisible = rect.top <= 0 && rect.bottom > 200;
+      const newIsHomeVisible = rect.top <= 0 && rect.bottom > 500;
 
       if (newIsHomeVisible !== isHomeVisible) {
         setIsHomeVisible(newIsHomeVisible);
@@ -71,7 +71,7 @@ export default function DesktopMenu() {
 
   return (
     <nav
-      className={`fixed bottom-0 right-[2%] top-0 z-10 mt-auto flex h-[calc(100vh-80px)] w-16 max-w-md flex-col items-center justify-center gap-y-4 ${
+      className={`fixed bottom-0 right-[1%] top-0 z-10 mt-auto flex h-[calc(100vh-80px)] w-16 max-w-md flex-col items-center justify-center gap-y-4 ${
         isMenuVisible ? "menu-visible" : "menu-hidden"
       }`}
     >
@@ -80,7 +80,9 @@ export default function DesktopMenu() {
           <a
             key={link.id}
             href={link.path}
-            className={activeItem === link.name ? "text-primary" : ""}
+            className={`${
+              activeItem === link.name ? "text-primary" : "text-dark"
+            } hover:scale-125 hover:text-light/50`}
           >
             {link.icon}
           </a>
