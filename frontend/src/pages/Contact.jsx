@@ -83,6 +83,7 @@ export default function Contact() {
               placeholder="Name and surname"
               id="fullname"
               name="name"
+              autoComplete="true"
             />
           </div>
           <div>
@@ -97,6 +98,7 @@ export default function Contact() {
               name="user_email"
               pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
               title="email@example.com"
+              autoComplete="true"
             />
           </div>
           <div>
