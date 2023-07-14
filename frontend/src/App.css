@@ -111,6 +111,16 @@
   transform: translateY(0);
 }
 
+.menu-visible {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+
+.menu-hidden {
+  opacity: 0;
+  transition: 2s ease-in-out;
+}
+
 /*= ==================================
         Swiper react
     ====================================== */

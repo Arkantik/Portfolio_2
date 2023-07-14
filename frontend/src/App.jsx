@@ -9,6 +9,7 @@ import About from "./pages/About";
 import Project from "./pages/Project";
 import Testimonial from "./pages/Testimonial";
 import Contact from "./pages/Contact";
+import DesktopMenu from "./components/utilities/DesktopMenu";
 
 // Style
 import "./App.css";
@@ -18,6 +19,7 @@ export default function App() {
     <div className="bg-dark">
       <Navbar />
       <main>
+        <DesktopMenu />
         <Home />
         <About />
         <Project />
