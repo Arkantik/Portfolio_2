@@ -81,7 +81,9 @@ export default function SideMenu() {
             key={link.id}
             href={link.path}
             className={`${
-              activeItem === link.name ? "text-primary" : "text-dark"
+              activeItem === link.name
+                ? "scale-125 text-primary duration-300"
+                : "text-dark"
             } hover:scale-125 hover:text-primary`}
           >
             {link.icon}
