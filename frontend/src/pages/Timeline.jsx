@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 
 // Style
-import style from "../styles/timeline.module.css";
+// import style from "../styles/timeline.module.css";
 
 // Data
 // import dataTimeline from "../services/timeline.json";
@@ -14,7 +14,8 @@ export default function Timeline() {
       const birthDate = new Date(1994, 4, 1);
       const currentDate = new Date();
       const timeDiff = Math.abs(currentDate.getTime() - birthDate.getTime());
-      const age = Math.floor(timeDiff / (1000 * 3600 * 24 * 365.25)); // Accounting for leap years
+      // Accounting for leap years
+      const age = Math.floor(timeDiff / (1000 * 3600 * 24 * 365.25));
       ageElement.textContent = age.toString();
     }
   }
@@ -25,7 +26,7 @@ export default function Timeline() {
 
   return (
     <section
-      className="flex h-screen flex-col justify-center gap-16 font-alt text-light"
+      className="flex h-screen flex-col justify-center gap-16 font-alt text-light "
       id="timeline"
     >
       <div className="flex items-center justify-between">
@@ -44,7 +45,30 @@ export default function Timeline() {
         </div>
       </div>
 
-      <div className="cd-horizontal-timeline loaded">
+      <div className="flex w-full items-center justify-center">
+        <div className="relative w-2/4 overflow-hidden rounded-xl bg-slate-800 p-px after:absolute after:-left-48 after:-top-48 after:z-30 after:h-96 after:w-96 after:bg-indigo-500 after:opacity-0 after:blur-[100px] after:transition-opacity after:duration-500 after:hover:opacity-10 before:group-hover:opacity-100">
+          <div className="relative z-20 h-full overflow-hidden rounded-[inherit] bg-slate-900 p-6 pb-8">
+            <div
+              className="pointer-events-none absolute bottom-0 left-1/2 -z-10 aspect-square w-1/2 -translate-x-1/2 translate-y-1/2"
+              aria-hidden="true"
+            >
+              <span className="translate-z-0 absolute inset-0 rounded-full bg-slate-800 blur-[120px]" />
+            </div>
+            <div className="flex flex-col items-center gap-4 text-center">
+              <h2 className=" text-xl font-bold text-primary">
+                Currently under development
+              </h2>
+              <p className="text-slate-100/80">
+                This section requires a package that has been deprecated for the
+                last 5 years, so I decided to redo that package which will take
+                some time to finish.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* <div className="cd-horizontal-timeline loaded">
         <div className="timeline">
           <div className="events-wrapper">
             <div className="events w-[2200px]">
@@ -876,8 +900,8 @@ export default function Timeline() {
               </div>
             </li>
           </ol>
-        </div>
-      </div>
+        </div> 
+      </div> */}
     </section>
   );
 }
