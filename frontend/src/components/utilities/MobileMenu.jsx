@@ -1,7 +1,7 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 
-export default function Menu({ onClick }) {
+export default function MobileMenu({ onClick }) {
   const [isOpen, setIsOpen] = useState(true);
 
   const toggleMenu = () => {
@@ -42,6 +42,6 @@ export default function Menu({ onClick }) {
   );
 }
 
-Menu.propTypes = {
+MobileMenu.propTypes = {
   onClick: PropTypes.func.isRequired,
 };
