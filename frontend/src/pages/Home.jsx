@@ -3,7 +3,7 @@ import { useRef, useEffect } from "react";
 import Typed from "typed.js";
 
 // Style
-import style from "../css/home.module.css";
+import style from "../styles/home.module.css";
 
 export default function Home() {
   const typedEl = useRef(null);

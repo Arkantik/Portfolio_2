@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 
 // Style
-import style from "../css/timeline.module.css";
+import style from "../styles/timeline.module.css";
 
 // Data
 // import dataTimeline from "../services/timeline.json";

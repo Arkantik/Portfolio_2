@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 // Style
-import style from "../../css/navbar.module.css";
+import style from "../../styles/navbar.module.css";
 
 // Component
 import Menu from "./Menu";

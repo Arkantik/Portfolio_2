@@ -1,4 +1,4 @@
-import style from "../css/review.module.css";
+import style from "../styles/review.module.css";
 
 export default function Testimonials() {
   return (
