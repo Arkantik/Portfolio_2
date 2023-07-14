@@ -1,5 +1,10 @@
 // Package
 import { useState } from "react";
+import {
+  BsGithub,
+  BsLinkedin,
+  BsFillFileEarmarkPersonFill,
+} from "react-icons/bs";
 
 // Style
 import style from "../../styles/navbar.module.css";
@@ -26,11 +31,7 @@ export default function Navbar() {
               target="_blank"
               rel="noreferrer"
             >
-              <img
-                src="../assets/icons/github.svg"
-                alt="github icon"
-                className="rounded bg-transparent p-1.5 hover:bg-primary"
-              />
+              <BsGithub className="rounded bg-transparent p-1.5 text-xl text-light hover:bg-primary" />
             </a>
           </li>
           <li>
@@ -39,20 +40,12 @@ export default function Navbar() {
               target="_blank"
               rel="noreferrer"
             >
-              <img
-                src="../assets/icons/linkedin.svg"
-                alt="linkedin icon"
-                className="rounded bg-transparent p-1.5 hover:bg-primary"
-              />
+              <BsLinkedin className="rounded bg-transparent p-1.5 text-xl text-light hover:bg-primary" />
             </a>
           </li>
           <li>
             <a href="../assets/document/resume-JeremyDohin.pdf" download>
-              <img
-                src="../assets/icons/home/resume.svg"
-                alt="resume icon"
-                className="rounded bg-transparent p-1.5 hover:bg-primary"
-              />
+              <BsFillFileEarmarkPersonFill className="rounded bg-transparent p-1.5 text-xl text-light hover:bg-primary" />
             </a>
           </li>
         </ul>
@@ -128,11 +121,7 @@ export default function Navbar() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img
-                      src="../assets/icons/github.svg"
-                      alt="github icon"
-                      className="rounded bg-transparent p-1.5 hover:bg-primary"
-                    />
+                    <BsGithub className="rounded bg-transparent p-1.5 text-xl text-light active:bg-primary" />
                   </a>
                 </li>
                 <li>
@@ -141,11 +130,7 @@ export default function Navbar() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img
-                      src="../assets/icons/linkedin.svg"
-                      alt="linkedin icon"
-                      className="rounded bg-transparent p-1.5 hover:bg-primary"
-                    />
+                    <BsLinkedin className="rounded bg-transparent p-1.5 text-xl text-light active:bg-primary" />
                   </a>
                 </li>
               </ul>

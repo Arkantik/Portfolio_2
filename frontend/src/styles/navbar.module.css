@@ -22,17 +22,9 @@
   transition: 0.2s;
 }
 
-.btn_resume:hover {
+.btn_resume:active {
   background-color: theme("colors.primary");
   color: theme("colors.dark");
   transform: scale(1.05);
   transition-timing-function: ease-out;
-}
-
-.social_icon:hover {
-  color: #202020 !important;
-  background: theme("colors.primary") !important;
-  -webkit-transition: 0.3s ease-in-out;
-  -o-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
 }
