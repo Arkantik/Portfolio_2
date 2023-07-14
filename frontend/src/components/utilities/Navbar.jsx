@@ -62,7 +62,7 @@ export default function Navbar() {
 
       {/* Mobile Nav */}
       {isOpen ? (
-        <div className="items-cente fixed z-20 h-screen w-full justify-center bg-dark font-alt">
+        <div className="fixed z-20 h-screen w-full items-center justify-center bg-dark font-alt">
           <nav className="flex h-screen w-full flex-col items-center justify-center gap-12 py-8 text-center">
             <ul className="flex flex-col gap-8">
               <li>
