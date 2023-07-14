@@ -16,7 +16,7 @@ import "./App.css";
 
 export default function App() {
   return (
-    <div className="overflow-x-hidden bg-dark">
+    <div className="overflow-x-hidden overflow-y-hidden bg-dark">
       <Navbar />
       <main>
         <DesktopMenu />

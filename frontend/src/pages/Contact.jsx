@@ -68,7 +68,7 @@ export default function Contact() {
 
   useEffect(() => {
     const observers = [
-      { ref: h2El, classToAdd: "show-form" },
+      { ref: h2El, classToAdd: "show-el" },
       { ref: formEl1, classToAdd: "show-form" },
       { ref: formEl2, classToAdd: "show-form" },
       { ref: formEl3, classToAdd: "show-form" },
@@ -105,7 +105,7 @@ export default function Contact() {
     >
       <div>
         <h2
-          className="hidden-form font-main text-xl uppercase text-primary"
+          className="hidden-el font-main text-xl uppercase text-primary"
           ref={h2El}
         >
           Let's get in touch!

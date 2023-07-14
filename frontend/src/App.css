@@ -153,20 +153,20 @@
   transition-delay: 0.1s;
 }
 .show-testi:nth-child(2) {
-  transition-delay: 0.15s;
-}
-.show-testi:nth-child(3) {
   transition-delay: 0.2s;
 }
+.show-testi:nth-child(3) {
+  transition-delay: 0.3s;
+}
 .show-testi:nth-child(4) {
-  transition-delay: 0.25s;
+  transition-delay: 0.4s;
 }
 
 /* = Contact = */
 .hidden-form {
   opacity: 0;
   filter: blur(8px);
-  transform: translateX(-100%);
+  transform: translateY(100%);
   transition: all 1s;
 
   @media (prefers-reduced-motion) {
@@ -177,19 +177,19 @@
 .show-form {
   opacity: 1;
   filter: blur(0);
-  transform: translateX(0%);
+  transform: translateY(0%);
 }
 .show-form:nth-child(1) {
   transition-delay: 0.1s;
 }
 .show-form:nth-child(2) {
-  transition-delay: 0.3s;
+  transition-delay: 0.2s;
 }
 .show-form:nth-child(3) {
-  transition-delay: 0.5s;
+  transition-delay: 0.3s;
 }
 .show-form:nth-child(4) {
-  transition-delay: 0.9s;
+  transition-delay: 0.6s;
 }
 
 /*= ==================================
