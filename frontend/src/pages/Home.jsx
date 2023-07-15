@@ -56,8 +56,8 @@ export default function Home() {
   }, []);
 
   return (
-    <div
-      className="grid h-screen grid-cols-1 items-center gap-8 lg:grid-cols-2 "
+    <article
+      className="grid h-screen grid-cols-1 items-center gap-8 lg:grid-cols-2"
       id="home"
     >
       <div className="hidden object-scale-down lg:flex">
@@ -127,6 +127,6 @@ export default function Home() {
           </a>
         </span>
       </div>
-    </div>
+    </article>
   );
 }
