@@ -11,7 +11,7 @@ import SwiperCore, {
 import "swiper/swiper-bundle.min.css";
 
 // Data
-import projectData from "../services/project.json";
+import projectData from "../data/project.json";
 
 SwiperCore.use([EffectCoverflow, Pagination, Navigation, Autoplay]);
 
