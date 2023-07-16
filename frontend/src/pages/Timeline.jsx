@@ -45,8 +45,8 @@ export default function Timeline() {
         </div>
       </div>
 
-      <div className="flex w-full items-center justify-center">
-        <div className="relative w-2/4 overflow-hidden rounded-xl bg-slate-800 p-px after:absolute after:-left-48 after:-top-48 after:z-30 after:h-96 after:w-96 after:bg-indigo-500 after:opacity-0 after:blur-[100px] after:transition-opacity after:duration-500 after:hover:opacity-10 before:group-hover:opacity-100">
+      <div className="z-0 flex w-full items-center justify-center">
+        <div className="relative overflow-hidden rounded-xl bg-slate-800 p-px after:absolute after:-left-48 after:-top-48 after:z-30 after:h-96 after:w-96 after:bg-indigo-500 after:opacity-0 after:blur-[100px] after:transition-opacity after:duration-500 after:hover:opacity-10 before:group-hover:opacity-100 md:w-2/4">
           <div className="relative z-20 h-full overflow-hidden rounded-[inherit] bg-slate-900 p-6 pb-8">
             <div
               className="pointer-events-none absolute bottom-0 left-1/2 -z-10 aspect-square w-1/2 -translate-x-1/2 translate-y-1/2"
