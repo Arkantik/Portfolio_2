@@ -9,7 +9,7 @@ import Toggle from "../components/utilities/Toggle";
 // import { motion } from "framer-motion";
 
 // Data
-import { skills, tools } from "../helpers/AboutData";
+import { skills, tools } from "../helpers/aboutData";
 
 export default function About() {
   const [activeTab, setActiveTab] = useState("skills");
@@ -39,16 +39,20 @@ export default function About() {
               technologies.
             </p>
           </div>
-          <div className="flex flex-col gap-8">
+          <div className="z-10 flex flex-col gap-8">
             <Toggle activeTab={activeTab} onTabToggle={handleTabToggle} />
 
-            <div className="flex w-full flex-wrap justify-center">
+            <div>
               {activeTab === "skills" && (
-                <ul>
+                <ul className="flex w-full flex-wrap justify-center">
                   {skills.map((skill) => (
                     <li key={skill.id} className="m-1 inline-flex">
                       <div className="rounded-lg bg-light p-2">
-                        <div className="text-2xl">{skill.icon}</div>
+                        <img
+                          src={skill.icon}
+                          alt={skill.name}
+                          className="w-14"
+                        />
                       </div>
                     </li>
                   ))}
@@ -56,11 +60,11 @@ export default function About() {
               )}
 
               {activeTab === "tools" && (
-                <ul>
+                <ul className="flex w-full flex-wrap justify-center">
                   {tools.map((tool) => (
                     <li key={tool.id} className="m-1 inline-flex">
                       <div className="rounded-lg bg-light p-2">
-                        <div className="text-2xl">{tool.icon}</div>
+                        <img src={tool.icon} alt={tool.name} className="w-14" />
                       </div>
                     </li>
                   ))}
