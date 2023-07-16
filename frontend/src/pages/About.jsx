@@ -31,7 +31,7 @@ export default function About() {
           </h2>
         </div>
 
-        <article className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
+        <article className="grid grid-cols-1 grid-rows-2 items-center gap-8 lg:grid-cols-2">
           <div>
             <p className="text-base text-light">
               I develop simple, intuitive and responsive user interface that
@@ -46,8 +46,8 @@ export default function About() {
               {activeTab === "skills" && (
                 <ul className="flex w-full flex-wrap justify-center">
                   {skills.map((skill) => (
-                    <li key={skill.id} className="m-1 inline-flex">
-                      <div className="rounded-lg bg-light p-2">
+                    <li key={skill.id} className="m-2 inline-flex">
+                      <div className="rounded-lg border-l border-t border-light/30 bg-light/10 p-2 backdrop-blur-sm">
                         <img
                           src={skill.icon}
                           alt={skill.name}
@@ -62,8 +62,8 @@ export default function About() {
               {activeTab === "tools" && (
                 <ul className="flex w-full flex-wrap justify-center">
                   {tools.map((tool) => (
-                    <li key={tool.id} className="m-1 inline-flex">
-                      <div className="rounded-lg bg-light p-2">
+                    <li key={tool.id} className="m-2 inline-flex">
+                      <div className="rounded-lg border-l border-t border-light/30 bg-light/10 p-2 backdrop-blur-sm">
                         <img src={tool.icon} alt={tool.name} className="w-14" />
                       </div>
                     </li>
