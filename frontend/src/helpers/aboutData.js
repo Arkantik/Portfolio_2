@@ -12,14 +12,16 @@ const skills = [
 ];
 
 const tools = [
-  { id: 1, name: "git", icon: "../assets/icons/tools/git.svg" },
-  { id: 2, name: "vscode", icon: "../assets/icons/tools/vscode.svg" },
-  { id: 3, name: "npm", icon: "../assets/icons/tools/npm.svg" },
-  { id: 4, name: "figma", icon: "../assets/icons/tools/figma.svg" },
-  { id: 5, name: "clickup", icon: "../assets/icons/tools/clickup.svg" },
-  { id: 6, name: "slack", icon: "../assets/icons/tools/slack.svg" },
-  { id: 7, name: "insomnia", icon: "../assets/icons/tools/insomnia.svg" },
-  { id: 8, name: "discord", icon: "../assets/icons/tools/discord.svg" },
+  { id: 1, name: "github", icon: "../assets/icons/tools/github.svg" },
+  { id: 2, name: "git", icon: "../assets/icons/tools/git.svg" },
+  { id: 3, name: "vscode", icon: "../assets/icons/tools/vscode.svg" },
+  { id: 4, name: "npm", icon: "../assets/icons/tools/npm.svg" },
+  { id: 5, name: "figma", icon: "../assets/icons/tools/figma.svg" },
+  { id: 6, name: "clickup", icon: "../assets/icons/tools/clickup.svg" },
+  { id: 7, name: "slack", icon: "../assets/icons/tools/slack.svg" },
+  { id: 8, name: "insomnia", icon: "../assets/icons/tools/insomnia.svg" },
+  { id: 9, name: "discord", icon: "../assets/icons/tools/discord.svg" },
+  { id: 10, name: "scrum", icon: "../assets/icons/tools/scrum.svg" },
 ];
 
 export { skills, tools };
