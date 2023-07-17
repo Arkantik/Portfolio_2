@@ -9,6 +9,9 @@ import {
 } from "react-icons/bs";
 import { useState, useEffect } from "react";
 
+// Helper
+import smoothScrollTo from "../../helpers/smoothScroll";
+
 const navData = [
   { id: 1, name: "home", path: "#home", icon: <BsFillHouseFill /> },
   { id: 2, name: "about", path: "#about", icon: <BsPatchQuestionFill /> },
@@ -28,6 +31,7 @@ export default function SideMenu() {
   const [isHomeVisible, setIsHomeVisible] = useState(false);
   const [isMenuVisible, setIsMenuVisible] = useState(true);
 
+  // Manage intersection observer animation
   useEffect(() => {
     const handleScroll = () => {
       const homeElement = document.getElementById("home");
@@ -80,6 +84,7 @@ export default function SideMenu() {
           <a
             key={link.id}
             href={link.path}
+            onClick={() => smoothScrollTo(`${link.path}`, 0)}
             className={`${
               activeItem === link.name
                 ? "scale-125 text-primary duration-300"

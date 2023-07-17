@@ -1,15 +1,33 @@
 // Packages
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import Typed from "typed.js";
+
+// Helper
+import smoothScrollTo from "../helpers/smoothScroll";
 
 // Style
 import style from "../styles/home.module.css";
 
 export default function Home() {
+  const [offset, setOffset] = useState(0);
   const typedEl = useRef(null);
   const h1El = useRef(null);
   const pEl = useRef(null);
 
+  // Manage offset for mobile
+  useEffect(() => {
+    const handleResize = () => {
+      setOffset(window.innerWidth < 640 ? 80 : 0);
+    };
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  // Manage intersection observer
   useEffect(() => {
     const typed = new Typed(typedEl.current, {
       strings: ["A Frontend Developer", "An UI/UX Lover"],
@@ -57,7 +75,7 @@ export default function Home() {
 
   return (
     <article
-      className="grid h-screen grid-cols-1 items-center gap-8 lg:grid-cols-2"
+      className="grid h-screen min-h-[calc(100dvh-80px)] grid-cols-1 items-center gap-8 lg:grid-cols-2"
       id="home"
     >
       <div className="hidden object-scale-down lg:flex">
@@ -85,14 +103,14 @@ export default function Home() {
       </div>
       <div className={`${style.circle_one}`}>
         <span data-tootik="About me" data-tootik-conf="left dark square shadow">
-          <a href="#about">
+          <a href="#about" onClick={() => smoothScrollTo("#about", offset)}>
             <span className={`${style.animated_circle_one} relative`} />
           </a>
         </span>
       </div>
       <div className={`${style.circle_two}`}>
         <span data-tootik="Timeline" data-tootik-conf="dark square shadow">
-          <a href="#timeline">
+          <a href="#timeline" onClick={() => smoothScrollTo("#timeline", 0)}>
             <span className={`${style.animated_circle_two} relative`} />
           </a>
         </span>
@@ -102,7 +120,7 @@ export default function Home() {
           data-tootik="Projects"
           data-tootik-conf="right dark square shadow"
         >
-          <a href="#project">
+          <a href="#project" onClick={() => smoothScrollTo("#project", 20)}>
             <span className={`${style.animated_circle_three} relative`} />
           </a>
         </span>
@@ -112,7 +130,10 @@ export default function Home() {
           data-tootik="Testimonials"
           data-tootik-conf="bottomR dark square shadow"
         >
-          <a href="#testimonial">
+          <a
+            href="#testimonial"
+            onClick={() => smoothScrollTo("#testimonial", 30)}
+          >
             <span className={`${style.animated_circle_four} relative`} />
           </a>
         </span>
@@ -122,7 +143,7 @@ export default function Home() {
           data-tootik="Contact"
           data-tootik-conf="bottomL dark square shadow"
         >
-          <a href="#contact">
+          <a href="#contact" onClick={() => smoothScrollTo("#contact", 0)}>
             <span className={`${style.animated_circle_five} relative`} />
           </a>
         </span>
