@@ -26,11 +26,11 @@ export default function Timeline() {
 
   return (
     <section
-      className="flex h-screen flex-col justify-center gap-16 font-alt text-light "
+      className="flex min-h-screen flex-col justify-center font-alt"
       id="timeline"
     >
-      <div className="flex items-center justify-between">
-        <h2 className="block font-main text-xl uppercase text-light">
+      <div className="flex items-center justify-between text-light">
+        <h2 className="block font-main text-xl uppercase ">
           <span className="block uppercase text-primary">My Career</span>
           <span> History &amp; Timeline </span>
         </h2>

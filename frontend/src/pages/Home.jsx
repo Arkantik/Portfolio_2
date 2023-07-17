@@ -120,7 +120,7 @@ export default function Home() {
           data-tootik="Projects"
           data-tootik-conf="right dark square shadow"
         >
-          <a href="#project" onClick={() => smoothScrollTo("#project", 20)}>
+          <a href="#project" onClick={() => smoothScrollTo("#project", 40)}>
             <span className={`${style.animated_circle_three} relative`} />
           </a>
         </span>
@@ -132,7 +132,7 @@ export default function Home() {
         >
           <a
             href="#testimonial"
-            onClick={() => smoothScrollTo("#testimonial", 30)}
+            onClick={() => smoothScrollTo("#testimonial", offset)}
           >
             <span className={`${style.animated_circle_four} relative`} />
           </a>
@@ -143,7 +143,7 @@ export default function Home() {
           data-tootik="Contact"
           data-tootik-conf="bottomL dark square shadow"
         >
-          <a href="#contact" onClick={() => smoothScrollTo("#contact", 0)}>
+          <a href="#contact" onClick={() => smoothScrollTo("#contact", offset)}>
             <span className={`${style.animated_circle_five} relative`} />
           </a>
         </span>

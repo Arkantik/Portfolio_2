@@ -55,7 +55,7 @@ export default function Testimonials() {
   }, []);
   return (
     <section
-      className="flex flex-col justify-center gap-16 font-alt md:h-screen"
+      className="flex min-h-screen flex-col justify-center font-alt"
       id="testimonial"
     >
       <div className="hidden-el" ref={testimonialH2}>
