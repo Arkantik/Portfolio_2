@@ -5,9 +5,6 @@ import { useState } from "react";
 import Bulb from "../components/Bulb";
 import Toggle from "../components/utilities/Toggle";
 
-// Framer motion
-// import { motion } from "framer-motion";
-
 // Data
 import { skills, tools } from "../helpers/aboutData";
 
@@ -21,7 +18,7 @@ export default function About() {
   return (
     <>
       <section
-        className="flex h-screen flex-col justify-center gap-16 font-alt"
+        className="flex h-screen min-h-[calc(100dvh-80px)] flex-col justify-center font-alt"
         id="about"
       >
         <div>
@@ -31,15 +28,15 @@ export default function About() {
           </h2>
         </div>
 
-        <article className="grid grid-cols-1 grid-rows-2 items-center gap-8 lg:grid-cols-2">
+        <article className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
           <div>
-            <p className="text-base text-light">
+            <p className="text-sm text-light">
               I develop simple, intuitive and responsive user interface that
               helps users get things done with less effort and time with those
               technologies.
             </p>
           </div>
-          <div className="z-10 flex flex-col gap-8">
+          <div className="z-10 flex flex-col items-end gap-8">
             <Toggle activeTab={activeTab} onTabToggle={handleTabToggle} />
 
             <div>
