@@ -4,6 +4,7 @@ import { useState } from "react";
 // Components
 import Bulb from "../components/Bulb";
 import Toggle from "../components/utilities/Toggle";
+import Accordion from "../components/Accordion";
 
 // Data
 import { skills, tools } from "../helpers/aboutData";
@@ -18,7 +19,7 @@ export default function About() {
   return (
     <>
       <section
-        className="flex min-h-[calc(100dvh-80px)] flex-col font-alt md:justify-center"
+        className="z-10 flex min-h-[calc(100dvh-80px)] flex-col justify-center font-alt"
         id="about"
       >
         <h2 className="block font-main text-xl uppercase text-light">
@@ -26,7 +27,7 @@ export default function About() {
           <span> &amp; my skills </span>
         </h2>
 
-        <article className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
+        <article className="grid grid-cols-1 items-center gap-4 md:grid-cols-2">
           <p className="text-justify text-sm text-light">
             Using all these technologies and tools, I am able to develop simple,
             intuitive and responsive user interface that helps users get things
@@ -34,10 +35,10 @@ export default function About() {
           </p>
 
           {/* Skills and tools section */}
-          <div className="z-10 flex flex-col items-end gap-8">
+          <div className="flex flex-col items-end gap-8">
             <Toggle activeTab={activeTab} onTabToggle={handleTabToggle} />
             {activeTab === "skills" && (
-              <ul className="flex w-full flex-wrap justify-center md:justify-end">
+              <ul className="flex w-full flex-wrap justify-center">
                 {skills.map((skill) => (
                   <li key={skill.id} className="m-2 inline-flex">
                     <div className="rounded-lg border-l border-t border-light/30 bg-light/10 p-2 backdrop-blur-sm">
@@ -48,7 +49,7 @@ export default function About() {
               </ul>
             )}
             {activeTab === "tools" && (
-              <ul className="flex w-full flex-wrap justify-center md:justify-end">
+              <ul className="flex w-full flex-wrap justify-center">
                 {tools.map((tool) => (
                   <li key={tool.id} className="m-2 inline-flex">
                     <div className="rounded-lg border-l border-t border-light/30 bg-light/10 p-2 backdrop-blur-sm">
@@ -59,19 +60,10 @@ export default function About() {
               </ul>
             )}
           </div>
-
+        </article>
+        <article className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
           {/* Hobbies section */}
-          <div className="z-10 flex flex-col items-end gap-8">
-            <ul className="flex w-full flex-wrap justify-center md:justify-start">
-              {skills.map((skill) => (
-                <li key={skill.id} className="m-2 inline-flex">
-                  <div className="rounded-lg border-l border-t border-light/30 bg-light/10 p-2 backdrop-blur-sm">
-                    <img src={skill.icon} alt={skill.name} className="w-14" />
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
+          <Accordion />
           <p className="text-justify text-sm text-light">
             Using all these technologies and tools, I am able to develop simple,
             intuitive and responsive user interface that helps users get things
