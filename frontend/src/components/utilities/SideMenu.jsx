@@ -84,7 +84,9 @@ export default function SideMenu() {
           <a
             key={link.id}
             href={link.path}
-            onClick={() => smoothScrollTo(`${link.path}`, 0)}
+            onClick={() =>
+              smoothScrollTo(`${link.path}`, link.name === "about" ? 80 : 0)
+            }
             className={`${
               activeItem === link.name
                 ? "scale-125 text-primary duration-300"
