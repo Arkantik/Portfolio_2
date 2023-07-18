@@ -61,7 +61,11 @@
 
 .accordion_panel:focus-within {
   outline: 1px solid var(--_panel-color);
-  outline-offset: 2px;
+  outline-offset: 1px;
+
+  .accordion_icon {
+    border: 1px solid var(--_panel-color);
+  }
 }
 
 .accordion_content > p {
@@ -149,3 +153,7 @@
   border-radius: 50%;
   z-index: 10;
 }
+
+/* .accordion_icon {
+  border: 1px solid var(--_panel-color);
+} */
