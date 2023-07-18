@@ -42,13 +42,10 @@
   --_panel-color: hsl(184, 70%, 50%);
 }
 .accordion_panel:nth-of-type(3) {
-  --_panel-color: hsl(290, 50%, 50%);
+  --_panel-color: hsl(220, 70%, 50%);
 }
 .accordion_panel:nth-of-type(4) {
-  --_panel-color: hsl(350, 70%, 50%);
-}
-.accordion_panel:nth-of-type(5) {
-  --_panel-color: hsl(20, 70%, 50%);
+  --_panel-color: hsl(290, 50%, 50%);
 }
 
 .accordion_panel:has([aria-expanded="true"]) {
@@ -69,6 +66,7 @@
 }
 
 .accordion_content > p {
+  width: 85%;
   transform: translateY(2rem);
   transform: translateX(-10%);
   opacity: 0;
@@ -110,7 +108,7 @@
     left: calc((var(--_panel-gap) + var(--_button-size)) * -1);
     width: calc(100% + (var(--_button-size) * 2));
     height: var(--_button-size);
-    background: hsl(0 0% 0% / 0.5);
+    background: hsl(0 0% 0% / 0.7);
     z-index: -1;
     border-radius: 100vw;
   }
@@ -123,15 +121,11 @@
   height: 100%;
   object-fit: cover;
   z-index: -1;
-
   transition: filter 500ms;
 }
 
 .accordion_panel:has([aria-expanded="true"]) .accordion_image {
-  filter: brightness(0.33);
-}
-.accordion_panel:has([aria-expanded="true"]):nth-of-type(3) .accordion_image {
-  filter: brightness(0.5);
+  filter: brightness(0.3) blur(0.5px);
 }
 
 .accordion_trigger {
@@ -153,7 +147,3 @@
   border-radius: 50%;
   z-index: 10;
 }
-
-/* .accordion_icon {
-  border: 1px solid var(--_panel-color);
-} */
