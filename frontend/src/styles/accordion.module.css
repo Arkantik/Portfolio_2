@@ -42,7 +42,7 @@
   --_panel-color: hsl(184, 70%, 50%);
 }
 .accordion_panel:nth-of-type(3) {
-  --_panel-color: hsl(220, 70%, 50%);
+  --_panel-color: hsl(290, 50%, 50%);
 }
 .accordion_panel:nth-of-type(4) {
   --_panel-color: hsl(350, 70%, 50%);
@@ -125,6 +125,9 @@
 
 .accordion_panel:has([aria-expanded="true"]) .accordion_image {
   filter: brightness(0.33);
+}
+.accordion_panel:has([aria-expanded="true"]):nth-of-type(3) .accordion_image {
+  filter: brightness(0.5);
 }
 
 .accordion_trigger {
