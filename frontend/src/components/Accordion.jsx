@@ -1,11 +1,11 @@
 // Package
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // Style
 import style from "../styles/accordion.module.css";
 
 export default function Accordion() {
-  const [activePanel, setActivePanel] = useState(null);
+  const [activePanel, setActivePanel] = useState("panel1-content");
 
   function toggleAccordion(panelId) {
     setActivePanel((prevActivePanel) =>
@@ -13,15 +13,30 @@ export default function Accordion() {
     );
   }
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setActivePanel("panel1-content");
+      } else {
+        setActivePanel(null);
+      }
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
-    <div className={`${style.accordion} z-10 text-light`}>
+    <div className={`${style.accordion} text-light`}>
       <div className={`${style.accordion_panel}`}>
         <h2 id="panel1-heading">
           <button
             type="button"
             className={style.accordion_trigger}
             onClick={() => toggleAccordion("panel1-content")}
-            aria-controls="panel1-content"
             aria-expanded={activePanel === "panel1-content"}
           >
             <span className={style.accordion_title} id="panel1-title">
@@ -46,16 +61,16 @@ export default function Accordion() {
           id="panel1-content"
           aria-labelledby="panel1-heading"
           aria-hidden={activePanel !== "panel1-content"}
-          role="region"
         >
           <p>
-            Port mutiny draught handsomely ye furl flogging line shrouds hulk.
-            Spirits Plate Fleet code of conduct.
+            In 2017, I started learning about crypto and the blockchain world,
+            it's revolutionary aspect have fascinated me since and will grow for
+            sure in the future.
           </p>
           <img
             className={style.accordion_image}
             src="../assets/img/about/crypto.avif"
-            alt="A sailboat at sea during sunset"
+            alt="crypto coins"
           />
         </div>
       </div>
@@ -65,7 +80,6 @@ export default function Accordion() {
             type="button"
             className={style.accordion_trigger}
             onClick={() => toggleAccordion("panel2-content")}
-            aria-controls="panel2-content"
             aria-expanded={activePanel === "panel2-content"}
           >
             <span className={style.accordion_title} id="panel2-title">
@@ -85,26 +99,25 @@ export default function Accordion() {
           id="panel2-content"
           aria-labelledby="panel2-heading"
           aria-hidden={activePanel !== "panel2-content"}
-          role="region"
         >
           <p>
-            Ahoy league hands Sea Legs keelhaul salmagundi fire ship crimp
-            Privateer galleon. Booty boom yard boatswain quarter.
+            I've had the chance to go around the world, from Australia to
+            Mexico, passing by Italy or England, I'm always up to go to a new
+            destination and learn about new cultures.
           </p>
           <img
             className={style.accordion_image}
             src="../assets/img/about/travel2.jpg"
-            alt="closeup of a metal chain connected to a metal ring in the ground"
+            alt="travel map"
           />
         </div>
       </div>
       <div className={style.accordion_panel}>
-        <h2 id="panel2-heading">
+        <h2>
           <button
             type="button"
             className={style.accordion_trigger}
             onClick={() => toggleAccordion("panel3-content")}
-            aria-controls="panel2-content"
             aria-expanded={activePanel === "panel3-content"}
           >
             <span className={style.accordion_title} id="panel2-title">
@@ -124,15 +137,57 @@ export default function Accordion() {
           id="panel2-content"
           aria-labelledby="panel3-heading"
           aria-hidden={activePanel !== "panel3-content"}
-          role="region"
         >
           <p>
-            Ahoy league hands Sea Legs keelhaul salmagundi fire ship crimp
-            Privateer galleon. Booty boom yard boatswain quarter.
+            Since I was young, I have always been playing video games, thanks to
+            my dad. To this day, I still play a few video games in my free time
+            and to relax with friends.
           </p>
           <img
             className={style.accordion_image}
             src="../assets/img/about/games.jpg"
+            alt="gaming room"
+          />
+        </div>
+      </div>
+      <div className={style.accordion_panel}>
+        <h2 id="panel4-heading">
+          <button
+            type="button"
+            className={style.accordion_trigger}
+            onClick={() => toggleAccordion("panel4-content")}
+            aria-controls="panel2-content"
+            aria-expanded={activePanel === "panel4-content"}
+          >
+            <span className={style.accordion_title} id="panel2-title">
+              Design
+            </span>
+            <svg viewBox="0 0 325.04 325.04" className={style.accordion_icon}>
+              <path
+                d="M307.6,129.885c-11.453-11.447-23.783-16.778-38.805-16.778c-6.189,0-12.056,0.858-17.729,1.688 c-5.094,0.745-9.905,1.449-14.453,1.45c-8.27,0-14.197-2.397-19.82-8.017c-10.107-10.101-8.545-20.758-6.569-34.25 c2.357-16.096,5.291-36.127-15.101-56.508C183.578,5.932,167.848,0.081,148.372,0.081c-37.296,0-78.367,21.546-99.662,42.829	C17.398,74.205,0.1,115.758,0,159.917c-0.1,44.168,17.018,85.656,48.199,116.82c31.077,31.061,72.452,48.168,116.504,48.171	c0.005,0,0.007,0,0.013,0c44.315,0,86.02-17.289,117.428-48.681c17.236-17.226,32.142-44.229,38.9-70.471	C329.291,173.738,324.517,146.793,307.6,129.885z M77.58,223.842c-11.995,4.219-25.071-2.067-29.233-14.02 c-4.15-11.94,2.182-25.045,14.148-29.259c11.972-4.218,25.055,2.063,29.216,14.015C95.877,206.526,89.539,219.634,77.58,223.842z M94.186,132.36c-6.774,10.743-20.952,14.011-31.66,7.3c-10.735-6.729-13.93-20.883-7.16-31.621 c6.774-10.744,20.951-14.012,31.66-7.299C97.749,107.456,100.943,121.611,94.186,132.36z M152.865,264.268 c-4.222,11.987-17.332,18.316-29.285,14.151c-11.959-4.16-18.226-17.229-14.027-29.195c4.222-11.965,17.333-18.294,29.297-14.141 C150.796,239.232,157.075,252.313,152.865,264.268z M144.383,95.278c-12.597,1.445-23.942-7.588-25.33-20.171
+		            c-1.398-12.594,7.69-23.974,20.293-25.423c12.604-1.45,23.947,7.582,25.34,20.183C166.073,82.45,156.985,93.829,144.383,95.278z M224.401,262.161c-10.737,6.759-24.897,3.562-31.632-7.141c-6.71-10.708-3.436-24.882,7.314-31.653 c10.733-6.777,24.907-3.574,31.616,7.134C238.43,241.231,235.162,255.4,224.401,262.161z M274.914,173.294 c-1.461,12.584-12.83,21.673-25.432,20.297c-12.58-1.398-21.611-12.742-20.177-25.343c1.433-12.578,12.829-21.673,25.421-20.286 C267.328,149.361,276.366,160.699,274.914,173.294z"
+              />
+            </svg>
+          </button>
+        </h2>
+
+        <div
+          className={`${style.accordion_content} ${
+            activePanel === "panel4-content" ? style.active : ""
+          }`}
+          id="panel2-content"
+          aria-labelledby="panel4-heading"
+          aria-hidden={activePanel !== "panel4-content"}
+        >
+          <p>
+            Drawing is something that caught my interest when I was young. As I
+            grew up, I switched from the pen and paper format to the mouse and
+            computer. Web design has always interested me, even though I dove
+            into Web development.
+          </p>
+          <img
+            className={style.accordion_image}
+            src="../assets/img/about/design.jpg"
             alt="closeup of a metal chain connected to a metal ring in the ground"
           />
         </div>
