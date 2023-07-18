@@ -103,14 +103,17 @@ export default function Home() {
       </div>
       <div className={`${style.circle_one}`}>
         <span data-tootik="About me" data-tootik-conf="left dark square shadow">
-          <a href="#about" onClick={() => smoothScrollTo("#about", offset)}>
+          <a href="#about" onClick={() => smoothScrollTo("#about", 80)}>
             <span className={`${style.animated_circle_one} relative`} />
           </a>
         </span>
       </div>
       <div className={`${style.circle_two}`}>
         <span data-tootik="Timeline" data-tootik-conf="dark square shadow">
-          <a href="#timeline" onClick={() => smoothScrollTo("#timeline", 0)}>
+          <a
+            href="#timeline"
+            onClick={() => smoothScrollTo("#timeline", offset)}
+          >
             <span className={`${style.animated_circle_two} relative`} />
           </a>
         </span>
