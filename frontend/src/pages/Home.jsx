@@ -17,7 +17,7 @@ export default function Home() {
   // Manage offset for mobile
   useEffect(() => {
     const handleResize = () => {
-      setOffset(window.innerWidth < 640 ? 80 : 0);
+      setOffset(window.innerWidth < 640 ? 60 : 0);
     };
     handleResize();
 
@@ -75,13 +75,14 @@ export default function Home() {
 
   return (
     <article
-      className="grid h-screen min-h-[calc(100dvh-80px)] grid-cols-1 items-center gap-8 lg:grid-cols-2"
+      className="relative grid h-screen min-h-[calc(100dvh-80px)] grid-cols-1 items-center gap-8 overflow-hidden lg:grid-cols-2"
       id="home"
     >
       <div className="hidden object-scale-down lg:flex">
         {/* <img src="../assets/img/slider-img.jpg" alt="Slider" /> */}
       </div>
-      <div className="px-8 md:px-20 lg:px-0">
+      {/* <div className="px-8 md:px-20 lg:px-0"> */}
+      <div className="isolate px-4 before:absolute before:-left-60 before:top-80 before:-z-10 before:h-[200px] before:w-[200px] before:rounded-full before:bg-primary/20 before:blur-[100px] md:px-20 md:before:-right-60 md:before:top-[300px] md:before:h-[400px] md:before:w-[400px] md:before:blur-[200px] lg:px-0">
         <h1
           className="hidden-el block font-main text-xl uppercase text-light md:text-2xl"
           ref={h1El}
@@ -103,17 +104,14 @@ export default function Home() {
       </div>
       <div className={`${style.circle_one}`}>
         <span data-tootik="About me" data-tootik-conf="left dark square shadow">
-          <a href="#about" onClick={() => smoothScrollTo("#about", 80)}>
+          <a href="#about" onClick={() => smoothScrollTo("#about", offset)}>
             <span className={`${style.animated_circle_one} relative`} />
           </a>
         </span>
       </div>
       <div className={`${style.circle_two}`}>
         <span data-tootik="Timeline" data-tootik-conf="dark square shadow">
-          <a
-            href="#timeline"
-            onClick={() => smoothScrollTo("#timeline", offset)}
-          >
+          <a href="#timeline" onClick={() => smoothScrollTo("#timeline", 0)}>
             <span className={`${style.animated_circle_two} relative`} />
           </a>
         </span>
@@ -123,7 +121,7 @@ export default function Home() {
           data-tootik="Projects"
           data-tootik-conf="right dark square shadow"
         >
-          <a href="#project" onClick={() => smoothScrollTo("#project", 40)}>
+          <a href="#project" onClick={() => smoothScrollTo("#project", offset)}>
             <span className={`${style.animated_circle_three} relative`} />
           </a>
         </span>
@@ -146,7 +144,7 @@ export default function Home() {
           data-tootik="Contact"
           data-tootik-conf="bottomL dark square shadow"
         >
-          <a href="#contact" onClick={() => smoothScrollTo("#contact", offset)}>
+          <a href="#contact" onClick={() => smoothScrollTo("#contact", 0)}>
             <span className={`${style.animated_circle_five} relative`} />
           </a>
         </span>
