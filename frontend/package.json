@@ -13,6 +13,7 @@
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-react": "^7.32.2",
     "postcss": "^8.4.24",
+    "postcss-nesting": "^12.0.0",
     "prettier-plugin-tailwindcss": "^0.3.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
