@@ -6,6 +6,9 @@ import {
   BsFillFileEarmarkPersonFill,
 } from "react-icons/bs";
 
+// Helper
+import smoothScrollTo from "../../helpers/smoothScroll";
+
 // Style
 import style from "../../styles/navbar.module.css";
 
@@ -20,7 +23,12 @@ export default function Navbar() {
   return (
     <header>
       <nav className="fixed z-30 flex h-[80px] w-full justify-between bg-dark px-8">
-        <a href="#home" title="Logo" className="flex items-center">
+        <a
+          href="#home"
+          title="Logo"
+          className="flex items-center"
+          onClick={() => smoothScrollTo("#home")}
+        >
           <img src="../assets/icons/logo.svg" alt="logo" />
         </a>
 
