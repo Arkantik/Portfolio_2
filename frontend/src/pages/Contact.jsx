@@ -105,7 +105,7 @@ export default function Contact() {
     >
       <div>
         <h2
-          className="hidden-el font-main text-xl uppercase text-primary"
+          className="hidden-title font-main text-xl uppercase text-primary"
           ref={h2El}
         >
           Let's get in touch!

@@ -20,15 +20,15 @@ export default function Testimonials() {
   useEffect(() => {
     const observers = [
       { ref: testimonialH2, classToAdd: "show-el" },
-      { ref: testimonialIcon, classToAdd: "show-testi" },
-      { ref: testimonialP, classToAdd: "show-testi" },
-      { ref: testimonialImg, classToAdd: "show-testi" },
-      { ref: testimonialName, classToAdd: "show-testi" },
+      { ref: testimonialIcon, classToAdd: "show-item" },
+      { ref: testimonialP, classToAdd: "show-item" },
+      { ref: testimonialImg, classToAdd: "show-item" },
+      { ref: testimonialName, classToAdd: "show-item" },
 
-      { ref: testimonial2Icon, classToAdd: "show-testi" },
-      { ref: testimonial2P, classToAdd: "show-testi" },
-      { ref: testimonial2Img, classToAdd: "show-testi" },
-      { ref: testimonial2Name, classToAdd: "show-testi" },
+      { ref: testimonial2Icon, classToAdd: "show-item" },
+      { ref: testimonial2P, classToAdd: "show-item" },
+      { ref: testimonial2Img, classToAdd: "show-item" },
+      { ref: testimonial2Name, classToAdd: "show-item" },
     ].map(({ ref, classToAdd }) => {
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -58,7 +58,7 @@ export default function Testimonials() {
       className="flex min-h-screen flex-col justify-center font-alt"
       id="testimonial"
     >
-      <div className="hidden-el" ref={testimonialH2}>
+      <div className="hidden-title" ref={testimonialH2}>
         <h2 className="font-main text-xl uppercase text-light">
           <span className="block uppercase text-primary">People</span>
           <span> I worked with &amp; for </span>
@@ -70,23 +70,23 @@ export default function Testimonials() {
 
       <div className="flex flex-col gap-16 text-center md:grid md:grid-cols-2 md:gap-32">
         <div className="flex flex-col gap-8">
-          <span className="hidden-testi" ref={testimonialIcon}>
+          <span className="hidden-left" ref={testimonialIcon}>
             <BiSolidQuoteAltRight className="flex w-full justify-center text-lg text-primary" />
           </span>
-          <p className="hidden-testi text-sm text-light" ref={testimonialP}>
+          <p className="hidden-left text-sm text-light" ref={testimonialP}>
             Jeremy has a solid understanding of the fundamental principles of
             web development and is capable of creatively solving complex
             problems. His ability to work in a team and collaborate with other
             developers is a valuable quality.
           </p>
           <div
-            className={`${style.review_img} hidden-testi flex justify-center`}
+            className={`${style.review_img} hidden-left flex justify-center`}
             ref={testimonialImg}
           >
             <img src="../assets/img/review/anthony.webp" alt="Anthony Gorski" />
           </div>
           <div
-            className={`${style.review_title} hidden-testi`}
+            className={`${style.review_title} hidden-left`}
             ref={testimonialName}
           >
             <h4 className="font-main text-lg text-primary">Anthony Gorski</h4>
@@ -96,23 +96,23 @@ export default function Testimonials() {
           </div>
         </div>
         <div className="flex flex-col gap-8">
-          <span className="hidden-testi2" ref={testimonial2Icon}>
+          <span className="hidden-right" ref={testimonial2Icon}>
             <BiSolidQuoteAltRight className="flex w-full justify-center text-lg text-primary" />
           </span>
-          <p className="hidden-testi2 text-sm text-light" ref={testimonial2P}>
+          <p className="hidden-right text-sm text-light" ref={testimonial2P}>
             Jeremy is a reliable person, always present and professional. He's
             also a good trainer, explaining softwares in details. One thing is
             certain, he always dives fully into new projects to push himself to
             the limit.
           </p>
           <div
-            className={`${style.review_img} hidden-testi2 flex justify-center`}
+            className={`${style.review_img} hidden-right flex justify-center`}
             ref={testimonial2Img}
           >
             <img src="../assets/img/review/ingrid.jpg" alt="Ingrid Freire" />
           </div>
           <div
-            className={`${style.review_title} hidden-testi2`}
+            className={`${style.review_title} hidden-right`}
             ref={testimonial2Name}
           >
             <h4 className="font-main text-lg text-primary">Ingrid Freire</h4>
