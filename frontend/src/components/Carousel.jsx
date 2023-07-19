@@ -77,12 +77,16 @@ export default function Carousel() {
                 <div className="flex justify-center gap-4">
                   <a
                     href={github}
+                    target="_blank"
+                    rel="noreferrer"
                     className="rounded-lg border border-primary bg-transparent px-4 py-1 text-light hover:bg-primary"
                   >
                     Github
                   </a>
                   <a
                     href={site}
+                    target="_blank"
+                    rel="noreferrer"
                     className="rounded-lg border border-primary bg-transparent px-4 py-1 text-light hover:bg-primary"
                   >
                     Website
