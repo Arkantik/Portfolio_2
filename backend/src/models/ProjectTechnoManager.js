@@ -14,10 +14,10 @@ class ProjectTechnoManager extends AbstractManager {
     );
   }
 
-  deleteFromVideoId(videoId) {
+  deleteFromProjectId(projectID) {
     return this.database.query(
       `DELETE FROM ${this.table} WHERE project_id = ?`,
-      [videoId]
+      [projectID]
     );
   }
 }
