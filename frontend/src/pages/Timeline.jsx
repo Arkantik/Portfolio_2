@@ -1,10 +1,13 @@
 // Package
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 // Components
 import Bulb from "../components/Bulb";
 
 export default function Timeline() {
+  const h2El = useRef(null);
+  const noticeEl = useRef(null);
+
   function updateAge() {
     const ageElement = document.getElementById("age");
     if (ageElement) {
@@ -21,13 +24,45 @@ export default function Timeline() {
     updateAge();
   }, []);
 
+  useEffect(() => {
+    const observers = [
+      { ref: h2El, classToAdd: "show-el" },
+      { ref: noticeEl, classToAdd: "show-el" },
+    ].map(({ ref, classToAdd }) => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(classToAdd);
+          } else {
+            entry.target.classList.remove(classToAdd);
+          }
+        });
+      });
+      observer.observe(ref.current);
+
+      return {
+        observer,
+        element: ref.current,
+      };
+    });
+
+    return () => {
+      observers.forEach(({ observer, element }) => {
+        observer.unobserve(element);
+      });
+    };
+  }, []);
+
   return (
     <>
       <section
         className="flex min-h-screen flex-col justify-center font-alt"
         id="timeline"
       >
-        <div className="flex items-center justify-between text-light">
+        <div
+          className="hidden-title flex items-center justify-between text-light"
+          ref={h2El}
+        >
           <h2 className="block font-main text-xl uppercase ">
             <span className="block uppercase text-primary">My Career</span>
             <span> History &amp; Timeline </span>
@@ -43,7 +78,10 @@ export default function Timeline() {
           </div>
         </div>
 
-        <div className="z-10 flex w-full items-center justify-center">
+        <div
+          className="hidden-title z-10 flex w-full items-center justify-center"
+          ref={noticeEl}
+        >
           <div className="relative overflow-hidden rounded-xl bg-slate-800 p-px after:absolute after:-left-48 after:-top-48 after:z-30 after:h-96 after:w-96 after:bg-indigo-500 after:opacity-0 after:blur-[100px] after:transition-opacity after:duration-500 after:hover:opacity-10 before:group-hover:opacity-100 md:w-2/4">
             <div className="relative z-20 h-full overflow-hidden rounded-[inherit] bg-slate-900 p-6 pb-8">
               <div
