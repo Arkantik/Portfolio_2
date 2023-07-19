@@ -3,7 +3,6 @@ const fs = require("node:fs");
 const path = require("node:path");
 const cors = require("cors");
 const express = require("express");
-// eslint-disable-next-line import/no-extraneous-dependencies
 const cookieParser = require("cookie-parser");
 
 // create express app

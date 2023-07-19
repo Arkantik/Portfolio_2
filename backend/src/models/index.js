@@ -14,8 +14,6 @@ const pool = mysql.createPool({
   database: DB_NAME,
 });
 
-// try a connection
-
 pool.getConnection().catch(() => {
   console.warn(
     "Warning:",
@@ -24,8 +22,6 @@ pool.getConnection().catch(() => {
     "Routes using models won't work as intended"
   );
 });
-
-// declare and fill models: that's where you should register your own managers
 
 const models = {};
 
@@ -37,9 +33,6 @@ models.project.setDatabase(pool);
 
 models.techno = new TechnoManager();
 models.techno.setDatabase(pool);
-
-// bonus: use a proxy to personalize error message,
-// when asking for a non existing model
 
 const handler = {
   get(obj, prop) {
