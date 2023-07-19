@@ -2,14 +2,14 @@ const models = require("../models");
 
 const getAll = async (req, res) => {
   try {
-    const [videoCategories] = await models.videoCategory.findAll();
-    if (!videoCategories.length)
+    const [projectTechno] = await models.projectTechno.findAll();
+    if (!projectTechno.length)
       return res
         .status(404)
         .send(
           "No result matched the requested filter. Please check your query and try again"
         );
-    return res.json(videoCategories);
+    return res.json(projectTechno);
   } catch (err) {
     console.error(err);
     return res
@@ -22,7 +22,7 @@ const getAll = async (req, res) => {
 
 const post = async (req, res) => {
   try {
-    await models.videoCategory.create(req.body);
+    await models.projectTechno.create(req.body);
     res.sendStatus(204);
   } catch (err) {
     console.error(err);
@@ -36,7 +36,7 @@ const post = async (req, res) => {
 
 const remove = async (req, res) => {
   try {
-    const [result] = await models.videoCategory.deleteFromVideoId(
+    const [result] = await models.projectTechno.deleteFromVideoId(
       req.params.id
     );
     if (result.affectedRows === 0)
