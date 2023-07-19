@@ -2,7 +2,6 @@
   {
     "id": "1",
     "src": "../assets/img/project/wildbook.png",
-    "alt": "Wildbook project",
     "name": "WildBook",
     "description": "Responsive and mobile-first single-page site using HTML, CSS, and vanilla JS.This project was made within 2 weeks with only 2 weeks of experience in web dev.",
     "techno": {
@@ -17,7 +16,6 @@
   {
     "id": "2",
     "src": "../assets/img/project/hogwarts.png",
-    "alt": "Hogwarts magic cards project",
     "name": "Hogwarts Magic Cards",
     "description": "Flash-game type website using ReactJS, a CSS framework (Tailwind), and integrating an API. This website is a strategy turn by turn card game set in the world of Harry Potter.",
     "techno": {
@@ -33,7 +31,6 @@
   {
     "id": "3",
     "src": "../assets/img/project/holifun.png",
-    "alt": "HoliFun project",
     "name": "HoliFun",
     "description": "No idea where to go for your next vacation? HoliFun is made for you! Project developped during a 36h Hackathon, with the objective to build something about vacation and using an API.",
     "techno": {
@@ -49,7 +46,6 @@
   {
     "id": "4",
     "src": "../assets/img/project/emmaus-connect.png",
-    "alt": "Emmaüs Connect project",
     "name": "Emmaüs Connect",
     "description": "This intranet application allows Emmaus Connect volunteers to log in with their credentials, register smartphones intended for sale through a form, and access the database. Project developped during a 48h Hackathon",
     "techno": {
@@ -65,10 +61,7 @@
   },
   {
     "id": "5",
-    "href": "../assets/img/project/origins.png",
-    "target": "",
     "src": "../assets/img/project/origins.png",
-    "alt": "Origins E-sport project",
     "name": "Origins E-sport",
     "description": "Currently in development",
     "techno": {
