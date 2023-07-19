@@ -114,14 +114,14 @@
 }
 
 /* = Home = */
-.hidden-el {
+.hidden-title {
   position: relative;
   opacity: 0;
   filter: blur(10px);
   transform: translateY(-100%);
   transition: all 2s;
 }
-.hidden-el:nth-child(2) {
+.hidden-title:nth-child(2) {
   transform: translateY(100%);
 }
 
@@ -135,34 +135,34 @@
 }
 
 /* = Testimonials = */
-.hidden-testi {
+.hidden-left {
   opacity: 0;
   filter: blur(8px);
   transform: translateX(-100%);
   transition: all 1s;
 }
-.hidden-testi2 {
+.hidden-right {
   opacity: 0;
   filter: blur(8px);
   transform: translateX(100%);
   transition: all 1s;
 }
 
-.show-testi {
+.show-item {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0%);
 }
-.show-testi:nth-child(1) {
+.show-item:nth-child(1) {
   transition-delay: 0.1s;
 }
-.show-testi:nth-child(2) {
+.show-item:nth-child(2) {
   transition-delay: 0.2s;
 }
-.show-testi:nth-child(3) {
+.show-item:nth-child(3) {
   transition-delay: 0.3s;
 }
-.show-testi:nth-child(4) {
+.show-item:nth-child(4) {
   transition-delay: 0.4s;
 }
 
