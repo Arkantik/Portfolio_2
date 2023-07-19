@@ -42,7 +42,7 @@ CREATE TABLE `project_techno` (
 -- Create user
 INSERT INTO `user` (`email`, `password`, `is_admin`)
 VALUES
-('jeremyd1.pro@gmail.com', '$argon2id$v=19$m=19893.36898592844,t=2,p=1$y/F65lSZ40xAVxes2YWvPw$4GTu0y5B2DnzDWVe93u/ai5vI5+9yU8yoB2tNKQC678', 1);
+('jeremyd1.pro@gmail.com', '$argon2id$v=19$m=19,t=2,p=1$dzBSZmgyanBpNFJwOTZCZg$bJ3qd1x3Oeh82FNJTK4QtA', 1);
 
 -- Create techno
 INSERT INTO `techno` (`name`, `img`) 
