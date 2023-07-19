@@ -69,7 +69,7 @@ export default function About() {
       </h2>
 
       {/* Skills and tools section */}
-      <article className="z-10 grid grid-cols-1 items-center gap-4 md:grid-cols-2">
+      <article className="grid grid-cols-1 items-center gap-4 md:grid-cols-2">
         <p className="hidden-left text-justify text-sm " ref={skillP}>
           Using all these technologies and tools, I am able to develop simple,
           intuitive and responsive user interface that helps users get things
@@ -81,7 +81,7 @@ export default function About() {
         >
           <Toggle activeTab={activeTab} onTabToggle={handleTabToggle} />
           {activeTab === "skills" && (
-            <ul className="  flex w-full flex-wrap justify-center">
+            <ul className="flex w-full flex-wrap justify-center">
               {skills.map((skill) => (
                 <li key={skill.id} className="m-2 inline-flex">
                   <div className="rounded-lg border-l border-t border-light/30 bg-light/10 p-2 backdrop-blur-sm">

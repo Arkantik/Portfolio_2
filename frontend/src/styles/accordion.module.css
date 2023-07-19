@@ -125,7 +125,7 @@
 }
 
 .accordion_panel:has([aria-expanded="true"]) .accordion_image {
-  filter: brightness(0.3) blur(0.5px);
+  filter: brightness(0.3) blur(1px);
 }
 
 .accordion_trigger {
