@@ -10,6 +10,7 @@
     "@emailjs/browser": "^3.11.0",
     "@vitejs/plugin-react": "^3.0.1",
     "autoprefixer": "^10.4.14",
+    "axios": "^1.4.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-react": "^7.32.2",
     "postcss": "^8.4.24",
