@@ -1,9 +1,9 @@
-
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
   `id` INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
   `email` VARCHAR(150) NOT NULL,
-  `password` VARCHAR(255) NOT NULL
+  `password` VARCHAR(255) NOT NULL,
+  `is_admin` TINYINT DEFAULT 0
 ) ENGINE=INNODB DEFAULT CHARSET=UTF8MB4;
 
 DROP TABLE IF EXISTS `project`;
@@ -38,14 +38,11 @@ CREATE TABLE `project_techno` (
 ) ENGINE=INNODB DEFAULT CHARSET=UTF8MB4;
 
 
-
-
-
 -- _____________________________________________ POPULATE TABLES _____________________________________________
 -- Create user
-INSERT INTO `user` (`email`, `password`) 
+INSERT INTO `user` (`email`, `password`, `is_admin`)
 VALUES
-('jeremyd1.pro@gmail.com', '$argon2id$v=19$m=19893.36898592844,t=2,p=1$y/F65lSZ40xAVxes2YWvPw$4GTu0y5B2DnzDWVe93u/ai5vI5+9yU8yoB2tNKQC678');
+('jeremyd1.pro@gmail.com', '$argon2id$v=19$m=19893.36898592844,t=2,p=1$y/F65lSZ40xAVxes2YWvPw$4GTu0y5B2DnzDWVe93u/ai5vI5+9yU8yoB2tNKQC678', 1);
 
 -- Create techno
 INSERT INTO `techno` (`name`, `img`) 
