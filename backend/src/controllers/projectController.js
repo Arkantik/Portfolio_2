@@ -13,6 +13,26 @@ const getAll = async (req, res) => {
   }
 };
 
+const getAllInfo = async (req, res) => {
+  try {
+    const [project] = await models.project.findAllProjectInfo();
+    if (!project.length)
+      return res
+        .status(404)
+        .send(
+          "No result matched the requested filter. Please check your query and try again"
+        );
+    return res.json(project);
+  } catch (err) {
+    console.error(err);
+    return res
+      .status(500)
+      .send(
+        "oops...an error occured when retrieving project-techno from database"
+      );
+  }
+};
+
 const getById = async (req, res) => {
   try {
     const [[project]] = await models.project.findById(req.params.id);
@@ -68,4 +88,4 @@ const remove = async (req, res) => {
   }
 };
 
-module.exports = { getAll, getById, editById, post, remove };
+module.exports = { getAll, getAllInfo, getById, editById, post, remove };

@@ -5,10 +5,7 @@ const router = express.Router();
 const projectController = require("../controllers/projectController");
 const validateProjectInfo = require("../middlewares/validators/projectValidator");
 
-/**
- * TODO: add authentication wall...
- */
-router.get("/", projectController.getAll);
+router.get("/", projectController.getAllInfo);
 router.get("/:id", projectController.getById);
 router.put("/:id", validateProjectInfo, projectController.editById);
 router.delete("/:id", projectController.remove);
