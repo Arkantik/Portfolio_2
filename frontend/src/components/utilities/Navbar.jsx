@@ -1,5 +1,6 @@
 // Package
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import {
   BsGithub,
   BsLinkedin,
@@ -23,14 +24,14 @@ export default function Navbar() {
   return (
     <header>
       <nav className="fixed z-30 flex h-[80px] w-full justify-between bg-dark px-8">
-        <a
-          href="#home"
+        <NavLink
+          to="/"
           title="Logo"
           className="flex items-center"
           onClick={() => smoothScrollTo("#home")}
         >
           <img src="../assets/icons/logo.svg" alt="logo" />
-        </a>
+        </NavLink>
 
         <ul className="hidden items-center gap-8 md:flex">
           <li>
