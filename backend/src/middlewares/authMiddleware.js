@@ -15,6 +15,7 @@ const verifyEmail = async (req, res, next) => {
           "Not account found! Please verify your email address or make sure to sign up..."
         );
     req.user = user;
+    console.info(user);
     return next();
   } catch (err) {
     console.error(err);
