@@ -27,12 +27,20 @@ const models = {};
 
 const ProjectManager = require("./ProjectManager");
 const TechnoManager = require("./TechnoManager");
+const ProjectTechnoManager = require("./ProjectTechnoManager");
+const UserManager = require("./UserManager");
 
 models.project = new ProjectManager();
 models.project.setDatabase(pool);
 
 models.techno = new TechnoManager();
 models.techno.setDatabase(pool);
+
+models.project_techno = new ProjectTechnoManager();
+models.project_techno.setDatabase(pool);
+
+models.user = new UserManager();
+models.user.setDatabase(pool);
 
 const handler = {
   get(obj, prop) {
