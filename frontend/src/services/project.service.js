@@ -5,12 +5,27 @@ const baseUrl = import.meta.env.VITE_BACKEND_URL;
 
 export const getAllProjects = async () => {
   try {
-    const url = `${baseUrl}/projects`;
+    const url = `${baseUrl}/project`;
+    const { data } = await axios(url);
+
+    // Convert the comma-separated 'techno_images' to an array of strings
+    const TechnoImagesArray = data.map((project) => ({
+      ...project,
+      techno_images: project.techno_images.split(","),
+    }));
+
+    return TechnoImagesArray;
+  } catch (error) {
+    return [];
+  }
+};
+
+export const getAllTechnos = async () => {
+  try {
+    const url = `${baseUrl}/techno`;
     const { data } = await axios(url);
     return data;
   } catch (error) {
     return { data: [] };
   }
 };
-
-export default getAllProjects;
