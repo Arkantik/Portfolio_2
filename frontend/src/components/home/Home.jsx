@@ -3,10 +3,10 @@ import { useRef, useEffect, useState } from "react";
 import Typed from "typed.js";
 
 // Helper
-import smoothScrollTo from "../helpers/smoothScroll";
+import smoothScrollTo from "../../helpers/smoothScroll";
 
 // Style
-import style from "../styles/home.module.css";
+import style from "../../styles/home.module.css";
 
 export default function Home() {
   const [offset, setOffset] = useState(0);

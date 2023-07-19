@@ -2,11 +2,11 @@
 import { useState, useEffect, useRef } from "react";
 
 // Components
-import Toggle from "../components/utilities/Toggle";
-import Accordion from "../components/Accordion";
+import Toggle from "../utilities/Toggle";
+import Accordion from "../Accordion";
 
 // Data
-import { skills, tools } from "../helpers/aboutData";
+import { skills, tools } from "../../helpers/aboutData";
 
 export default function About() {
   const [activeTab, setActiveTab] = useState("skills");

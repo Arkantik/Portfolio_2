@@ -2,10 +2,10 @@
 import { useState, useEffect, useRef } from "react";
 
 // Components
-import Carousel from "../components/Carousel";
+import Carousel from "../Carousel";
 
 // Service
-import * as Services from "../services/project.service";
+import * as Services from "../../services/project.service";
 
 export default function Project() {
   const h2El = useRef(null);

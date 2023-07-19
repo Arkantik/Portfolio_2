@@ -4,7 +4,7 @@ import { BiSolidQuoteAltRight } from "react-icons/bi";
 import { useRef, useEffect } from "react";
 
 // Style
-import style from "../styles/review.module.css";
+import style from "../../styles/review.module.css";
 
 export default function Testimonials() {
   const testimonialH2 = useRef(null);
