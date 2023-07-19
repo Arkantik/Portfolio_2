@@ -1,12 +1,17 @@
 // Packages
-import { useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 
 // Components
 import Carousel from "../components/Carousel";
 
+// Service
+import * as Services from "../services/project.service";
+
 export default function Project() {
   const h2El = useRef(null);
   const carouselEl = useRef(null);
+
+  const [projects, setProjects] = useState([]);
 
   useEffect(() => {
     const observers = [
@@ -36,6 +41,13 @@ export default function Project() {
       });
     };
   }, []);
+
+  useEffect(() => {
+    Services.getAllProjects().then((res) => {
+      setProjects(res);
+    });
+  }, []);
+
   return (
     <section
       className="flex min-h-screen flex-col justify-center font-alt"
@@ -48,7 +60,7 @@ export default function Project() {
         </h2>
       </div>
       <div className="hidden-right" ref={carouselEl}>
-        <Carousel />
+        <Carousel projects={projects} />
       </div>
     </section>
   );
