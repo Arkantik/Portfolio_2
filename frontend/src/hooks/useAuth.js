@@ -7,6 +7,31 @@ export default function useAuth() {
   const BASE_URL = import.meta.env.VITE_BACKEND_URL;
   const LOCAL_STORAGE_KEY = "account";
 
+  let status;
+
+  switch (account.is_admin) {
+    case 0:
+      status = "guest";
+      break;
+    case 1:
+      status = "authenticated";
+      break;
+    case null:
+      status = "guest";
+      break;
+    case undefined:
+      status = "guest";
+      break;
+    default:
+      status = "guest";
+  }
+
+  const checkAuthentication = (userStatus) => userStatus === "authenticated";
+  const isLoggedIn = checkAuthentication(status);
+
+  const checkPrivileges = (userAccount) => Boolean(userAccount?.is_admin);
+  const isAdmin = checkPrivileges(account);
+
   const loadUserFromLocalStorage = () => {
     const userAccount = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
     if (userAccount) setAccount(userAccount);
@@ -31,6 +56,8 @@ export default function useAuth() {
   };
 
   return {
+    isLoggedIn,
+    isAdmin,
     loadUserFromLocalStorage,
     setUserToLocalStorage,
     clearUserFromLocalStorage,

@@ -18,7 +18,7 @@ import "./App.css";
 import Dashboard from "./pages/Dashboard";
 
 export default function App() {
-  const { isLoggedIn, loadUserFromLocalStorage } = useAuth();
+  const { isLoggedIn, isAdmin, loadUserFromLocalStorage } = useAuth();
 
   useEffect(() => {
     loadUserFromLocalStorage();
@@ -30,7 +30,7 @@ export default function App() {
       <main>
         <Routes>
           <Route path="/" element={<Portfolio />} />
-          {isLoggedIn ? (
+          {isLoggedIn && isAdmin ? (
             <Route>
               <Route path="dashboard" element={<Dashboard />} />
             </Route>
