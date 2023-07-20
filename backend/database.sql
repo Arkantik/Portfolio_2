@@ -63,11 +63,11 @@ VALUES
 -- Create project
 INSERT INTO `project` (`name`, `description`, `img`, `github`, `website`, `tool`) 
 VALUES
-('WildBook', 'Responsive and mobile-first single-page site using HTML, CSS, and vanilla JS.This project was made within 2 weeks with only 2 weeks of experience in web dev.', '../assets/img/project/wildbook.png', 'https://github.com/Arkantik/WildBook', 'https://arkantik.github.io/WildBook/', '../assets/icons/tools/figma.svg'),
-('Hogwarts Magic Cards', 'Flash-game type website using ReactJS, a CSS framework (Tailwind), and integrating an API. This website is a strategy turn by turn card game set in the world of Harry Potter.', '../assets/img/project/hogwarts.png', 'https://github.com/Arkantik/hogwarts-magic-cards', 'https://arkantik.github.io/hogwarts-magic-cards/', '../assets/icons/tools/figma.svg'),
-('HoliFun', 'No idea where to go for your next vacation? HoliFun is made for you! Project developped during a 36h Hackathon, with the objective to build something about vacation and using an API.', '../assets/img/project/holifun.png', 'https://github.com/Arkantik/holifun', 'https://arkantik.github.io/holifun/', ''),
-('Emmaüs Connect', 'This intranet application allows Emmaus Connect volunteers to log in with their credentials, register smartphones intended for sale through a form, and access the database. Project developped during a 48h Hackathon', '../assets/img/project/emmaus-connect.png', 'https://github.com/Arkantik/Emmaus-Connect', '', ''),
-('Origins E-sport', 'Currently in development', '../assets/img/project/origins.png', '', '', '../assets/icons/tools/figma.svg');
+('WildBook', 'Responsive and mobile-first single-page site using HTML, CSS, and vanilla JS.This project was made within 2 weeks with only 2 weeks of experience in web dev.', 'wildbook.png', 'https://github.com/Arkantik/WildBook', 'https://arkantik.github.io/WildBook/', '../assets/icons/tools/figma.svg'),
+('Hogwarts Magic Cards', 'Flash-game type website using ReactJS, a CSS framework (Tailwind), and integrating an API. This website is a strategy turn by turn card game set in the world of Harry Potter.', 'hogwarts.png', 'https://github.com/Arkantik/hogwarts-magic-cards', 'https://arkantik.github.io/hogwarts-magic-cards/', '../assets/icons/tools/figma.svg'),
+('HoliFun', 'No idea where to go for your next vacation? HoliFun is made for you! Project developped during a 36h Hackathon, with the objective to build something about vacation and using an API.', 'holifun.png', 'https://github.com/Arkantik/holifun', 'https://arkantik.github.io/holifun/', ''),
+('Emmaüs Connect', 'This intranet application allows Emmaus Connect volunteers to log in with their credentials, register smartphones intended for sale through a form, and access the database. Project developped during a 48h Hackathon', 'emmaus-connect.png', 'https://github.com/Arkantik/Emmaus-Connect', '', ''),
+('Origins E-sport', 'Currently in development', 'origins.png', '', '', '../assets/icons/tools/figma.svg');
 
 -- Create project_techno
 INSERT INTO `project_techno` (`project_id`, `techno_id`) 

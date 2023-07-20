@@ -42,7 +42,9 @@ export default function Carousel({ projects }) {
         {projects.map((project) => (
           <SwiperSlide key={project.projectid}>
             <img
-              src={project.img}
+              src={`${
+                import.meta.env.VITE_BACKEND_URL
+              }/uploads/images/projects/${project.img}`}
               alt={project.name}
               className="h-2/5 w-full rounded-t-2xl object-cover object-top md:h-3/5 md:w-full md:object-cover"
             />
@@ -51,7 +53,9 @@ export default function Carousel({ projects }) {
                 {project.techno_images.map((imgSrc) => (
                   <img
                     key={imgSrc}
-                    src={imgSrc}
+                    src={`${
+                      import.meta.env.VITE_BACKEND_URL
+                    }/uploads/images/technos/${imgSrc}`}
                     alt="Technology"
                     className="inline-flex p-2"
                   />
