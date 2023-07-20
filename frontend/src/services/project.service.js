@@ -19,4 +19,18 @@ export const getAllProjects = async () => {
   }
 };
 
+export const modifyProjectById = (body, id) =>
+  axios.put(`${baseUrl}/project/${id}`, body);
+
+// export const addProjectImage = (form) =>
+//   axios.post(`${baseUrl}/upload/images/project`, form);
+
+export const addProject = (body) => axios.post(`${baseUrl}/project/`, body);
+
 export const deleteProject = (id) => axios.delete(`${baseUrl}/project/${id}`);
+
+export const addProjectTechno = (body) =>
+  axios.post(`${baseUrl}/video-category/`, body);
+
+export const deleteProjectTechno = (id) =>
+  axios.delete(`${baseUrl}/video-category/${id}`);
