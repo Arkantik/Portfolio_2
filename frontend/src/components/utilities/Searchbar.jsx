@@ -26,6 +26,7 @@ export default function Searchbar({
 
       <input
         type="search"
+        name="search"
         className="block w-full rounded-lg border border-light/50 bg-gray-700 p-3 pl-10 text-sm text-light placeholder-light/80 focus:border-primary focus:outline-none"
         placeholder="Search..."
         value={filterText}
