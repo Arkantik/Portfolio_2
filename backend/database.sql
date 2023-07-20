@@ -47,18 +47,18 @@ VALUES
 -- Create techno
 INSERT INTO `techno` (`name`, `img`) 
 VALUES 
-('Html', '../assets/icons/languages/html.svg'),
-('Css', '../assets/icons/languages/css.svg'),
-('JavaScript', '../assets/icons/languages/js.svg'),
-('ReactJS', '../assets/icons/languages/react.svg'),
-('Angular', '../assets/icons/languages/angular.svg'),
-('Tailwind', '../assets/icons/languages/tailwind.svg'),
-('SASS', '../assets/icons/languages/sass.svg'),
-('NodeJS', '../assets/icons/languages/nodejs.svg'),
-('Express', '../assets/icons/languages/express.svg'),
-('MySQL', '../assets/icons/languages/mysql.svg'),
-('ViteJS', '../assets/icons/languages/vitejs.svg'),
-('NextJS', '../assets/icons/languages/nextjs.svg');
+('Html', 'html.svg'),
+('Css', 'css.svg'),
+('JavaScript', 'js.svg'),
+('ReactJS', 'react.svg'),
+('Angular', 'angular.svg'),
+('Tailwind', 'tailwind.svg'),
+('SASS', 'sass.svg'),
+('NodeJS', 'nodejs.svg'),
+('Express', 'express.svg'),
+('MySQL', 'mysql.svg'),
+('ViteJS', 'vitejs.svg'),
+('NextJS', 'nextjs.svg');
 
 -- Create project
 INSERT INTO `project` (`name`, `description`, `img`, `github`, `website`, `tool`) 
