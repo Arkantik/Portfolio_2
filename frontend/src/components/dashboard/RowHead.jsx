@@ -49,7 +49,6 @@ export default function RowHead({ activeTab }) {
     }
     return true; // Include other titles
   });
-  console.info(filteredTitles);
 
   return (
     <thead className="bg-primary text-light">
