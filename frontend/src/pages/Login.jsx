@@ -1,6 +1,7 @@
 // Packages
 import { useState } from "react";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 // Hooks
 import useUserContext from "../hooks/useUserContext";
@@ -13,6 +14,7 @@ export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [passwordVisible, setPasswordVisible] = useState(false);
+  const navigate = useNavigate();
 
   const { setAccount } = useUserContext();
   const { setUserToLocalStorage, loginUser } = useAuth();
@@ -42,6 +44,7 @@ export default function Login() {
       setUserToLocalStorage(user);
       // update user context
       setAccount(user);
+      navigate("/dashboard");
     } catch (err) {
       console.error(err);
       const errorMessage = err?.response?.data?.message || err.message;
