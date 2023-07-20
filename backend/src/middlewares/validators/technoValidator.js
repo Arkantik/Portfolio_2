@@ -30,38 +30,4 @@ const validateTechnoInfo = (req, res, next) => {
   return next();
 };
 
-const technoUpdateSchema = Joi.object({
-  name: [Joi.string().max(50), Joi.allow(null)],
-  img: [
-    Joi.string()
-      .regex(/([.{0,2}/]+)?([A-z0-9-_./]+)?.(png|jpg|jpeg|webp|svg)$/i)
-      .max(255),
-    Joi.allow(null),
-  ],
-});
-
-const validateTechnoUpdateInfo = (req, res, next) => {
-  const { techno_name: name } = req.body;
-  req.body.name = name;
-  const { originalname: img, destination } = req.file;
-  req.body.img = img;
-
-  const { error } = technoUpdateSchema.validate(
-    { name, img },
-    { abortEarly: false }
-  );
-
-  if (error) return res.status(422).json({ validationErrors: error.details });
-
-  fs.rename(
-    `${destination}/${req.file.filename}`,
-    `${destination}/${img}`,
-    (err) => {
-      if (err) throw err;
-    }
-  );
-
-  return next();
-};
-
-module.exports = { validateTechnoInfo, validateTechnoUpdateInfo };
+module.exports = validateTechnoInfo;
