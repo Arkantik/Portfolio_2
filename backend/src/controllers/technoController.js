@@ -36,7 +36,7 @@ const post = async (req, res) => {
     console.error(err);
     res
       .status(500)
-      .send("oops...an error occured when updating techno from database");
+      .send("oops...an error occured when registering techno from database");
   }
 };
 

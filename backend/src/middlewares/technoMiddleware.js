@@ -5,12 +5,12 @@ const checkForExistingTechno = async (req, res, next) => {
     if (!Object.keys(req.body).length)
       return res.status(400).send("Bad request. Body cannot be empty...");
 
-    const [techno] = await models.game.findAll();
+    const [techno] = await models.techno.findAll();
 
     if (!techno.length) return res.status(404).send("No techno found");
 
     const match = techno.find(
-      (game) => game.name.toLowerCase() === req.body.name.toLowerCase()
+      (tech) => tech.name.toLowerCase() === req.body.name.toLowerCase()
     );
 
     if (match) return res.status(409).send("Techno already exists!");

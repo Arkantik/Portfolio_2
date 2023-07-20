@@ -1,4 +1,5 @@
 const Joi = require("joi");
+const fs = require("node:fs");
 
 const technoSchema = Joi.object({
   name: Joi.string().max(50).required(),
@@ -9,14 +10,22 @@ const technoSchema = Joi.object({
 });
 
 const validateTechnoInfo = (req, res, next) => {
-  const { name, thumbnail } = req.body;
+  const { techno_name: name } = req.body;
+  req.body.name = name;
+  const { originalname: img, destination } = req.file;
+  req.body.img = img;
 
-  const { error } = technoSchema.validate(
-    { name, thumbnail },
-    { abortEarly: false }
-  );
+  const { error } = technoSchema.validate({ name, img }, { abortEarly: false });
 
   if (error) return res.status(422).json({ validationErrors: error.details });
+
+  fs.rename(
+    `${destination}/${req.file.filename}`,
+    `${destination}/${img}`,
+    (err) => {
+      if (err) throw err;
+    }
+  );
 
   return next();
 };
