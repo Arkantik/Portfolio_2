@@ -5,7 +5,7 @@ import { useState } from "react";
 // Components
 import Searchbar from "../utilities/Searchbar";
 import ModalProject from "./project/ModalProject";
-import ModalTechno from "./tech/ModalTechno";
+import ModalTechno from "./technos/ModalTechno";
 
 export default function RowSearch({
   activeTab,
