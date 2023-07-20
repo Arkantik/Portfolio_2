@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 import styles from "../../styles/dashboard.module.css";
 
 export default function NavTab({ setActiveTabItem }) {
-  const [activeTab, setActiveTab] = useState("video");
+  const [activeTab, setActiveTab] = useState("project");
 
   const handleActive = (tab) => {
     setActiveTab(tab);
