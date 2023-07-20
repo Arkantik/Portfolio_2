@@ -75,13 +75,13 @@ export default function Home() {
 
   return (
     <article
-      className="relative grid h-screen min-h-[calc(100dvh-80px)] grid-cols-1 items-center gap-8 overflow-hidden lg:grid-cols-2"
+      className="relative grid h-screen min-h-[calc(100dvh-80px)] grid-cols-1 items-center gap-8 overflow-hidden bg-cover bg-top lg:grid-cols-2"
+      style={{ backgroundImage: "url('../assets/img/homebg1.svg')" }}
       id="home"
     >
       <div className="hidden object-scale-down lg:flex">
         {/* <img src="../assets/img/slider-img.jpg" alt="Slider" /> */}
       </div>
-      {/* <div className="px-8 md:px-20 lg:px-0"> */}
       <div className="isolate px-4 before:absolute before:-left-44 before:top-1/2 before:-z-10 before:h-[200px] before:w-[200px] before:animate-pulse before:rounded-full before:bg-primary/40 before:blur-[100px] md:px-20 md:before:-right-60 md:before:top-[300px] md:before:h-[400px] md:before:w-[400px] md:before:blur-[100px] lg:px-0">
         <h1
           className="hidden-title block font-main text-xl uppercase text-light md:text-2xl"
