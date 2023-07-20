@@ -9,6 +9,7 @@
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@vitejs/plugin-react": "^3.0.1",
+    "antd": "^5.7.1",
     "autoprefixer": "^10.4.14",
     "axios": "^1.4.0",
     "eslint-config-airbnb": "^19.0.4",
