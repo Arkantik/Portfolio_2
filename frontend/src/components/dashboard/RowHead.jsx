@@ -41,7 +41,7 @@ export default function RowHead({ activeTab }) {
     if (
       activeTab === "techno" &&
       (title.name === "Github" ||
-        title.name === "Webiste" ||
+        title.name === "Site" ||
         title.name === "Tool" ||
         title.name === "Technos")
     ) {
@@ -49,6 +49,7 @@ export default function RowHead({ activeTab }) {
     }
     return true; // Include other titles
   });
+  console.info(filteredTitles);
 
   return (
     <thead className="bg-primary text-light">
