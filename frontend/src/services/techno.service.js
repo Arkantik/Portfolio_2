@@ -15,10 +15,6 @@ export const getAllTechnos = async () => {
 export const modifyTechnoById = (body, id) =>
   axios.put(`${baseUrl}/techno/${id}`, body);
 
-// export const addTechnoImage = (form) => {
-//   return axios.post(`${baseUrl}/techno`, form);
-// };
-
 export const addTechno = (body) => axios.post(`${baseUrl}/techno`, body);
 
 export const deleteTechno = (id) => axios.delete(`${baseUrl}/techno/${id}`);
