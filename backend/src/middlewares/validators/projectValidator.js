@@ -1,4 +1,5 @@
 const Joi = require("joi");
+const fs = require("node:fs");
 
 const projectSchema = Joi.object({
   name: Joi.string().max(255).required(),
@@ -13,7 +14,13 @@ const projectSchema = Joi.object({
 });
 
 const validateProjectInfo = (req, res, next) => {
-  const { name, description, img, github, website, tool } = req.body;
+  // const { name, description, img, github, website, tool } = req.body;
+
+  const { project_name: name, description, github, website, tool } = req.body;
+  req.body.name = name;
+  const { originalname: img, destination } = req.file;
+  req.body.img = img;
+  console.info({ img });
 
   const { error } = projectSchema.validate(
     {
@@ -28,6 +35,14 @@ const validateProjectInfo = (req, res, next) => {
   );
 
   if (error) return res.status(422).json({ validationErrors: error.details });
+
+  fs.rename(
+    `${destination}/${req.file.filename}`,
+    `${destination}/${img}`,
+    (err) => {
+      if (err) throw err;
+    }
+  );
 
   return next();
 };
