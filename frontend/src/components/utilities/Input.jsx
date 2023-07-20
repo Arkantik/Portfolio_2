@@ -30,7 +30,7 @@ const Input = forwardRef(function forwardRefToChild(
       <input
         type={type}
         id={htmlFor}
-        name={name}
+        name={htmlFor}
         data-attribute={name}
         title={tooltip}
         className={className}
