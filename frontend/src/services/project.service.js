@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 import axios from "axios";
 
 const baseUrl = import.meta.env.VITE_BACKEND_URL;
@@ -20,12 +19,4 @@ export const getAllProjects = async () => {
   }
 };
 
-export const getAllTechnos = async () => {
-  try {
-    const url = `${baseUrl}/techno`;
-    const { data } = await axios(url);
-    return data;
-  } catch (error) {
-    return { data: [] };
-  }
-};
+export const deleteProject = (id) => axios.delete(`${baseUrl}/project/${id}`);
