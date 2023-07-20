@@ -58,7 +58,7 @@ VALUES
 ('Express', '../assets/icons/languages/express.svg'),
 ('MySQL', '../assets/icons/languages/mysql.svg'),
 ('ViteJS', '../assets/icons/languages/vitejs.svg'),
-('NextJS', '../assets/icons/languages/vitejs.svg');
+('NextJS', '../assets/icons/languages/nextjs.svg');
 
 -- Create project
 INSERT INTO `project` (`name`, `description`, `img`, `github`, `website`, `tool`) 
