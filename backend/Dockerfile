@@ -1,7 +1,7 @@
 # Dockerfile backend
 FROM node:16.14
 
-WORKDIR /src/app
+WORKDIR usr/src/app
 
 ARG DB_HOST=${DB_HOST}
 ENV DB_HOST=${DB_HOST}
